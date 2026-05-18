@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 import { useState, useEffect } from "react";
 import { Navigation } from "lucide-react";
 
@@ -80,6 +80,7 @@ export default function LiveTrackingSection() {
           <div className="w-full h-full rounded-2xl overflow-hidden relative">
             <APIProvider apiKey="AIzaSyD81Vi2_4CJnKyqQ4FmdAMhw-SnrZkM1x4">
               <Map
+                mapId="DEMO_MAP_ID"
                 defaultCenter={{ lat: 40.7128, lng: -74.0060 }}
                 defaultZoom={14}
                 disableDefaultUI={true}
@@ -87,11 +88,11 @@ export default function LiveTrackingSection() {
                 gestureHandling="cooperative"
               >
                 {/* Simulated Bus Marker */}
-                <Marker position={busPosition}>
+                <AdvancedMarker position={busPosition}>
                   <div className="w-10 h-10 bg-geobus-black border-2 border-geobus-neon rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(182,255,59,0.5)]">
                     <Navigation className="w-5 h-5 text-geobus-neon" />
                   </div>
-                </Marker>
+                </AdvancedMarker>
               </Map>
             </APIProvider>
 

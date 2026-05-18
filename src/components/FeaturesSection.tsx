@@ -1,17 +1,69 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Navigation, Clock, Ticket, GraduationCap, ShieldCheck, BarChart3, AlertTriangle, Route } from "lucide-react";
+import { Navigation, Clock, ShieldCheck, BarChart3, AlertTriangle, Route, MapPin, Search, Bell, Wifi, Users, GraduationCap } from "lucide-react";
 
 const features = [
-  { icon: Navigation, title: "Live GPS Tracking", desc: "Real-time accuracy down to the meter." },
-  { icon: Clock, title: "AI ETA Prediction", desc: "Machine learning powered arrival times." },
-  { icon: Ticket, title: "Smart Ticketing", desc: "Contactless QR boarding." },
-  { icon: GraduationCap, title: "Student Transport", desc: "Dedicated secure routing for schools." },
-  { icon: ShieldCheck, title: "Driver Monitoring", desc: "Live health and fatigue tracking." },
-  { icon: BarChart3, title: "Fleet Analytics", desc: "Deep insights into fleet performance." },
-  { icon: AlertTriangle, title: "Emergency Alerts", desc: "Instant SOS and dynamic rerouting." },
-  { icon: Route, title: "Route Optimization", desc: "AI-driven fuel & time efficiency." },
+  {
+    icon: Navigation,
+    title: "Live GPS Tracking",
+    desc: "Real-time bus tracking with precise live location updates."
+  },
+  {
+    icon: Clock,
+    title: "AI ETA Prediction",
+    desc: "Smart arrival predictions powered by AI and traffic analysis."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Driver Monitoring",
+    desc: "Realtime driver activity, fatigue, and safety monitoring."
+  },
+  {
+    icon: BarChart3,
+    title: "Fleet Analytics",
+    desc: "Advanced operational insights and fleet performance metrics."
+  },
+  {
+    icon: AlertTriangle,
+    title: "Emergency Alerts",
+    desc: "Instant SOS alerts with emergency response tracking."
+  },
+  {
+    icon: Route,
+    title: "Route Optimization",
+    desc: "AI-powered route planning for fuel and time efficiency."
+  },
+  {
+    icon: MapPin,
+    title: "Nearby Bus Stops",
+    desc: "Quickly discover nearby bus stops and transit hubs."
+  },
+  {
+    icon: Search,
+    title: "Smart Station Search",
+    desc: "Fast autocomplete search with intelligent route suggestions."
+  },
+  {
+    icon: Bell,
+    title: "Realtime Delay Alerts",
+    desc: "Get notified instantly about delays and schedule changes."
+  },
+  {
+    icon: Wifi,
+    title: "Live Vehicle Connectivity",
+    desc: "Continuous vehicle updates through onboard IoT tracking."
+  },
+  {
+    icon: Users,
+    title: "Passenger Management",
+    desc: "Efficient monitoring and management of passenger flow."
+  },
+  {
+    icon: GraduationCap,
+    title: "Student Tracking",
+    desc: "Realtime student transport visibility and safety monitoring."
+  },
 ];
 
 export default function FeaturesSection() {

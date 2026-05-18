@@ -1,7 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Navigation, Clock, ShieldCheck, BarChart3, AlertTriangle, Route, MapPin, Search, Bell, Wifi, Users, GraduationCap } from "lucide-react";
+import { 
+  Navigation, 
+  Clock, 
+  ShieldCheck, 
+  BarChart3, 
+  AlertTriangle, 
+  Route, 
+  MapPin, 
+  Search, 
+  Bell, 
+  Wifi, 
+  Users, 
+  GraduationCap 
+} from "lucide-react";
 
 const features = [
   {
@@ -97,7 +110,7 @@ export default function FeaturesSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ delay: idx * 0.05 }}
               className="glass-card p-6 rounded-2xl group hover:border-geobus-neon/50 transition-colors duration-300 relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-geobus-neon/5 rounded-full blur-[50px] -mr-16 -mt-16 transition-opacity group-hover:opacity-100 opacity-50" />

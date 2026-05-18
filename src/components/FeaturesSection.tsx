@@ -1,19 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Navigation, 
-  Clock, 
-  ShieldCheck, 
-  BarChart3, 
-  AlertTriangle, 
-  Route, 
-  MapPin, 
-  Search, 
-  Bell, 
-  Wifi, 
-  Users, 
-  GraduationCap 
+import {
+  Navigation,
+  Clock,
+  ShieldCheck,
+  BarChart3,
+  AlertTriangle,
+  Route,
+  MapPin,
+  Search,
+  Bell,
+  Wifi,
+  Users,
+  Globe
 } from "lucide-react";
 
 const features = [
@@ -73,9 +73,9 @@ const features = [
     desc: "Efficient monitoring and management of passenger flow."
   },
   {
-    icon: GraduationCap,
-    title: "Student Tracking",
-    desc: "Realtime student transport visibility and safety monitoring."
+    icon: Globe,
+    title: "Multi-language Support",
+    desc: "Seamless experience with support for English and Malayalam."
   },
 ];
 

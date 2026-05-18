@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-heading font-bold text-white mb-4 uppercase flex items-center gap-2">
+            <h3 className="text-2xl font-heading font-bold text-white mb-4 flex items-center gap-2">
               <MapPin className="w-6 h-6 text-geobus-neon" />
               GeoBus
             </h3>

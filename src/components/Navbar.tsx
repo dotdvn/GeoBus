@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <MapPin className="w-8 h-8 text-geobus-neon" />
-          <span className="text-xl font-heading font-bold text-white uppercase tracking-wider">
+          <span className="text-xl font-heading font-bold text-white tracking-wider">
             GeoBus
           </span>
         </div>

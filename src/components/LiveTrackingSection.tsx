@@ -100,7 +100,7 @@ export default function LiveTrackingSection() {
     // Filter which stations to display: 
     // If showAllBusStops is false, ONLY show the selectedStops!
     // If showAllBusStops is true, show all 295 stations
-    const stationsToShow = showAllBusStops 
+    const stationsToShow = showAllBusStops
       ? (stationsData as Station[])
       : selectedStops;
 
@@ -129,7 +129,7 @@ export default function LiveTrackingSection() {
             .setText(station.name)
         )
         .addTo(map.current!);
-      
+
       stationMarkers.current.push(m);
     });
   }, [showAllBusStops, map.current, selectedStops]);
@@ -168,7 +168,7 @@ export default function LiveTrackingSection() {
         if (section) {
           section.scrollIntoView({ behavior: "smooth", block: "center" });
         }
-        
+
         // Trigger map zoom and pan flight
         focusStation(station);
       }
@@ -190,7 +190,7 @@ export default function LiveTrackingSection() {
           <div className="w-2 h-2 rounded-full bg-geobus-neon animate-pulse" />
           <span className="text-xs font-semibold text-geobus-neon uppercase tracking-wider">Live System Active</span>
         </motion.div>
-        
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -202,7 +202,7 @@ export default function LiveTrackingSection() {
       </div>
 
       <div className="container px-6 mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -210,7 +210,7 @@ export default function LiveTrackingSection() {
           className="relative h-[100vh] w-full rounded-3xl overflow-hidden glass-card p-2"
         >
           <div className="absolute inset-0 rounded-3xl pointer-events-none border border-white/10 z-10" />
-          
+
           <div className="w-full h-full rounded-2xl overflow-hidden relative">
             {/* MapLibre Container */}
             <div ref={mapContainer} id="map" className="w-full h-full rounded-2xl overflow-hidden" />
@@ -231,23 +231,22 @@ export default function LiveTrackingSection() {
             <div className="absolute top-6 right-6 z-20">
               <button
                 onClick={() => setShowAllBusStops(prev => !prev)}
-                className={`px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center gap-2 border transition-all cursor-pointer ${
-                  showAllBusStops
-                    ? "bg-geobus-neon text-black border-geobus-neon shadow-[0_0_15px_rgba(182,255,59,0.4)] hover:scale-102"
-                    : "glass text-white border-white/10 hover:border-geobus-neon/50 hover:scale-102"
-                }`}
+                className={`px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center gap-2 border transition-all cursor-pointer ${showAllBusStops
+                  ? "bg-geobus-neon text-black border-geobus-neon shadow-[0_0_15px_rgba(182,255,59,0.4)] hover:scale-102"
+                  : "glass text-white border-white/10 hover:border-geobus-neon/50 hover:scale-102"
+                  }`}
               >
                 <span className={`w-2 h-2 rounded-full ${showAllBusStops ? "bg-black animate-pulse" : "bg-geobus-neon animate-pulse"}`} />
                 <span>{showAllBusStops ? "Showing All Stops" : "Show All Bus Stops"}</span>
               </button>
             </div>
-            
+
             <div className="absolute bottom-6 right-6 z-20 glass p-3 rounded-xl flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-white font-bold">12</span>
+                <span className="text-white font-bold">1</span>
               </div>
               <div>
-                <p className="text-xs text-geobus-text uppercase tracking-wider">Active Fleet</p>
+                <p className="text-xs text-geobus-text uppercase tracking-wider">Trial Fleet</p>
                 <p className="text-white font-bold">Vehicles Online</p>
               </div>
             </div>

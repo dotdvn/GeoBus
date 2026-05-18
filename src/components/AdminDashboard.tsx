@@ -49,10 +49,10 @@ export default function AdminDashboard() {
             {/* Sidebar Stats */}
             <div className="col-span-1 space-y-4">
               {[
-                { label: "Active Fleet", value: "142", icon: Bus, color: "text-geobus-neon" },
-                { label: "Total Passengers", value: "8,492", icon: Users, color: "text-white" },
-                { label: "System Health", value: "99.9%", icon: Activity, color: "text-green-400" },
-                { label: "Alerts", value: "3", icon: AlertCircle, color: "text-red-400" },
+                { label: "Active Fleet", value: "TRIAL", icon: Bus, color: "text-geobus-neon" },
+                { label: "Total Passengers", value: "TRIAL", icon: Users, color: "text-white" },
+                { label: "System Health", value: "TRIAL", icon: Activity, color: "text-green-400" },
+                { label: "Alerts", value: "TRIAL", icon: AlertCircle, color: "text-red-400" },
               ].map((stat, idx) => (
                 <div key={idx} className="glass p-4 rounded-xl flex items-center gap-4">
                   <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
@@ -69,20 +69,20 @@ export default function AdminDashboard() {
             {/* Main Chart Area Mockup */}
             <div className="col-span-1 md:col-span-3 glass rounded-2xl p-6 relative overflow-hidden flex flex-col">
               <h3 className="text-white font-heading font-bold mb-6">Fleet Performance Analytics</h3>
-              
+
               <div className="flex-grow flex items-end gap-2 h-48 opacity-80 mt-auto">
-                 {/* CSS Mock Chart */}
-                 {[40, 60, 30, 80, 50, 90, 70, 100, 85, 60, 40, 75, 95].map((height, idx) => (
-                   <div key={idx} className="w-full relative group cursor-pointer h-full flex items-end">
-                     <motion.div 
-                        initial={{ height: 0 }}
-                        whileInView={{ height: `${height}%` }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 + (idx * 0.05), duration: 0.8 }}
-                        className={`w-full rounded-t-sm ${idx % 3 === 0 ? 'bg-geobus-neon' : 'bg-white/20'} group-hover:bg-white transition-colors`} 
-                      />
-                   </div>
-                 ))}
+                {/* CSS Mock Chart */}
+                {[40, 60, 30, 80, 50, 90, 70, 100, 85, 60, 40, 75, 95].map((height, idx) => (
+                  <div key={idx} className="w-full relative group cursor-pointer h-full flex items-end">
+                    <motion.div
+                      initial={{ height: 0 }}
+                      whileInView={{ height: `${height}%` }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 + (idx * 0.05), duration: 0.8 }}
+                      className={`w-full rounded-t-sm ${idx % 3 === 0 ? 'bg-geobus-neon' : 'bg-white/20'} group-hover:bg-white transition-colors`}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

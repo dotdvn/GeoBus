@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-geobus-black: #0a0a0a;
+  --color-geobus-graphite: #121212;
+  --color-geobus-gray: #1a1a1a;
+  --color-geobus-neon: #B6FF3B;
+  --color-geobus-text: #A1A1AA;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-space-grotesk), sans-serif;
+}
+
+@utility glass {
+  background: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility glass-card {
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+@utility neon-glow {
+  box-shadow: 0 0 10px rgba(182, 255, 59, 0.4), 0 0 20px rgba(182, 255, 59, 0.2);
+}
+
+@utility neon-text-glow {
+  text-shadow: 0 0 8px rgba(182, 255, 59, 0.5);
+}
+
+@utility text-gradient {
+  background: linear-gradient(to right, #FFFFFF, #A1A1AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6FF3B;
+}
+
+/* Base selection */
+::selection {
+  background-color: #B6FF3B;
+  color: #000;
+}

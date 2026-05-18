@@ -1,0 +1,6198 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-05-18T13:37:45Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/289607449",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ramanattukara",
+        "name:ml": "രാമനാട്ടുകര",
+        "public_transport": "station",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86531,
+          11.17824
+        ]
+      },
+      "id": "node/289607449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/289607455",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Palayam Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.784203,
+          11.249439
+        ]
+      },
+      "id": "node/289607455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/353409857",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Town Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0600795,
+          10.086309
+        ]
+      },
+      "id": "node/353409857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/354065017",
+        "alt_name": "Thiruvananthapuram City",
+        "alt_name_1": "Trivandrum City",
+        "alt_name_2": "TVM City",
+        "amenity": "bus_station",
+        "internet_access": "wlan",
+        "name": "East Fort",
+        "name:ml": "കിഴക്കേകോട്ട",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9474622,
+          8.4834042
+        ]
+      },
+      "id": "node/354065017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/360378970",
+        "alt_name:en": "Kattakkada",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kattakada",
+        "name:ar": "موقف الحافلة كاتاكدا",
+        "name:ml": "കാട്ടാക്കട",
+        "public_transport": "station",
+        "ref": "KTD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0809575,
+          8.5069532
+        ]
+      },
+      "id": "node/360378970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/548339155",
+        "amenity": "bus_station",
+        "name": "Kolathur Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1376332,
+          10.94716
+        ]
+      },
+      "id": "node/548339155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/561154744",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Old Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1205926,
+          11.1196933
+        ]
+      },
+      "id": "node/561154744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/679055132",
+        "amenity": "bus_station",
+        "name": "Nechipuzhoor",
+        "name:ml": "നെച്ചിപുഴൂർ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6612829,
+          9.7525024
+        ]
+      },
+      "id": "node/679055132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/737863508",
+        "amenity": "bus_station",
+        "name": "Kuravilangad Ksrtc Busstop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5615324,
+          9.7530238
+        ]
+      },
+      "id": "node/737863508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/765697277",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Muttom Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7455168,
+          9.8371923
+        ]
+      },
+      "id": "node/765697277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/801907220",
+        "amenity": "bus_station",
+        "name": "Ramapuram Private BusStand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6598304,
+          9.7996742
+        ]
+      },
+      "id": "node/801907220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/997591145",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kerala state road transport coperation bus stand ettumanoor",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5557469,
+          9.6677898
+        ]
+      },
+      "id": "node/997591145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1080684023",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kasaragod Muncipal Bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9942898,
+          12.5068621
+        ]
+      },
+      "id": "node/1080684023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1161721527",
+        "amenity": "bus_station",
+        "name": "Private bus stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3359263,
+          10.3019364
+        ]
+      },
+      "id": "node/1161721527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1166965746",
+        "amenity": "bus_station",
+        "is_in": "Trissur Distt.",
+        "name": "Guruvayur Private Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0438602,
+          10.5933319
+        ]
+      },
+      "id": "node/1166965746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1195120299",
+        "amenity": "bus_station",
+        "name": "Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1599206,
+          10.2749119
+        ]
+      },
+      "id": "node/1195120299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1468047003",
+        "amenity": "bus_station",
+        "name": "Kalanad bus station",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0224926,
+          12.4507487
+        ]
+      },
+      "id": "node/1468047003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1468049848",
+        "amenity": "bus_station",
+        "name": "Mangad Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0332858,
+          12.4550545
+        ]
+      },
+      "id": "node/1468049848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1472174498",
+        "amenity": "bus_station",
+        "name": "Bus Terminal, Kakkanad",
+        "name:en": "Bus Terminal, Kakkanad",
+        "name:ml": "കാക്കനാട്"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3436819,
+          10.0207497
+        ]
+      },
+      "id": "node/1472174498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1474435860",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Iritty",
+        "name:ml": "ഇരിട്ടി",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6784147,
+          11.9896481
+        ]
+      },
+      "id": "node/1474435860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1488474515",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pappanamcode",
+        "name:ml": "പാപ്പനംകോട്",
+        "public_transport": "station",
+        "ref": "PPD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9810403,
+          8.4705379
+        ]
+      },
+      "id": "node/1488474515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1668617281",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "local_ref": "KSRTC",
+        "name": "Ksrtc Depot, Thalassery",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4820381,
+          11.7609615
+        ]
+      },
+      "id": "node/1668617281"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1682930314",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pilathara Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2633371,
+          12.0802941
+        ]
+      },
+      "id": "node/1682930314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1685165893",
+        "alt_name:en": "Payyanur",
+        "alt_name_1:en": "Payyannur",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Payyanur New",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2151009,
+          12.1081344
+        ]
+      },
+      "id": "node/1685165893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1689876487",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vatakara Old Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5875535,
+          11.5974016
+        ]
+      },
+      "id": "node/1689876487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1787256216",
+        "amenity": "bus_station",
+        "name": "Kotty Railway Gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1934808,
+          12.0976021
+        ]
+      },
+      "id": "node/1787256216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1842395440",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9684797,
+          11.4714252
+        ]
+      },
+      "id": "node/1842395440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1850148559",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Omassery",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9645525,
+          11.3638898
+        ]
+      },
+      "id": "node/1850148559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1850177930",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mukkam",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9971628,
+          11.3208658
+        ]
+      },
+      "id": "node/1850177930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1877768220",
+        "addr:city": "KILIMAMOOR",
+        "addr:postcode": "695601",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "yes",
+        "name": "KSRTC Bus Depot Kilimanoor",
+        "operator": "KSRTC",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8805613,
+          8.7748267
+        ]
+      },
+      "id": "node/1877768220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1889339116",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thottil Palam Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.780267,
+          11.6773239
+        ]
+      },
+      "id": "node/1889339116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1917699333",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chathannoor KSRTC Stand",
+        "name:ml": "ചാത്തന്നൂർ",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "short_name": "CHT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7221481,
+          8.8570173
+        ]
+      },
+      "id": "node/1917699333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1930595751",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "കോതമംഗലം",
+        "name:en": "Kothamangalam",
+        "name:ml": "കോതമംഗലം",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "short_name": "KMG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6287507,
+          10.0604552
+        ]
+      },
+      "id": "node/1930595751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2271279520",
+        "amenity": "bus_station",
+        "name": "Kuravilangad Junction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5610757,
+          9.7576158
+        ]
+      },
+      "id": "node/2271279520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2288992305",
+        "addr:city": "Moolamattom",
+        "addr:postcode": "685589",
+        "addr:street": "Thodupuzha Moolamattom",
+        "amenity": "bus_station",
+        "int_name": "Private Bus Station Moolamattom",
+        "name": "Private Bus Station",
+        "source": "Survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8523262,
+          9.7914693
+        ]
+      },
+      "id": "node/2288992305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2291876211",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ayarkkunnam Private Bus Station",
+        "name:ml": "അയർക്കുന്നം ബസ് സ്റ്റാൻഡ്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6065123,
+          9.6354156
+        ]
+      },
+      "id": "node/2291876211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2294085419",
+        "amenity": "bus_station",
+        "name": "Kuravilangad Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5617627,
+          9.7593514
+        ]
+      },
+      "id": "node/2294085419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2355694746",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Edavannappara Bustand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9755123,
+          11.2450245
+        ]
+      },
+      "id": "node/2355694746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2435343762",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Azheekal Bus Terminal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3051157,
+          11.9438169
+        ]
+      },
+      "id": "node/2435343762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508302672",
+        "amenity": "bus_station",
+        "name": "Kallumkadavu Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8525862,
+          9.0945492
+        ]
+      },
+      "id": "node/2508302672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2592394225",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kannur Government Hospital Private Bus Stand",
+        "operator:type": "public",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3713982,
+          11.8619489
+        ]
+      },
+      "id": "node/2592394225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2605819078",
+        "addr:city": "Kozhencherry",
+        "addr:street": "Kozhencherry-Ranni road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Kozhencherry Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7049673,
+          9.3371345
+        ]
+      },
+      "id": "node/2605819078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2623815260",
+        "alt_name:en": "Mananthavady",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kerala State Road Transport Corperation, Mananthavadi",
+        "name:ml": "മാനന്തവാടി",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "shelter": "yes",
+        "short_name": "MND"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0071542,
+          11.8045868
+        ]
+      },
+      "id": "node/2623815260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2875692897",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "lit": "yes",
+        "name": "Changanassery",
+        "name:ml": "ചങ്ങനാശ്ശേരി",
+        "public_transport": "station",
+        "ref": "52",
+        "shelter": "yes",
+        "short_name": "CHR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5409609,
+          9.4456858
+        ]
+      },
+      "id": "node/2875692897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2883013286",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Old Municipal Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6846347,
+          9.7127516
+        ]
+      },
+      "id": "node/2883013286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2883196477",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Poonjar",
+        "name:ml": "പൂഞ്ഞാർ",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8132759,
+          9.6734751
+        ]
+      },
+      "id": "node/2883196477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2883508357",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "വെഞ്ഞാറമ്മൂട്",
+        "name:en": "Venjaramoodu",
+        "name:ml": "വെഞ്ഞാറമൂട്",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "ref": "VJD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9103719,
+          8.6779888
+        ]
+      },
+      "id": "node/2883508357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2883508360",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Venjaramoodu Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9123997,
+          8.6796539
+        ]
+      },
+      "id": "node/2883508360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2884932592",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Edakkara Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.306033,
+          11.3565821
+        ]
+      },
+      "id": "node/2884932592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2885383658",
+        "addr:city": "മൂവാറ്റുപുഴ",
+        "addr:postcode": "686661",
+        "addr:street": "എംസി റോഡ്",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "wlan",
+        "name": "KSRTC",
+        "name:ml": "കെ. എസ്. ആർ. ടി. സി.",
+        "operator": "Kerala Government",
+        "public_transport": "station",
+        "source": "Kerala State Road Transport Corpration Bus Stand Muvattupuzha",
+        "website": "https://www.keralartc.com/main.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5797924,
+          9.977111
+        ]
+      },
+      "id": "node/2885383658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2897254089",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Pathanamthitta KSRTC bus stand",
+        "name:ml": "പത്തനംതിട്ട കെ.എസ്.ആർ.ടി.സി. ബസ് സ്റ്റാന്റ്",
+        "operator": "Kerala State Road Transport Corporation",
+        "operator:wikidata": "Q679587",
+        "public_transport": "station",
+        "ref": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7895169,
+          9.2671433
+        ]
+      },
+      "id": "node/2897254089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2904289089",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kayamkulam Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5006206,
+          9.1737306
+        ]
+      },
+      "id": "node/2904289089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2913831391",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ranni Bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7793302,
+          9.3780115
+        ]
+      },
+      "id": "node/2913831391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2916974293",
+        "amenity": "bus_station",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "KFI-Kerala-Goverment-Free-Wifi",
+        "name": "Mangattukavala Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7248837,
+          9.9026373
+        ]
+      },
+      "id": "node/2916974293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2917357737",
+        "amenity": "bus_station",
+        "name": "Mallappally Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6573806,
+          9.4460338
+        ]
+      },
+      "id": "node/2917357737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2920194581",
+        "addr:city": "changanacherry",
+        "addr:housenumber": "private bus stand no:1",
+        "addr:postcode": "686105",
+        "addr:street": "bus stand",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Changanassery Perunna Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.544237,
+          9.4435115
+        ]
+      },
+      "id": "node/2920194581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2933131841",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Kilimanoor Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.878644,
+          8.7700796
+        ]
+      },
+      "id": "node/2933131841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2934096620",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chavakkad",
+        "name:ml": "ചാവക്കാട്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0222013,
+          10.5820424
+        ]
+      },
+      "id": "node/2934096620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2976976829",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8554655,
+          11.5357745
+        ]
+      },
+      "id": "node/2976976829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3028236968",
+        "amenity": "bus_station",
+        "name": "Koorachundu Bus Stand",
+        "name:ml": "കൂരാച്ചുണ്ടു് ബസ്സ് സ്റ്റാന്റ്"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8430703,
+          11.540186
+        ]
+      },
+      "id": "node/3028236968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3133561980",
+        "amenity": "bus_station",
+        "name": "poothotta new bus stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3841681,
+          9.846508
+        ]
+      },
+      "id": "node/3133561980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3447915389",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "lit": "yes",
+        "name": "Konni",
+        "name:ml": "കോന്നി",
+        "public_transport": "station",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8483014,
+          9.2288446
+        ]
+      },
+      "id": "node/3447915389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526233529",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "ആയൂർ",
+        "name:en": "Ayoor",
+        "name:ml": "ആയൂര്‍",
+        "operator": "KSRTC",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8596861,
+          8.8985287
+        ]
+      },
+      "id": "node/3526233529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3664130320",
+        "amenity": "bus_station",
+        "name": "bus stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2786167,
+          10.7820873
+        ]
+      },
+      "id": "node/3664130320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3684507855",
+        "amenity": "bus_station",
+        "name": "Moolakkal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8850984,
+          10.9660987
+        ]
+      },
+      "id": "node/3684507855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3684508482",
+        "amenity": "bus_station",
+        "name": "Tanur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.880539,
+          10.9779156
+        ]
+      },
+      "id": "node/3684508482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3691544496",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kuttiady New Bus Stand",
+        "operator": "goverment",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7514354,
+          11.6545265
+        ]
+      },
+      "id": "node/3691544496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3752972818",
+        "amenity": "bus_station",
+        "name": "parthasarathy bus station",
+        "operator": "kakkodi panchayath"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7901239,
+          11.3259726
+        ]
+      },
+      "id": "node/3752972818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753015137",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Cherukulam Bus Station",
+        "operator": "kakkodi grama panchayth",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.771755,
+          11.3346424
+        ]
+      },
+      "id": "node/3753015137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753048764",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mallikadave Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7852807,
+          11.3096265
+        ]
+      },
+      "id": "node/3753048764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3757483597",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Narikkuni Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8641591,
+          11.3676983
+        ]
+      },
+      "id": "node/3757483597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3811026548",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Athikkayam",
+        "name:ml": "അത്തിക്കയം",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8431476,
+          9.3875221
+        ]
+      },
+      "id": "node/3811026548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3812342517",
+        "amenity": "bus_station",
+        "name": "Paruva-Kattikkal Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8666504,
+          9.4078373
+        ]
+      },
+      "id": "node/3812342517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3818668331",
+        "amenity": "bus_station",
+        "name": "Kuttiady Bus Stand",
+        "operator": "goverment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7531435,
+          11.6541685
+        ]
+      },
+      "id": "node/3818668331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3839328223",
+        "amenity": "bus_station",
+        "name": "bus stand vengara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9770984,
+          11.0504993
+        ]
+      },
+      "id": "node/3839328223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3864435009",
+        "amenity": "bus_station",
+        "name": "Cheranalloor Ferry Bus Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2827585,
+          10.0722225
+        ]
+      },
+      "id": "node/3864435009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3872826044",
+        "amenity": "bus_station",
+        "building": "terrace",
+        "name": "Pattambi Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1791235,
+          10.8012672
+        ]
+      },
+      "id": "node/3872826044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3883265125",
+        "amenity": "bus_station",
+        "name": "മലപ്പുറം കെ.എസ്.ആർ.ടി.സി",
+        "name:en": "KSRTC Bus Stand, Malappuram",
+        "name:hi": "मलप्पुरम"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0800732,
+          11.0425516
+        ]
+      },
+      "id": "node/3883265125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3906562538",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Medical College",
+        "name:ml": "മെഡിക്കൽ കോളേജ്",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "ref": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9300559,
+          8.522508
+        ]
+      },
+      "id": "node/3906562538"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3906976442",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thangassery Bus Station",
+        "name:en": "Thangassery Bus Station",
+        "public_transport": "station",
+        "wikidata": "Q22952154",
+        "wikimedia_commons": "Category:Tangasseri Bus Terminal",
+        "wikipedia": "en:Tangasseri Bus Terminal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5694202,
+          8.8825221
+        ]
+      },
+      "id": "node/3906976442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3906976443",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5713759,
+          8.8861769
+        ]
+      },
+      "id": "node/3906976443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3951434588",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Alappuzha Railway Station",
+        "name:ml": "ആലപ്പുഴ റെയിൽവേ സ്റ്റേഷൻ",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3226246,
+          9.4850082
+        ]
+      },
+      "id": "node/3951434588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4292205903",
+        "amenity": "bus_station",
+        "name": "ottupara bus stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2543865,
+          10.6661583
+        ]
+      },
+      "id": "node/4292205903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4308325290",
+        "addr:street": "Thrissur – Kuttippuram Road",
+        "amenity": "bus_station",
+        "name": "Kandanakam Kerala State Road Transport Corporation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0140147,
+          10.8139157
+        ]
+      },
+      "id": "node/4308325290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4348995047",
+        "amenity": "bus_station",
+        "name": "Palapetty beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1081482,
+          10.3623777
+        ]
+      },
+      "id": "node/4348995047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4397015590",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Payyoli",
+        "name:ml": "പയ്യോളി",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.620078,
+          11.5150174
+        ]
+      },
+      "id": "node/4397015590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4410752289",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Enchakkal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9374966,
+          8.4787442
+        ]
+      },
+      "id": "node/4410752289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4413584491",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "thazhe chovva",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4071749,
+          11.865846
+        ]
+      },
+      "id": "node/4413584491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4413584689",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "mele chovva",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3969833,
+          11.8717069
+        ]
+      },
+      "id": "node/4413584689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4415494793",
+        "addr:postcode": "686538",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Njaliakuzhi Bus Stand",
+        "name:en": "Njaliakuzhi Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5734398,
+          9.5219045
+        ]
+      },
+      "id": "node/4415494793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4424782690",
+        "amenity": "bus_station",
+        "name": "Panthrandil",
+        "name:en": "Panthrandil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1294155,
+          12.1867405
+        ]
+      },
+      "id": "node/4424782690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4434041235",
+        "addr:street": "Marayamuttom",
+        "amenity": "bus_station",
+        "junction": "yes",
+        "name": "Marayamuttom",
+        "name:en": "Marayamuttom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1077296,
+          8.4166055
+        ]
+      },
+      "id": "node/4434041235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4445183990",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mukkadamukku, Chavara",
+        "name:en": "Mukkadamukku",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5436009,
+          8.9784651
+        ]
+      },
+      "id": "node/4445183990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4445183991",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kunjalumoodu Chavara",
+        "name:en": "Kunjalumood",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5387055,
+          8.9797661
+        ]
+      },
+      "id": "node/4445183991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4445269189",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Vazhayilmukku, Chavara",
+        "name:en": "Vazhayilmukku",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5461243,
+          8.9781236
+        ]
+      },
+      "id": "node/4445269189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4502579790",
+        "addr:street": "Calicut-Valanchery-Kuttipuram Highway",
+        "amenity": "bus_station",
+        "name": "Thozhuvanoor",
+        "name:en": "Thozhuvanoor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0592056,
+          10.9007613
+        ]
+      },
+      "id": "node/4502579790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4510122590",
+        "addr:street": "Paravur",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "wlan",
+        "name": "Paravur Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6686915,
+          8.8107644
+        ]
+      },
+      "id": "node/4510122590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4616175089",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "check_date": "2023-01-28",
+        "highway": "bus_stop",
+        "name": "Munnar Local bus stand",
+        "name:en": "Local bus stand",
+        "network": "RTO06",
+        "operator": "KSRTC,Private",
+        "public_transport": "platform",
+        "service": "regional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.061182,
+          10.0863247
+        ]
+      },
+      "id": "node/4616175089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4688824842",
+        "alt_name:en": "Vikas Bhavan",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vikas Bhavan Bus Depot",
+        "name:ml": "വികാസ് ഭവൻ",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "ref": "10",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9469661,
+          8.5085586
+        ]
+      },
+      "id": "node/4688824842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4735556825",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Keezhur kunnu",
+        "name:en": "Keezhur kunnu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6590701,
+          11.9707879
+        ]
+      },
+      "id": "node/4735556825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4735559521",
+        "addr:city": "Punnad",
+        "addr:postcode": "670703",
+        "addr:street": "Thalassery - Coorg Highway",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Punnad",
+        "name:en": "Punnad",
+        "name:ml": "പുന്നാട്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.655176,
+          11.9642102
+        ]
+      },
+      "id": "node/4735559521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4744267021",
+        "amenity": "bus_station",
+        "name": "Alathur private Bus staion",
+        "name:en": "Alathur private Bus staion",
+        "name:ml": "ആലത്തൂർ പ്രൈവറ്റ് ബസ് സ്റ്റാൻഡ്"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5417394,
+          10.6469228
+        ]
+      },
+      "id": "node/4744267021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4748418898",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "bus_routes": "5",
+        "name": "Chavara Pvt. Bus Stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5351064,
+          8.9757533
+        ]
+      },
+      "id": "node/4748418898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4829735633",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "പന്തളം",
+        "name:en": "Pandalam",
+        "operator": "KSRTC",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6770026,
+          9.2244689
+        ]
+      },
+      "id": "node/4829735633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4829744731",
+        "amenity": "bus_station",
+        "name": "PrivateBusStation",
+        "name:en": "PrivateBusStation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5353918,
+          9.311192
+        ]
+      },
+      "id": "node/4829744731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4853803092",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "New bus stand koyilandy",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6955779,
+          11.4410631
+        ]
+      },
+      "id": "node/4853803092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5097234921",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Neyyar Dam",
+        "name:en": "Neyyar Dam",
+        "name:ml": "നെയ്യാർ ഡാം ബസ് സ്റ്റാൻഡ്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1447283,
+          8.5327095
+        ]
+      },
+      "id": "node/5097234921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5151905624",
+        "addr:street": "New Bus Stand-Edodi Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5908278,
+          11.5983369
+        ]
+      },
+      "id": "node/5151905624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5255461723",
+        "amenity": "bus_station",
+        "name": "Vembuva"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5799213,
+          12.065979
+        ]
+      },
+      "id": "node/5255461723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5255461724",
+        "amenity": "bus_station",
+        "name": "Payyavoor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.581181,
+          12.0610197
+        ]
+      },
+      "id": "node/5255461724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5300436205",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kozhinjampara Bus Stand",
+        "name:ml": "കൊഴിഞ്ഞാമ്പാര ബസ് സ്റ്റാൻഡ്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8336961,
+          10.7375466
+        ]
+      },
+      "id": "node/5300436205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5444813630",
+        "amenity": "bus_station",
+        "name": "Jetty to Ayitti, Padne, Kotty"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1481496,
+          12.1443026
+        ]
+      },
+      "id": "node/5444813630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5658274063",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "This is the Old bus stand. Buses towards Vadakara stops here.",
+        "name": "Old Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6940406,
+          11.4409005
+        ]
+      },
+      "id": "node/5658274063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5757830263",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Molekkurish Bus Stop",
+        "network": "RTO17",
+        "operator": "private,ksrtc",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4162776,
+          10.0366621
+        ]
+      },
+      "id": "node/5757830263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5781032591",
+        "addr:street": "Koduvally",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "wlan",
+        "name": "Koduvally Bustand",
+        "network": "Public & Private",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9103776,
+          11.3612592
+        ]
+      },
+      "id": "node/5781032591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5866142538",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2491436,
+          10.664509
+        ]
+      },
+      "id": "node/5866142538"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5978953440",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vellikulangara Bus Stand",
+        "operator": "Mattathur Panchayath",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4108991,
+          10.3605311
+        ]
+      },
+      "id": "node/5978953440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6004246335",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Elamkadu Bus Stand",
+        "name:ml": "ഇളംകാട് ബസ്സ് സ്റ്റാന്റ്",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.89555,
+          9.6342394
+        ]
+      },
+      "id": "node/6004246335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6237476485",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Attipeedika Bus Stand",
+        "name:ml": "അട്ടിപ്പീടിക",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4351363,
+          9.576929
+        ]
+      },
+      "id": "node/6237476485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6872584459",
+        "addr:city": "kottayi",
+        "addr:street": "Kuzhalmannam-Perinkottukurushi Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "thekkekara bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5361447,
+          10.7600423
+        ]
+      },
+      "id": "node/6872584459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6894794701",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Aryanad Bus Stand",
+        "name:ml": "ആര്യനാട്",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "ref": "ARD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0830541,
+          8.5796319
+        ]
+      },
+      "id": "node/6894794701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6897397549",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "mangatukavala",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7204228,
+          9.9077872
+        ]
+      },
+      "id": "node/6897397549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6898348375",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "private bus station pandalam",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6778201,
+          9.2248312
+        ]
+      },
+      "id": "node/6898348375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6908032048",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "nadapuram bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6534746,
+          11.6845128
+        ]
+      },
+      "id": "node/6908032048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6982422336",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Karuvarakund Bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3424834,
+          11.1255968
+        ]
+      },
+      "id": "node/6982422336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7016742691",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Parassala",
+        "name:en": "Parassala",
+        "name:ta": "பாறசாலை",
+        "public_transport": "station",
+        "ref": "PSL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1464755,
+          8.3494223
+        ]
+      },
+      "id": "node/7016742691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7075686804",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Neyyattinkara Bus Stand",
+        "name:en": "Neyyattinkara Bus Station",
+        "public_transport": "station",
+        "ref": "NTA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0880245,
+          8.3974066
+        ]
+      },
+      "id": "node/7075686804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7079154533",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "thriprayar privet bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.107365,
+          10.4150436
+        ]
+      },
+      "id": "node/7079154533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7090063788",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vithura",
+        "name:ml": "വിതുര",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "ref": "VTR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0951147,
+          8.6763654
+        ]
+      },
+      "id": "node/7090063788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7090216827",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vadakara",
+        "name:ml": "വടകര",
+        "operator": "KSRTC",
+        "public_transport": "station",
+        "short_name": "VKA",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5941324,
+          11.5941919
+        ]
+      },
+      "id": "node/7090216827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7103911109",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "wadakkanchery bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2465786,
+          10.6573204
+        ]
+      },
+      "id": "node/7103911109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7111502345",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.031316,
+          10.5811237
+        ]
+      },
+      "id": "node/7111502345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7111521822",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3206944,
+          10.5377148
+        ]
+      },
+      "id": "node/7111521822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7119153736",
+        "addr:city": "Thiruvambady",
+        "addr:postcode": "673603",
+        "addr:street": "OMASSERY-THIRUVAMBADY ROAD",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thiruvambady Bus Stand",
+        "operator": "THIRUVAMBADY PANCHAYAT",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0099571,
+          11.3611627
+        ]
+      },
+      "id": "node/7119153736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7119677646",
+        "addr:city": "Calicut",
+        "addr:postcode": "673603",
+        "addr:street": "Koodaranhi Rd",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Koodaranji Bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0361837,
+          11.3481892
+        ]
+      },
+      "id": "node/7119677646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7123793987",
+        "amenity": "bus_station",
+        "bin": "no",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "Aashramum Bus Stop;Ashramam bustop",
+        "public_transport": "platform",
+        "survey:date": "2021-09-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1612683,
+          10.5528251
+        ]
+      },
+      "id": "node/7123793987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7128163559",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kandala Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0726519,
+          8.4828986
+        ]
+      },
+      "id": "node/7128163559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7201164051",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pampady Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6398576,
+          9.5696697
+        ]
+      },
+      "id": "node/7201164051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7227156494",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "അങ്കമാലി ബസ് സ്റ്റാന്റ്",
+        "name:en": "ANGAMALY BUS STAND",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3865464,
+          10.1958543
+        ]
+      },
+      "id": "node/7227156494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7305284372",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "elampally",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7169812,
+          9.5704685
+        ]
+      },
+      "id": "node/7305284372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321075019",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC BUS STAND, KOOTHATUKULAM",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5928441,
+          9.8633567
+        ]
+      },
+      "id": "node/7321075019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7324324347",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Puthuppally Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5727024,
+          9.5573955
+        ]
+      },
+      "id": "node/7324324347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7325550887",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "kottaramattam bus terminal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6728613,
+          9.708848
+        ]
+      },
+      "id": "node/7325550887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7335357661",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "ksrtc sub depot NDKM",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1596296,
+          9.836373
+        ]
+      },
+      "id": "node/7335357661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7340824135",
+        "addr:city": "BEKAL FORT",
+        "addr:street": "PALLIKERE",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pallikkare Bus Stop",
+        "network": "PALLIKERE TO KASARAGOD",
+        "public_transport": "station",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0418477,
+          12.3906059
+        ]
+      },
+      "id": "node/7340824135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7340883158",
+        "addr:city": "BEKAL FORT",
+        "addr:street": "PALLIKERE",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pallikkare Bus Stop",
+        "network": "PALLIKERE TO KANHANGAD",
+        "public_transport": "station",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0422961,
+          12.3901104
+        ]
+      },
+      "id": "node/7340883158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342322422",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kallada Tours And Travels Kottarakara",
+        "office": "travel_agent",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7832349,
+          9.0044562
+        ]
+      },
+      "id": "node/7342322422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342727365",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kottarakkara Kerala State Road Transport Corporation Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7819086,
+          9.0060586
+        ]
+      },
+      "id": "node/7342727365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7379130151",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2865829,
+          10.5204448
+        ]
+      },
+      "id": "node/7379130151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7454153723",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mannanthala",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9435115,
+          8.560323
+        ]
+      },
+      "id": "node/7454153723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7454153725",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mannanthala",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9431227,
+          8.5605733
+        ]
+      },
+      "id": "node/7454153725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7459280920",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kerala State Transport Corporation Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0035783,
+          8.6054656
+        ]
+      },
+      "id": "node/7459280920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7461797457",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Kavumkara Bus Station/Market Bus Stand",
+        "network": "Private",
+        "operator": "Private Bus Owners",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5845116,
+          9.9891756
+        ]
+      },
+      "id": "node/7461797457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7462174573",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9073663,
+          9.9704686
+        ]
+      },
+      "id": "node/7462174573"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7462250969",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chirayinkeezhu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7853866,
+          8.6604187
+        ]
+      },
+      "id": "node/7462250969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7462411840",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7793358,
+          9.378011
+        ]
+      },
+      "id": "node/7462411840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7462528377",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "PARAPPIL MUTHUVILA NEDUMANGADU",
+        "name": "Parappil Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9790588,
+          8.7174991
+        ]
+      },
+      "id": "node/7462528377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7462779262",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kerala State Road Transport Corporation Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5406697,
+          9.4453829
+        ]
+      },
+      "id": "node/7462779262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7464698941",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chengannur Private Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6096763,
+          9.3186083
+        ]
+      },
+      "id": "node/7464698941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7465555388",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kerala State Road Transport Corporation Regional Workshop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.344839,
+          10.0924402
+        ]
+      },
+      "id": "node/7465555388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7465902649",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kulamavu Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8887822,
+          9.7949521
+        ]
+      },
+      "id": "node/7465902649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7467170982",
+        "addr:city": "Vazhakulam",
+        "addr:housenumber": "Vazhakulam",
+        "addr:postcode": "686670",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vazhakulam Private Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6408347,
+          9.9441519
+        ]
+      },
+      "id": "node/7467170982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7467637511",
+        "addr:city": "Rajakad",
+        "addr:housenumber": "Rajakad,Kerala",
+        "addr:postcode": "685566",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Rajakad Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0984088,
+          9.9616742
+        ]
+      },
+      "id": "node/7467637511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7468233849",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9756242,
+          11.2450718
+        ]
+      },
+      "id": "node/7468233849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7470352013",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thalayolaparambu Bus Terminal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4431992,
+          9.7854136
+        ]
+      },
+      "id": "node/7470352013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7470646956",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1616641,
+          10.9923574
+        ]
+      },
+      "id": "node/7470646956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7473009353",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "fixme": "Please confirm the name of the stop",
+        "name": "Thanjoor Mala Colony",
+        "operator": "RTO17",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.607404,
+          10.0214084
+        ]
+      },
+      "id": "node/7473009353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7473576392",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "kalavoor bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3294085,
+          9.5691246
+        ]
+      },
+      "id": "node/7473576392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7476143690",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "emergency": "first_aid_kit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2380013,
+          12.1017517
+        ]
+      },
+      "id": "node/7476143690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7477487537",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4609676,
+          12.1671169
+        ]
+      },
+      "id": "node/7477487537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7477833223",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "vattoli busstand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8884996,
+          11.3992704
+        ]
+      },
+      "id": "node/7477833223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7480354393",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5840033,
+          8.890128
+        ]
+      },
+      "id": "node/7480354393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7486735765",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7498906,
+          9.9227103
+        ]
+      },
+      "id": "node/7486735765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7489360710",
+        "addr:city": "Edoor",
+        "addr:postcode": "670704",
+        "addr:street": "Edoor",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "yes",
+        "name": "Edoor BusStand &Goods Carrier Stand",
+        "operator:type": "public",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7250142,
+          11.9964057
+        ]
+      },
+      "id": "node/7489360710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7489987391",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kumbalam Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6618022,
+          8.9924317
+        ]
+      },
+      "id": "node/7489987391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7490127386",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ambalamkunnu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7931208,
+          8.9009919
+        ]
+      },
+      "id": "node/7490127386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7490184959",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "bus stand ambalapady",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7832782,
+          9.9948809
+        ]
+      },
+      "id": "node/7490184959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7490324062",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Muthalamad",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9548509,
+          11.0311788
+        ]
+      },
+      "id": "node/7490324062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7491293306",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3590142,
+          9.9930964
+        ]
+      },
+      "id": "node/7491293306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7491293307",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3589685,
+          9.9957524
+        ]
+      },
+      "id": "node/7491293307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7491693835",
+        "addr:street": "College road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Kaduvamuzhy Bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7736821,
+          9.6942973
+        ]
+      },
+      "id": "node/7491693835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7497035596",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Kadukutty Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.309524,
+          10.2700931
+        ]
+      },
+      "id": "node/7497035596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7498032679",
+        "amenity": "bus_station",
+        "name": "Muthukurussi bus stand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2567086,
+          10.8983252
+        ]
+      },
+      "id": "node/7498032679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7499988791",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Changanassery Private Bus Stand No. 1",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5420423,
+          9.4470579
+        ]
+      },
+      "id": "node/7499988791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7508765741",
+        "addr:city": "Pothanicad",
+        "addr:district": "Ernakulam",
+        "addr:postcode": "686671",
+        "addr:street": "Adivad - Pothanikkad Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Pothanicad Bus Waiting Station",
+        "operator": "KSRTC;Private",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.681229,
+          10.0069201
+        ]
+      },
+      "id": "node/7508765741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7510448663",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Manalinmmel Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.235333,
+          11.1934306
+        ]
+      },
+      "id": "node/7510448663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7513132113",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5933824,
+          9.8628372
+        ]
+      },
+      "id": "node/7513132113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7515168226",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3533694,
+          11.9667771
+        ]
+      },
+      "id": "node/7515168226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7515405379",
+        "addr:housenumber": "271/21",
+        "addr:postcode": "676 121",
+        "addr:street": "Manjeri-Pandikkad Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1229427,
+          11.1196313
+        ]
+      },
+      "id": "node/7515405379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7515408052",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mukkam Old Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9972036,
+          11.3206787
+        ]
+      },
+      "id": "node/7515408052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7515443475",
+        "addr:housenumber": "271/21",
+        "addr:postcode": "676 121",
+        "addr:street": "Manjeri-Pandikkad Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1202824,
+          11.1198209
+        ]
+      },
+      "id": "node/7515443475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7516356807",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mandiram",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5267122,
+          9.5080416
+        ]
+      },
+      "id": "node/7516356807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7518508953",
+        "addr:place": "madakkara",
+        "addr:street": "Cheruvathur-Achanthuruthu",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1283943,
+          12.2175465
+        ]
+      },
+      "id": "node/7518508953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7525132997",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC Bus Terminus",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0000136,
+          11.7949739
+        ]
+      },
+      "id": "node/7525132997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7600040714",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "peechi bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3677491,
+          10.5283054
+        ]
+      },
+      "id": "node/7600040714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7634953471",
+        "addr:street": "Thiruvananthapuram - Ponmudi Road",
+        "amenity": "bus_station",
+        "check_date": "2026-03-24",
+        "name": "KSRTC Vithura",
+        "phone": "0472 285 8686"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0954746,
+          8.6760259
+        ]
+      },
+      "id": "node/7634953471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7663505358",
+        "addr:postcode": "688561",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ambalapuzha Junction Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3551601,
+          9.382829
+        ]
+      },
+      "id": "node/7663505358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7923747352",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Puthenvelikkara Bus Stand",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2454284,
+          10.1874427
+        ]
+      },
+      "id": "node/7923747352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7923747353",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2449873,
+          10.1872596
+        ]
+      },
+      "id": "node/7923747353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7944687000",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Medical College Station",
+        "proposed": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8368988,
+          11.2711194
+        ]
+      },
+      "id": "node/7944687000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8218101570",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9355667,
+          11.4091177
+        ]
+      },
+      "id": "node/8218101570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8237911844",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "pallimukku-mulavana",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6883682,
+          8.9674869
+        ]
+      },
+      "id": "node/8237911844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8255003108",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Parippu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4758931,
+          9.6192318
+        ]
+      },
+      "id": "node/8255003108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8279467391",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Edathanattukara",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3492748,
+          11.0597378
+        ]
+      },
+      "id": "node/8279467391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8280662767",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Bmm school bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6289276,
+          9.5543933
+        ]
+      },
+      "id": "node/8280662767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8286625791",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "covered": "yes",
+        "name": "Medical College bus Terminal",
+        "passenger_information_display": "yes",
+        "public_transport": "station",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5213911,
+          9.632297
+        ]
+      },
+      "id": "node/8286625791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8290657068",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "chungam pattikkad",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2288012,
+          11.0162982
+        ]
+      },
+      "id": "node/8290657068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8291520318",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2195993,
+          11.0421646
+        ]
+      },
+      "id": "node/8291520318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8291520319",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2224961,
+          11.0414768
+        ]
+      },
+      "id": "node/8291520319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8313647783",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4548285,
+          10.9914693
+        ]
+      },
+      "id": "node/8313647783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8323674240",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "Bus shelter",
+        "name": "Alummood Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7942707,
+          9.5094979
+        ]
+      },
+      "id": "node/8323674240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8324686262",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2444115,
+          11.1941272
+        ]
+      },
+      "id": "node/8324686262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8325008781",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "edneer",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0717105,
+          12.5236989
+        ]
+      },
+      "id": "node/8325008781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8325309561",
+        "addr:city": "Adoor",
+        "addr:housenumber": "ADOOR",
+        "addr:postcode": "691523",
+        "addr:street": "MC Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "wlan",
+        "name": "ADOOR BUS STAND",
+        "operator": "KSRTC",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7331323,
+          9.1528484
+        ]
+      },
+      "id": "node/8325309561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8334434124",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "kunnamkulam bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0697256,
+          10.6508456
+        ]
+      },
+      "id": "node/8334434124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8345433432",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pandalam Private Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6775722,
+          9.2244588
+        ]
+      },
+      "id": "node/8345433432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8345433447",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chengannur KSRTC Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6130267,
+          9.318477
+        ]
+      },
+      "id": "node/8345433447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8349704344",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6778471,
+          9.225102
+        ]
+      },
+      "id": "node/8349704344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8387363100",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Karikulam Bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8131997,
+          9.3949325
+        ]
+      },
+      "id": "node/8387363100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8396443668",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "mangattukavala bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7248112,
+          9.9026347
+        ]
+      },
+      "id": "node/8396443668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8396638517",
+        "addr:street": "Dindigul-Theni-Kottarakara Highway",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name:ml": "ബസ് കാത്തിരുപ്പ് കേന്ദ്രം",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7939494,
+          9.3423709
+        ]
+      },
+      "id": "node/8396638517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8396732029",
+        "addr:street": "Thundumannil - Vaaliplakkal Rd.",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Valiyaplachal Bus Stop Padi",
+        "name:ml": "വലിയപ്ലാച്ചല്‍ ബസ് സ്റ്റോപ്പ്പടി",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.789261,
+          9.3530238
+        ]
+      },
+      "id": "node/8396732029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8398672102",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Waiting shed, Pazhayidom",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7770583,
+          9.5053756
+        ]
+      },
+      "id": "node/8398672102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8399094503",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Waiting Shed",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7965158,
+          9.5066909
+        ]
+      },
+      "id": "node/8399094503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8399235736",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pallickathodu bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6825499,
+          9.6019645
+        ]
+      },
+      "id": "node/8399235736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8410806153",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Arumaloor",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0742376,
+          8.4769919
+        ]
+      },
+      "id": "node/8410806153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8411932471",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "mangattukavala bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7209022,
+          9.9076731
+        ]
+      },
+      "id": "node/8411932471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8423188202",
+        "addr:city": "attingal",
+        "addr:street": "kacheri nada",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC Attingal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8188726,
+          8.6941962
+        ]
+      },
+      "id": "node/8423188202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8504627253",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thiruvarpu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4719415,
+          9.578784
+        ]
+      },
+      "id": "node/8504627253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8543100128",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Malarikal",
+        "network": "Private",
+        "public_transport": "station",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4923105,
+          9.5590198
+        ]
+      },
+      "id": "node/8543100128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8561362588",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "departures_board": "yes",
+        "highway": "bus_stop",
+        "name": "Kayalpuram Pally",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4310977,
+          9.4609144
+        ]
+      },
+      "id": "node/8561362588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8565472973",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4464093,
+          9.4499217
+        ]
+      },
+      "id": "node/8565472973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8566577142",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6686537,
+          8.8108708
+        ]
+      },
+      "id": "node/8566577142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8571043809",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Nedumkandam Bus Stand",
+        "operator": "Public",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1518644,
+          9.8437002
+        ]
+      },
+      "id": "node/8571043809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8575640878",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mannadiyar Bus Garage",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0047768,
+          8.4287944
+        ]
+      },
+      "id": "node/8575640878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8724713411",
+        "addr:street": "Balusseri-Kozhikode Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8335823,
+          11.4294462
+        ]
+      },
+      "id": "node/8724713411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8728599927",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "umayanalloor bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6537963,
+          8.8650395
+        ]
+      },
+      "id": "node/8728599927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8764984577",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2332838,
+          12.141002
+        ]
+      },
+      "id": "node/8764984577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8788724490",
+        "addr:city": "Kottayam",
+        "addr:street": "Thirunakkara",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Old Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5214253,
+          9.5905855
+        ]
+      },
+      "id": "node/8788724490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8845582901",
+        "addr:city": "Koduvayur",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Koduvayur Bus Stand 1",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6541091,
+          10.6849196
+        ]
+      },
+      "id": "node/8845582901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8847816795",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pilathra Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2667983,
+          12.0782172
+        ]
+      },
+      "id": "node/8847816795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8848038935",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pazhayangadi Bustand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2659951,
+          12.0268875
+        ]
+      },
+      "id": "node/8848038935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8864666705",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Municipal Bus Stand Thankalam",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6127927,
+          10.0688834
+        ]
+      },
+      "id": "node/8864666705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8864989562",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Karukachal Bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.641388,
+          9.5030111
+        ]
+      },
+      "id": "node/8864989562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8875528054",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9259087,
+          9.3297402
+        ]
+      },
+      "id": "node/8875528054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8887251741",
+        "addr:city": "THRISSUR",
+        "addr:postcode": "680121",
+        "addr:street": "IRINJALAKUDA",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "ksrtc bus stand irinjakuda",
+        "operator": "GOVERNMENT OF KERALA",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1949673,
+          10.3460758
+        ]
+      },
+      "id": "node/8887251741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8889815407",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "irinjalakuda bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2069498,
+          10.3471898
+        ]
+      },
+      "id": "node/8889815407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8890058717",
+        "amenity": "bus_station",
+        "name": "New bustand payyanur",
+        "survey:date": "2021-07-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.214975,
+          12.1080948
+        ]
+      },
+      "id": "node/8890058717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8890058718",
+        "amenity": "bus_station",
+        "name": "Bustand payyanur",
+        "survey:date": "2021-07-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2073098,
+          12.1058166
+        ]
+      },
+      "id": "node/8890058718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8890580917",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Changaramkulam Bus Stand",
+        "public_transport": "station",
+        "survey:date": "2021-07-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0277551,
+          10.7348497
+        ]
+      },
+      "id": "node/8890580917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8892176818",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vengad",
+        "public_transport": "station",
+        "survey:date": "2021-07-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5389404,
+          11.8727486
+        ]
+      },
+      "id": "node/8892176818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8956159663",
+        "addr:city": "edavanna",
+        "addr:postcode": "676541",
+        "addr:street": "Kozhikode - Nilmbur - Gudallur Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Bus Stand Edavanna",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1398117,
+          11.215243
+        ]
+      },
+      "id": "node/8956159663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9048625822",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC Bus Stand",
+        "public_transport": "station",
+        "survey:date": "2021-08-30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6291446,
+          10.0602479
+        ]
+      },
+      "id": "node/9048625822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9072639517",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vadakke stand",
+        "public_transport": "station",
+        "survey:date": "2021-09-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2147787,
+          10.5304435
+        ]
+      },
+      "id": "node/9072639517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9097073646",
+        "addr:city": "alathur",
+        "addr:postcode": "678543",
+        "addr:street": "Alathur-Kazhani-Pazhambalakode Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "chungam",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5006814,
+          10.6572579
+        ]
+      },
+      "id": "node/9097073646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9106176830",
+        "addr:city": "Chemperi",
+        "addr:postcode": "670632",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chemperi Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5470636,
+          12.096418
+        ]
+      },
+      "id": "node/9106176830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9123553246",
+        "addr:city": "Alanallur",
+        "addr:postcode": "678601",
+        "addr:street": "Alanallur-Mannarkkad Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Alanallur bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3521941,
+          11.007082
+        ]
+      },
+      "id": "node/9123553246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9144656920",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "omassery bus terminal",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9822352,
+          11.3831919
+        ]
+      },
+      "id": "node/9144656920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9284804417",
+        "addr:housenumber": "41",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC Bus Stand",
+        "public_transport": "station",
+        "survey:date": "2021-11-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.200802,
+          10.215129
+        ]
+      },
+      "id": "node/9284804417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9320409891",
+        "addr:housenumber": "41",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2005902,
+          10.2149941
+        ]
+      },
+      "id": "node/9320409891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9363096385",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Pulinkunnu",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4463698,
+          9.4488959
+        ]
+      },
+      "id": "node/9363096385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9363643219",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thiruvalla KSRTC Terminal",
+        "public_transport": "station",
+        "survey:date": "2021-12-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5746058,
+          9.3864759
+        ]
+      },
+      "id": "node/9363643219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9365045366",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "name": "KSRTC Kottayam",
+        "passenger_information_display": "yes",
+        "public_transport": "station",
+        "ref": "5",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.523438,
+          9.5858048
+        ]
+      },
+      "id": "node/9365045366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9366577617",
+        "amenity": "bus_station",
+        "survey:date": "2021-12-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8696129,
+          8.8713299
+        ]
+      },
+      "id": "node/9366577617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9388019721",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Asst Transport Office",
+        "public_transport": "station",
+        "survey:date": "2022-01-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3867232,
+          10.1957524
+        ]
+      },
+      "id": "node/9388019721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9442675997",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kavalam",
+        "name:ml": "കാവാലം",
+        "operator": "KSRTC",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.455845,
+          9.4765609
+        ]
+      },
+      "id": "node/9442675997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9467782518",
+        "amenity": "bus_station",
+        "name": "Palayi bus stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5749163,
+          11.8463583
+        ]
+      },
+      "id": "node/9467782518"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9481321260",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kongad Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5213617,
+          10.8541639
+        ]
+      },
+      "id": "node/9481321260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9765280488",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Perumba",
+        "operator": "Kerala Samsthana Vyapari Vyavasayi Samithi",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2186177,
+          12.1097531
+        ]
+      },
+      "id": "node/9765280488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9765354898",
+        "amenity": "bus_station",
+        "name": "LIC Junction",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2105731,
+          12.1134594
+        ]
+      },
+      "id": "node/9765354898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9765389012",
+        "amenity": "bus_station",
+        "name": "Krishnapilla Smaraka Waiting Shed",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2054165,
+          12.1129152
+        ]
+      },
+      "id": "node/9765389012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890256",
+        "amenity": "bus_station",
+        "name": "Kotti",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1943021,
+          12.0909601
+        ]
+      },
+      "id": "node/9775890256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890271",
+        "amenity": "bus_station",
+        "name": "Punchakkad",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1948071,
+          12.0798711
+        ]
+      },
+      "id": "node/9775890271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890274",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Punnakadavu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1946904,
+          12.0754503
+        ]
+      },
+      "id": "node/9775890274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890282",
+        "amenity": "bus_station",
+        "name": "Vadakkumbad",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1831569,
+          12.0749618
+        ]
+      },
+      "id": "node/9775890282"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890289",
+        "amenity": "bus_station",
+        "name": "CM Musahaji Sahib Smaraka Waiting Shelter",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1861321,
+          12.0772672
+        ]
+      },
+      "id": "node/9775890289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890298",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vadukkumbad",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1878494,
+          12.0757598
+        ]
+      },
+      "id": "node/9775890298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890299",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Vadukkumbad",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.187718,
+          12.0756903
+        ]
+      },
+      "id": "node/9775890299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775890308",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Punnakkadavu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1919317,
+          12.07395
+        ]
+      },
+      "id": "node/9775890308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775907017",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kunnaru",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1907663,
+          12.0708025
+        ]
+      },
+      "id": "node/9775907017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775907025",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "platform",
+        "name": "Ramanthali Bank",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1899818,
+          12.0631527
+        ]
+      },
+      "id": "node/9775907025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9776394771",
+        "amenity": "bus_station",
+        "name": "Lions Bus Shelter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2314997,
+          12.1005105
+        ]
+      },
+      "id": "node/9776394771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9776394799",
+        "amenity": "bus_station",
+        "name": "Payyannur New Stand",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2148701,
+          12.1082626
+        ]
+      },
+      "id": "node/9776394799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9776418238",
+        "amenity": "bus_station",
+        "name": "Thayineri",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2079445,
+          12.1228752
+        ]
+      },
+      "id": "node/9776418238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9777546735",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Bus Stop",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2151905,
+          12.1398245
+        ]
+      },
+      "id": "node/9777546735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9777546750",
+        "amenity": "bus_station",
+        "name": "Kandoth Mukku",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2166255,
+          12.1320299
+        ]
+      },
+      "id": "node/9777546750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9777546753",
+        "amenity": "bus_station",
+        "name": "Ayurveda",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2162299,
+          12.1286156
+        ]
+      },
+      "id": "node/9777546753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9777546767",
+        "amenity": "bus_station",
+        "name": "Kandoth",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2171847,
+          12.1196313
+        ]
+      },
+      "id": "node/9777546767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9777546771",
+        "amenity": "bus_station",
+        "name": "Kandoth",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2170412,
+          12.1196929
+        ]
+      },
+      "id": "node/9777546771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9778655081",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thachangod bus stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.269744,
+          11.1896536
+        ]
+      },
+      "id": "node/9778655081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781228120",
+        "amenity": "bus_station",
+        "name": "Olavara",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1862964,
+          12.1016186
+        ]
+      },
+      "id": "node/9781228120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781228121",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Olavara",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1861757,
+          12.1015714
+        ]
+      },
+      "id": "node/9781228121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394939",
+        "amenity": "bus_station",
+        "name": "Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1808998,
+          12.1239163
+        ]
+      },
+      "id": "node/9781394939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394940",
+        "amenity": "bus_station",
+        "name": "Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1809454,
+          12.1237432
+        ]
+      },
+      "id": "node/9781394940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394950",
+        "amenity": "bus_station",
+        "name": "School Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1828994,
+          12.1191855
+        ]
+      },
+      "id": "node/9781394950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394951",
+        "amenity": "bus_station",
+        "name": "School Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1831113,
+          12.1192261
+        ]
+      },
+      "id": "node/9781394951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394959",
+        "amenity": "bus_station",
+        "name": "Udumbunthala",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1854012,
+          12.1090431
+        ]
+      },
+      "id": "node/9781394959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781394960",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Udumbunthala",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1852859,
+          12.1090345
+        ]
+      },
+      "id": "node/9781394960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781427946",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Beericheri",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1771058,
+          12.1360105
+        ]
+      },
+      "id": "node/9781427946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781427947",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Beericheri",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1771836,
+          12.1346666
+        ]
+      },
+      "id": "node/9781427947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9781427952",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "name": "Beericheri",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1772882,
+          12.1349157
+        ]
+      },
+      "id": "node/9781427952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9783451598",
+        "amenity": "bus_station",
+        "name": "Trikaripur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1766525,
+          12.1418305
+        ]
+      },
+      "id": "node/9783451598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9789279592",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "badiadka bus stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0722363,
+          12.5888815
+        ]
+      },
+      "id": "node/9789279592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9861648117",
+        "amenity": "bus_station",
+        "name": "Koramukku Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7083967,
+          11.9987595
+        ]
+      },
+      "id": "node/9861648117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10164897938",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KSRTC Depot",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4686236,
+          10.9942801
+        ]
+      },
+      "id": "node/10164897938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10181834107",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mannarkkad Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4550503,
+          10.9920286
+        ]
+      },
+      "id": "node/10181834107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10635502868",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "KSRTC BUS STATION",
+        "operator": "KSRTC",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.556018,
+          9.6676837
+        ]
+      },
+      "id": "node/10635502868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11064301105",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Thampanoor central",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9520403,
+          8.4882482
+        ]
+      },
+      "id": "node/11064301105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11097204625",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7613609,
+          9.4852322
+        ]
+      },
+      "id": "node/11097204625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11155380105",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "kodenchery bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0068806,
+          11.4309507
+        ]
+      },
+      "id": "node/11155380105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11173426008",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Piravom Bus Stand",
+        "operator": "RTO17",
+        "public_transport": "station",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4885784,
+          9.8744923
+        ]
+      },
+      "id": "node/11173426008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11273823811",
+        "air_conditioning": "yes",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Airport Feeder Bus Stop",
+        "network": "Pavan Doot",
+        "operator": "Kochi Metro",
+        "power": "electric",
+        "public_transport": "station",
+        "trolleybus": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3496575,
+          10.1094731
+        ]
+      },
+      "id": "node/11273823811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11273823812",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Airport Feeder Bus Stop",
+        "network": "Pavan Doot",
+        "operator": "Kochi metro",
+        "public_transport": "station",
+        "trolleybus": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3916313,
+          10.1556373
+        ]
+      },
+      "id": "node/11273823812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11274423076",
+        "addr:city": "Manjeri",
+        "addr:postcode": "676 121",
+        "addr:street": "Tirur - Malappuram - Manjeri Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Old Bus stand Manjeri",
+        "operator": "Manjeri Municipality",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1202284,
+          11.119855
+        ]
+      },
+      "id": "node/11274423076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11350096504",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0051251,
+          10.9340934
+        ]
+      },
+      "id": "node/11350096504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11677272262",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kainakiri",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3863412,
+          9.4791411
+        ]
+      },
+      "id": "node/11677272262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11776246369",
+        "amenity": "bus_station",
+        "name": "Etteyar Bus Stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4716102,
+          11.9907652
+        ]
+      },
+      "id": "node/11776246369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11883177104",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "departures_board": "yes",
+        "highway": "bus_stop",
+        "name": "Kayalpuram Pally",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.4311767,
+          9.4609449
+        ]
+      },
+      "id": "node/11883177104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12034837301",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "departures_board": "timetable",
+        "name": "Manimala",
+        "name:ml": "മണിമല",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7491531,
+          9.4937029
+        ]
+      },
+      "id": "node/12034837301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12301337770",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kanjirapally",
+        "public_transport": "station",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7916486,
+          9.5579726
+        ]
+      },
+      "id": "node/12301337770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12301337771",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ponkunnam",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7558297,
+          9.5650989
+        ]
+      },
+      "id": "node/12301337771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12330924544",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3597696,
+          12.0366909
+        ]
+      },
+      "id": "node/12330924544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12433027091",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chadayamangalam",
+        "name:ml": "ചടയമംഗലം",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8690612,
+          8.8740665
+        ]
+      },
+      "id": "node/12433027091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464883847",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Muttil",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1105978,
+          11.6425103
+        ]
+      },
+      "id": "node/12464883847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12471429462",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Karunagapally",
+        "name:ml": "കരുനാഗപ്പള്ളി",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5358188,
+          9.0554698
+        ]
+      },
+      "id": "node/12471429462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12475740028",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pamba KSRTC bus stand",
+        "operator": "Kerala State Road Transport Corporation",
+        "operator:wikidata": "Q679587",
+        "public_transport": "station",
+        "ref": "94"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0691087,
+          9.4065163
+        ]
+      },
+      "id": "node/12475740028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12495325092",
+        "alt_name:en": "Ittiyappara",
+        "alt_name:ml": "ഇട്ടിയപ്പാറ",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ranni",
+        "name:ml": "റാന്നി",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7860354,
+          9.386161
+        ]
+      },
+      "id": "node/12495325092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12495337950",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Anchal Municipal Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9079797,
+          8.9290984
+        ]
+      },
+      "id": "node/12495337950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12495352855",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Punalur KSRTC Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9271225,
+          9.0169618
+        ]
+      },
+      "id": "node/12495352855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12495381828",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Punalur Chemmanthoor Private Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9176858,
+          9.0186836
+        ]
+      },
+      "id": "node/12495381828"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12495391578",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kadakkal",
+        "name:en": "Kadakkal",
+        "name:ml": "കടയ്ക്കല്‍",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9172279,
+          8.8253611
+        ]
+      },
+      "id": "node/12495391578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12825686235",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "check_date": "2025-05-10",
+        "name": "Neeleswaram Bus Stand",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1303245,
+          12.2556994
+        ]
+      },
+      "id": "node/12825686235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13307691386",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mammoottil Kadavu",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5680302,
+          8.9103608
+        ]
+      },
+      "id": "node/13307691386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13583998401",
+        "amenity": "bus_station",
+        "name": "Megha Bus (Cochin and Munnar)",
+        "website": "https://www.meghabus.in/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9539536,
+          8.4911067
+        ]
+      },
+      "id": "node/13583998401"
+    }
+  ]
+}

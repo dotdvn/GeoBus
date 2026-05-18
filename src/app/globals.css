@@ -69,3 +69,27 @@ body {
   background-color: #B6FF3B;
   color: #000;
 }
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Glassmorphism MapLibre Popups */
+.maplibregl-popup-content {
+  background: rgba(10, 10, 10, 0.85) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1.5px solid rgba(182, 255, 59, 0.4) !important;
+  border-radius: 14px !important;
+  color: #ffffff !important;
+  font-family: var(--font-sans), sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7) !important;
+  padding: 8px 12px !important;
+  letter-spacing: 0.025em !important;
+}
+.maplibregl-popup-tip {
+  display: none !important; /* Hide standard white arrow for clean geometric aesthetic */
+}

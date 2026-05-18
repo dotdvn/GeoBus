@@ -1,51 +1,185 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Navigation } from "lucide-react";
-
-// Using a custom dark style for Google Maps
-const darkMapStyle = [
-  { elementType: "geometry", stylers: [{ color: "#212121" }] },
-  { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
-  { elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-  { elementType: "labels.text.stroke", stylers: [{ color: "#212121" }] },
-  { featureType: "administrative", elementType: "geometry", stylers: [{ color: "#757575" }] },
-  { featureType: "administrative.country", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] },
-  { featureType: "administrative.land_parcel", stylers: [{ visibility: "off" }] },
-  { featureType: "administrative.locality", elementType: "labels.text.fill", stylers: [{ color: "#bdbdbd" }] },
-  { featureType: "poi", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-  { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#181818" }] },
-  { featureType: "poi.park", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
-  { featureType: "poi.park", elementType: "labels.text.stroke", stylers: [{ color: "#1b1b1b" }] },
-  { featureType: "road", elementType: "geometry.fill", stylers: [{ color: "#2c2c2c" }] },
-  { featureType: "road", elementType: "labels.text.fill", stylers: [{ color: "#8a8a8a" }] },
-  { featureType: "road.arterial", elementType: "geometry", stylers: [{ color: "#373737" }] },
-  { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#3c3c3c" }] },
-  { featureType: "road.highway.controlled_access", elementType: "geometry", stylers: [{ color: "#4e4e4e" }] },
-  { featureType: "road.local", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
-  { featureType: "transit", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-  { featureType: "water", elementType: "geometry", stylers: [{ color: "#000000" }] },
-  { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] },
-];
+import maplibregl from "maplibre-gl";
+import stationsData from "../data/stations.json";
+import { Station } from "../utils/searchEngine";
 
 export default function LiveTrackingSection() {
-  const [busPosition, setBusPosition] = useState({ lat: 40.7128, lng: -74.0060 }); // NYC roughly
+  const [busPosition, setBusPosition] = useState({ lat: 9.9312, lng: 76.2673 }); // Kerala [lat, lng]
+  const [showAllBusStops, setShowAllBusStops] = useState(false);
+  const [selectedStops, setSelectedStops] = useState<Station[]>([]);
+  const mapContainer = useRef<HTMLDivElement>(null);
+  const map = useRef<maplibregl.Map | null>(null);
+  const marker = useRef<maplibregl.Marker | null>(null);
+  const stationMarkers = useRef<maplibregl.Marker[]>([]);
 
+  // Simulate bus movement along a route in Kerala
   useEffect(() => {
-    // Simulate bus movement
     const interval = setInterval(() => {
       setBusPosition(prev => ({
         lat: prev.lat + 0.0001,
-        lng: prev.lng + 0.0001,
+        lng: prev.lng + 0.00015,
       }));
     }, 2000);
     return () => clearInterval(interval);
   }, []);
 
+  // Initialize MapLibre GL Map
+  useEffect(() => {
+    if (map.current) return; // Only initialize once
+    if (!mapContainer.current) return;
+
+    map.current = new maplibregl.Map({
+      container: "map",
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: "raster",
+            tiles: [
+              "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+            ],
+            tileSize: 256
+          }
+        },
+        layers: [
+          {
+            id: "osm",
+            type: "raster",
+            source: "osm"
+          }
+        ]
+      },
+      center: [76.2673, 9.9312],
+      zoom: 7,
+      attributionControl: false,
+    });
+
+    // Create a custom neon bus marker element
+    const el = document.createElement("div");
+    el.className = "bus-marker-element";
+    el.style.width = "40px";
+    el.style.height = "40px";
+    el.style.backgroundColor = "#0a0a0a";
+    el.style.border = "2px solid #B6FF3B";
+    el.style.borderRadius = "50%";
+    el.style.display = "flex";
+    el.style.alignItems = "center";
+    el.style.justifyContent = "center";
+    el.style.boxShadow = "0 0 15px rgba(182, 255, 59, 0.6)";
+    el.style.cursor = "pointer";
+    el.style.transform = "rotate(45deg)";
+
+    el.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B6FF3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(45deg);"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    `;
+
+    marker.current = new maplibregl.Marker({ element: el })
+      .setLngLat([76.2673, 9.9312])
+      .addTo(map.current);
+
+    return () => {
+      if (map.current) {
+        map.current.remove();
+        map.current = null;
+      }
+    };
+  }, []);
+
+  // Synchronize dynamic station markers based on showAllBusStops toggle
+  useEffect(() => {
+    if (!map.current) return;
+
+    // Clear existing markers
+    stationMarkers.current.forEach(m => m.remove());
+    stationMarkers.current = [];
+
+    // Filter which stations to display: 
+    // If showAllBusStops is false, ONLY show the selectedStops!
+    // If showAllBusStops is true, show all 295 stations
+    const stationsToShow = showAllBusStops 
+      ? (stationsData as Station[])
+      : selectedStops;
+
+    // Render new markers
+    stationsToShow.forEach((station) => {
+      const isSelected = selectedStops.some(s => s.id === station.id);
+
+      let el: HTMLElement | undefined = undefined;
+      if (isSelected && !showAllBusStops) {
+        // Create custom neon stop marker element for the selected route stops
+        el = document.createElement("div");
+        el.className = "selected-stop-marker";
+        el.style.width = "16px";
+        el.style.height = "16px";
+        el.style.backgroundColor = "#B6FF3B";
+        el.style.border = "2px solid #0a0a0a";
+        el.style.borderRadius = "50%";
+        el.style.boxShadow = "0 0 10px #B6FF3B";
+        el.style.cursor = "pointer";
+      }
+
+      const m = new maplibregl.Marker({ element: el })
+        .setLngLat([station.lng, station.lat])
+        .setPopup(
+          new maplibregl.Popup({ closeButton: false })
+            .setText(station.name)
+        )
+        .addTo(map.current!);
+      
+      stationMarkers.current.push(m);
+    });
+  }, [showAllBusStops, map.current, selectedStops]);
+
+  // Update marker position smoothly (without auto-relocating map camera)
+  useEffect(() => {
+    if (marker.current) {
+      marker.current.setLngLat([busPosition.lng, busPosition.lat]);
+    }
+  }, [busPosition]);
+
+  // Focus station helper function
+  const focusStation = (station: Station) => {
+    if (map.current) {
+      map.current.flyTo({
+        center: [station.lng, station.lat],
+        zoom: 14,
+        essential: true
+      });
+    }
+  };
+
+  // Add event listener to dynamically focus map on selected search station
+  useEffect(() => {
+    const handleFocusStation = (e: Event) => {
+      const station = (e as CustomEvent).detail as Station;
+      if (station) {
+        // Add to selected stops list dynamically if not already present
+        setSelectedStops(prev => {
+          if (prev.some(s => s.id === station.id)) return prev;
+          return [...prev, station];
+        });
+
+        // Smoothly scroll to the map tracking section
+        const section = document.getElementById("live-tracking");
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        
+        // Trigger map zoom and pan flight
+        focusStation(station);
+      }
+    };
+
+    window.addEventListener("focus-station", handleFocusStation);
+    return () => window.removeEventListener("focus-station", handleFocusStation);
+  }, []);
+
   return (
-    <section className="py-32 relative bg-geobus-black border-t border-white/5">
+    <section id="live-tracking" className="py-32 relative bg-geobus-black border-t border-white/5">
       <div className="container px-6 mx-auto mb-12 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -73,28 +207,13 @@ export default function LiveTrackingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="relative h-[600px] w-full rounded-3xl overflow-hidden glass-card p-2"
+          className="relative h-[100vh] w-full rounded-3xl overflow-hidden glass-card p-2"
         >
           <div className="absolute inset-0 rounded-3xl pointer-events-none border border-white/10 z-10" />
           
           <div className="w-full h-full rounded-2xl overflow-hidden relative">
-            <APIProvider apiKey="AIzaSyD81Vi2_4CJnKyqQ4FmdAMhw-SnrZkM1x4">
-              <Map
-                mapId="DEMO_MAP_ID"
-                defaultCenter={{ lat: 40.7128, lng: -74.0060 }}
-                defaultZoom={14}
-                disableDefaultUI={true}
-                styles={darkMapStyle}
-                gestureHandling="cooperative"
-              >
-                {/* Simulated Bus Marker */}
-                <AdvancedMarker position={busPosition}>
-                  <div className="w-10 h-10 bg-geobus-black border-2 border-geobus-neon rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(182,255,59,0.5)]">
-                    <Navigation className="w-5 h-5 text-geobus-neon" />
-                  </div>
-                </AdvancedMarker>
-              </Map>
-            </APIProvider>
+            {/* MapLibre Container */}
+            <div ref={mapContainer} id="map" className="w-full h-full rounded-2xl overflow-hidden" />
 
             {/* Overlay UI elements */}
             <div className="absolute top-6 left-6 z-20 glass-card p-4 rounded-2xl max-w-[250px]">
@@ -106,6 +225,21 @@ export default function LiveTrackingSection() {
               <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
                 <div className="h-full bg-geobus-neon w-[70%]" />
               </div>
+            </div>
+
+            {/* Top-Right Control Widget */}
+            <div className="absolute top-6 right-6 z-20">
+              <button
+                onClick={() => setShowAllBusStops(prev => !prev)}
+                className={`px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center gap-2 border transition-all cursor-pointer ${
+                  showAllBusStops
+                    ? "bg-geobus-neon text-black border-geobus-neon shadow-[0_0_15px_rgba(182,255,59,0.4)] hover:scale-102"
+                    : "glass text-white border-white/10 hover:border-geobus-neon/50 hover:scale-102"
+                }`}
+              >
+                <span className={`w-2 h-2 rounded-full ${showAllBusStops ? "bg-black animate-pulse" : "bg-geobus-neon animate-pulse"}`} />
+                <span>{showAllBusStops ? "Showing All Stops" : "Show All Bus Stops"}</span>
+              </button>
             </div>
             
             <div className="absolute bottom-6 right-6 z-20 glass p-3 rounded-xl flex items-center gap-3">

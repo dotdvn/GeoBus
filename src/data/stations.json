@@ -1,0 +1,2792 @@
+[
+  {
+    "id": "node/289607449",
+    "name": "Ramanattukara",
+    "nameMl": "രാമനാട്ടുകര",
+    "lat": 11.17824,
+    "lng": 75.86531,
+    "aliases": [
+      "Ramanattukara",
+      "രാമനാട്ടുകര"
+    ]
+  },
+  {
+    "id": "node/289607455",
+    "name": "Palayam Bus Stand",
+    "lat": 11.249439,
+    "lng": 75.784203,
+    "aliases": [
+      "Palayam Bus Stand"
+    ]
+  },
+  {
+    "id": "node/353409857",
+    "name": "Town Bus Stand",
+    "lat": 10.086309,
+    "lng": 77.0600795,
+    "aliases": [
+      "Town Bus Stand"
+    ]
+  },
+  {
+    "id": "node/354065017",
+    "name": "East Fort",
+    "nameMl": "കിഴക്കേകോട്ട",
+    "lat": 8.4834042,
+    "lng": 76.9474622,
+    "aliases": [
+      "East Fort",
+      "കിഴക്കേകോട്ട",
+      "Thiruvananthapuram City",
+      "Trivandrum City",
+      "TVM City"
+    ]
+  },
+  {
+    "id": "node/360378970",
+    "name": "Kattakada",
+    "nameMl": "കാട്ടാക്കട",
+    "lat": 8.5069532,
+    "lng": 77.0809575,
+    "aliases": [
+      "Kattakada",
+      "കാട്ടാക്കട",
+      "Kattakkada",
+      "KTD"
+    ]
+  },
+  {
+    "id": "node/548339155",
+    "name": "Kolathur Bus Stand",
+    "lat": 10.94716,
+    "lng": 76.1376332,
+    "aliases": [
+      "Kolathur Bus Stand"
+    ]
+  },
+  {
+    "id": "node/561154744",
+    "name": "Old Bus Stand",
+    "lat": 11.1196933,
+    "lng": 76.1205926,
+    "aliases": [
+      "Old Bus Stand"
+    ]
+  },
+  {
+    "id": "node/679055132",
+    "name": "Nechipuzhoor",
+    "nameMl": "നെച്ചിപുഴൂർ",
+    "lat": 9.7525024,
+    "lng": 76.6612829,
+    "aliases": [
+      "Nechipuzhoor",
+      "നെച്ചിപുഴൂർ"
+    ]
+  },
+  {
+    "id": "node/737863508",
+    "name": "Kuravilangad Ksrtc Busstop",
+    "lat": 9.7530238,
+    "lng": 76.5615324,
+    "aliases": [
+      "Kuravilangad Ksrtc Busstop"
+    ]
+  },
+  {
+    "id": "node/765697277",
+    "name": "Muttom Bus Stand",
+    "lat": 9.8371923,
+    "lng": 76.7455168,
+    "aliases": [
+      "Muttom Bus Stand"
+    ]
+  },
+  {
+    "id": "node/801907220",
+    "name": "Ramapuram Private BusStand",
+    "lat": 9.7996742,
+    "lng": 76.6598304,
+    "aliases": [
+      "Ramapuram Private BusStand"
+    ]
+  },
+  {
+    "id": "node/997591145",
+    "name": "Kerala state road transport coperation bus stand ettumanoor",
+    "lat": 9.6677898,
+    "lng": 76.5557469,
+    "aliases": [
+      "Kerala state road transport coperation bus stand ettumanoor"
+    ]
+  },
+  {
+    "id": "node/1080684023",
+    "name": "Kasaragod Muncipal Bus stand",
+    "lat": 12.5068621,
+    "lng": 74.9942898,
+    "aliases": [
+      "Kasaragod Muncipal Bus stand"
+    ]
+  },
+  {
+    "id": "node/1161721527",
+    "name": "Private bus stand",
+    "lat": 10.3019364,
+    "lng": 76.3359263,
+    "aliases": [
+      "Private bus stand"
+    ]
+  },
+  {
+    "id": "node/1166965746",
+    "name": "Guruvayur Private Bus Stand",
+    "district": "Trissur District",
+    "lat": 10.5933319,
+    "lng": 76.0438602,
+    "aliases": [
+      "Guruvayur Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/1195120299",
+    "name": "Bus Stand",
+    "lat": 10.2749119,
+    "lng": 77.1599206,
+    "aliases": [
+      "Bus Stand"
+    ]
+  },
+  {
+    "id": "node/1468047003",
+    "name": "Kalanad bus station",
+    "lat": 12.4507487,
+    "lng": 75.0224926,
+    "aliases": [
+      "Kalanad bus station"
+    ]
+  },
+  {
+    "id": "node/1468049848",
+    "name": "Mangad Bus Stop",
+    "lat": 12.4550545,
+    "lng": 75.0332858,
+    "aliases": [
+      "Mangad Bus Stop"
+    ]
+  },
+  {
+    "id": "node/1472174498",
+    "name": "Bus Terminal, Kakkanad",
+    "nameMl": "കാക്കനാട്",
+    "lat": 10.0207497,
+    "lng": 76.3436819,
+    "aliases": [
+      "Bus Terminal, Kakkanad",
+      "കാക്കനാട്"
+    ]
+  },
+  {
+    "id": "node/1474435860",
+    "name": "Iritty",
+    "nameMl": "ഇരിട്ടി",
+    "lat": 11.9896481,
+    "lng": 75.6784147,
+    "aliases": [
+      "Iritty",
+      "ഇരിട്ടി"
+    ]
+  },
+  {
+    "id": "node/1488474515",
+    "name": "Pappanamcode",
+    "nameMl": "പാപ്പനംകോട്",
+    "lat": 8.4705379,
+    "lng": 76.9810403,
+    "aliases": [
+      "Pappanamcode",
+      "പാപ്പനംകോട്",
+      "PPD"
+    ]
+  },
+  {
+    "id": "node/1668617281",
+    "name": "Ksrtc Depot, Thalassery",
+    "lat": 11.7609615,
+    "lng": 75.4820381,
+    "aliases": [
+      "Ksrtc Depot, Thalassery",
+      "KSRTC"
+    ]
+  },
+  {
+    "id": "node/1682930314",
+    "name": "Pilathara Bus Stand",
+    "lat": 12.0802941,
+    "lng": 75.2633371,
+    "aliases": [
+      "Pilathara Bus Stand"
+    ]
+  },
+  {
+    "id": "node/1685165893",
+    "name": "Payyanur New",
+    "lat": 12.1081344,
+    "lng": 75.2151009,
+    "aliases": [
+      "Payyanur New",
+      "Payyanur"
+    ]
+  },
+  {
+    "id": "node/1689876487",
+    "name": "Vatakara Old Bus Stand",
+    "lat": 11.5974016,
+    "lng": 75.5875535,
+    "aliases": [
+      "Vatakara Old Bus Stand"
+    ]
+  },
+  {
+    "id": "node/1787256216",
+    "name": "Kotty Railway Gate",
+    "lat": 12.0976021,
+    "lng": 75.1934808,
+    "aliases": [
+      "Kotty Railway Gate"
+    ]
+  },
+  {
+    "id": "node/1850148559",
+    "name": "Omassery",
+    "lat": 11.3638898,
+    "lng": 75.9645525,
+    "aliases": [
+      "Omassery"
+    ]
+  },
+  {
+    "id": "node/1850177930",
+    "name": "Mukkam",
+    "lat": 11.3208658,
+    "lng": 75.9971628,
+    "aliases": [
+      "Mukkam"
+    ]
+  },
+  {
+    "id": "node/1877768220",
+    "name": "KSRTC Bus Depot Kilimanoor",
+    "district": "KILIMAMOOR",
+    "lat": 8.7748267,
+    "lng": 76.8805613,
+    "aliases": [
+      "KSRTC Bus Depot Kilimanoor"
+    ]
+  },
+  {
+    "id": "node/1889339116",
+    "name": "Thottil Palam Bus Stand",
+    "lat": 11.6773239,
+    "lng": 75.780267,
+    "aliases": [
+      "Thottil Palam Bus Stand"
+    ]
+  },
+  {
+    "id": "node/1917699333",
+    "name": "Chathannoor KSRTC Stand",
+    "nameMl": "ചാത്തന്നൂർ",
+    "lat": 8.8570173,
+    "lng": 76.7221481,
+    "aliases": [
+      "Chathannoor KSRTC Stand",
+      "ചാത്തന്നൂർ",
+      "CHT"
+    ]
+  },
+  {
+    "id": "node/1930595751",
+    "name": "കോതമംഗലം",
+    "nameMl": "കോതമംഗലം",
+    "lat": 10.0604552,
+    "lng": 76.6287507,
+    "aliases": [
+      "കോതമംഗലം",
+      "KMG"
+    ]
+  },
+  {
+    "id": "node/2271279520",
+    "name": "Kuravilangad Junction",
+    "lat": 9.7576158,
+    "lng": 76.5610757,
+    "aliases": [
+      "Kuravilangad Junction"
+    ]
+  },
+  {
+    "id": "node/2288992305",
+    "name": "Private Bus Station",
+    "district": "Moolamattom",
+    "lat": 9.7914693,
+    "lng": 76.8523262,
+    "aliases": [
+      "Private Bus Station"
+    ]
+  },
+  {
+    "id": "node/2291876211",
+    "name": "Ayarkkunnam Private Bus Station",
+    "nameMl": "അയർക്കുന്നം ബസ് സ്റ്റാൻഡ്",
+    "lat": 9.6354156,
+    "lng": 76.6065123,
+    "aliases": [
+      "Ayarkkunnam Private Bus Station",
+      "അയർക്കുന്നം ബസ് സ്റ്റാൻഡ്"
+    ]
+  },
+  {
+    "id": "node/2294085419",
+    "name": "Kuravilangad Bus Stand",
+    "lat": 9.7593514,
+    "lng": 76.5617627,
+    "aliases": [
+      "Kuravilangad Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2355694746",
+    "name": "Edavannappara Bustand",
+    "lat": 11.2450245,
+    "lng": 75.9755123,
+    "aliases": [
+      "Edavannappara Bustand"
+    ]
+  },
+  {
+    "id": "node/2435343762",
+    "name": "Azheekal Bus Terminal",
+    "lat": 11.9438169,
+    "lng": 75.3051157,
+    "aliases": [
+      "Azheekal Bus Terminal"
+    ]
+  },
+  {
+    "id": "node/2508302672",
+    "name": "Kallumkadavu Bus Stand",
+    "lat": 9.0945492,
+    "lng": 76.8525862,
+    "aliases": [
+      "Kallumkadavu Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2592394225",
+    "name": "Kannur Government Hospital Private Bus Stand",
+    "lat": 11.8619489,
+    "lng": 75.3713982,
+    "aliases": [
+      "Kannur Government Hospital Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2605819078",
+    "name": "Kozhencherry Private Bus Stand",
+    "district": "Kozhencherry",
+    "lat": 9.3371345,
+    "lng": 76.7049673,
+    "aliases": [
+      "Kozhencherry Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2623815260",
+    "name": "Kerala State Road Transport Corperation, Mananthavadi",
+    "nameMl": "മാനന്തവാടി",
+    "lat": 11.8045868,
+    "lng": 76.0071542,
+    "aliases": [
+      "Kerala State Road Transport Corperation, Mananthavadi",
+      "മാനന്തവാടി",
+      "Mananthavady",
+      "MND"
+    ]
+  },
+  {
+    "id": "node/2875692897",
+    "name": "Changanassery",
+    "nameMl": "ചങ്ങനാശ്ശേരി",
+    "lat": 9.4456858,
+    "lng": 76.5409609,
+    "aliases": [
+      "Changanassery",
+      "ചങ്ങനാശ്ശേരി",
+      "CHR",
+      "52"
+    ]
+  },
+  {
+    "id": "node/2883013286",
+    "name": "Old Municipal Bus Stand",
+    "lat": 9.7127516,
+    "lng": 76.6846347,
+    "aliases": [
+      "Old Municipal Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2883196477",
+    "name": "Poonjar",
+    "nameMl": "പൂഞ്ഞാർ",
+    "lat": 9.6734751,
+    "lng": 76.8132759,
+    "aliases": [
+      "Poonjar",
+      "പൂഞ്ഞാർ"
+    ]
+  },
+  {
+    "id": "node/2883508357",
+    "name": "വെഞ്ഞാറമ്മൂട്",
+    "nameMl": "വെഞ്ഞാറമൂട്",
+    "lat": 8.6779888,
+    "lng": 76.9103719,
+    "aliases": [
+      "വെഞ്ഞാറമ്മൂട്",
+      "വെഞ്ഞാറമൂട്",
+      "VJD"
+    ]
+  },
+  {
+    "id": "node/2883508360",
+    "name": "Venjaramoodu Private Bus Stand",
+    "lat": 8.6796539,
+    "lng": 76.9123997,
+    "aliases": [
+      "Venjaramoodu Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2884932592",
+    "name": "Edakkara Bus Stand",
+    "lat": 11.3565821,
+    "lng": 76.306033,
+    "aliases": [
+      "Edakkara Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2885383658",
+    "name": "KSRTC",
+    "nameMl": "കെ. എസ്. ആർ. ടി. സി.",
+    "district": "മൂവാറ്റുപുഴ",
+    "lat": 9.977111,
+    "lng": 76.5797924,
+    "aliases": [
+      "KSRTC",
+      "കെ. എസ്. ആർ. ടി. സി."
+    ]
+  },
+  {
+    "id": "node/2897254089",
+    "name": "Pathanamthitta KSRTC bus stand",
+    "nameMl": "പത്തനംതിട്ട കെ.എസ്.ആർ.ടി.സി. ബസ് സ്റ്റാന്റ്",
+    "lat": 9.2671433,
+    "lng": 76.7895169,
+    "aliases": [
+      "Pathanamthitta KSRTC bus stand",
+      "പത്തനംതിട്ട കെ.എസ്.ആർ.ടി.സി. ബസ് സ്റ്റാന്റ്",
+      "3"
+    ]
+  },
+  {
+    "id": "node/2904289089",
+    "name": "Kayamkulam Private Bus Stand",
+    "lat": 9.1737306,
+    "lng": 76.5006206,
+    "aliases": [
+      "Kayamkulam Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2913831391",
+    "name": "Ranni Bus stand",
+    "lat": 9.3780115,
+    "lng": 76.7793302,
+    "aliases": [
+      "Ranni Bus stand"
+    ]
+  },
+  {
+    "id": "node/2916974293",
+    "name": "Mangattukavala Bus Stand",
+    "lat": 9.9026373,
+    "lng": 76.7248837,
+    "aliases": [
+      "Mangattukavala Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2917357737",
+    "name": "Mallappally Bus Stand",
+    "lat": 9.4460338,
+    "lng": 76.6573806,
+    "aliases": [
+      "Mallappally Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2920194581",
+    "name": "Changanassery Perunna Private Bus Stand",
+    "district": "changanacherry",
+    "lat": 9.4435115,
+    "lng": 76.544237,
+    "aliases": [
+      "Changanassery Perunna Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2933131841",
+    "name": "Kilimanoor Private Bus Stand",
+    "lat": 8.7700796,
+    "lng": 76.878644,
+    "aliases": [
+      "Kilimanoor Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/2934096620",
+    "name": "Chavakkad",
+    "nameMl": "ചാവക്കാട്",
+    "lat": 10.5820424,
+    "lng": 76.0222013,
+    "aliases": [
+      "Chavakkad",
+      "ചാവക്കാട്"
+    ]
+  },
+  {
+    "id": "node/3028236968",
+    "name": "Koorachundu Bus Stand",
+    "nameMl": "കൂരാച്ചുണ്ടു് ബസ്സ് സ്റ്റാന്റ്",
+    "lat": 11.540186,
+    "lng": 75.8430703,
+    "aliases": [
+      "Koorachundu Bus Stand",
+      "കൂരാച്ചുണ്ടു് ബസ്സ് സ്റ്റാന്റ്"
+    ]
+  },
+  {
+    "id": "node/3133561980",
+    "name": "poothotta new bus stand",
+    "lat": 9.846508,
+    "lng": 76.3841681,
+    "aliases": [
+      "poothotta new bus stand"
+    ]
+  },
+  {
+    "id": "node/3447915389",
+    "name": "Konni",
+    "nameMl": "കോന്നി",
+    "lat": 9.2288446,
+    "lng": 76.8483014,
+    "aliases": [
+      "Konni",
+      "കോന്നി"
+    ]
+  },
+  {
+    "id": "node/3526233529",
+    "name": "ആയൂർ",
+    "nameMl": "ആയൂര്‍",
+    "lat": 8.8985287,
+    "lng": 76.8596861,
+    "aliases": [
+      "ആയൂർ",
+      "ആയൂര്‍"
+    ]
+  },
+  {
+    "id": "node/3664130320",
+    "name": "bus stop",
+    "lat": 10.7820873,
+    "lng": 76.2786167,
+    "aliases": [
+      "bus stop"
+    ]
+  },
+  {
+    "id": "node/3684507855",
+    "name": "Moolakkal",
+    "lat": 10.9660987,
+    "lng": 75.8850984,
+    "aliases": [
+      "Moolakkal"
+    ]
+  },
+  {
+    "id": "node/3684508482",
+    "name": "Tanur",
+    "lat": 10.9779156,
+    "lng": 75.880539,
+    "aliases": [
+      "Tanur"
+    ]
+  },
+  {
+    "id": "node/3691544496",
+    "name": "Kuttiady New Bus Stand",
+    "lat": 11.6545265,
+    "lng": 75.7514354,
+    "aliases": [
+      "Kuttiady New Bus Stand"
+    ]
+  },
+  {
+    "id": "node/3752972818",
+    "name": "parthasarathy bus station",
+    "lat": 11.3259726,
+    "lng": 75.7901239,
+    "aliases": [
+      "parthasarathy bus station"
+    ]
+  },
+  {
+    "id": "node/3753015137",
+    "name": "Cherukulam Bus Station",
+    "lat": 11.3346424,
+    "lng": 75.771755,
+    "aliases": [
+      "Cherukulam Bus Station"
+    ]
+  },
+  {
+    "id": "node/3753048764",
+    "name": "Mallikadave Bus Stand",
+    "lat": 11.3096265,
+    "lng": 75.7852807,
+    "aliases": [
+      "Mallikadave Bus Stand"
+    ]
+  },
+  {
+    "id": "node/3757483597",
+    "name": "Narikkuni Bus Stand",
+    "lat": 11.3676983,
+    "lng": 75.8641591,
+    "aliases": [
+      "Narikkuni Bus Stand"
+    ]
+  },
+  {
+    "id": "node/3811026548",
+    "name": "Athikkayam",
+    "nameMl": "അത്തിക്കയം",
+    "lat": 9.3875221,
+    "lng": 76.8431476,
+    "aliases": [
+      "Athikkayam",
+      "അത്തിക്കയം"
+    ]
+  },
+  {
+    "id": "node/3812342517",
+    "name": "Paruva-Kattikkal Bus Stop",
+    "lat": 9.4078373,
+    "lng": 76.8666504,
+    "aliases": [
+      "Paruva-Kattikkal Bus Stop"
+    ]
+  },
+  {
+    "id": "node/3818668331",
+    "name": "Kuttiady Bus Stand",
+    "lat": 11.6541685,
+    "lng": 75.7531435,
+    "aliases": [
+      "Kuttiady Bus Stand"
+    ]
+  },
+  {
+    "id": "node/3839328223",
+    "name": "bus stand vengara",
+    "lat": 11.0504993,
+    "lng": 75.9770984,
+    "aliases": [
+      "bus stand vengara"
+    ]
+  },
+  {
+    "id": "node/3864435009",
+    "name": "Cheranalloor Ferry Bus Station",
+    "lat": 10.0722225,
+    "lng": 76.2827585,
+    "aliases": [
+      "Cheranalloor Ferry Bus Station"
+    ]
+  },
+  {
+    "id": "node/3872826044",
+    "name": "Pattambi Bus Stand",
+    "lat": 10.8012672,
+    "lng": 76.1791235,
+    "aliases": [
+      "Pattambi Bus Stand"
+    ]
+  },
+  {
+    "id": "node/3883265125",
+    "name": "മലപ്പുറം കെ.എസ്.ആർ.ടി.സി",
+    "lat": 11.0425516,
+    "lng": 76.0800732,
+    "aliases": [
+      "മലപ്പുറം കെ.എസ്.ആർ.ടി.സി"
+    ]
+  },
+  {
+    "id": "node/3906562538",
+    "name": "Medical College",
+    "nameMl": "മെഡിക്കൽ കോളേജ്",
+    "lat": 8.522508,
+    "lng": 76.9300559,
+    "aliases": [
+      "Medical College",
+      "മെഡിക്കൽ കോളേജ്",
+      "56"
+    ]
+  },
+  {
+    "id": "node/3906976442",
+    "name": "Thangassery Bus Station",
+    "lat": 8.8825221,
+    "lng": 76.5694202,
+    "aliases": [
+      "Thangassery Bus Station"
+    ]
+  },
+  {
+    "id": "node/3951434588",
+    "name": "Alappuzha Railway Station",
+    "nameMl": "ആലപ്പുഴ റെയിൽവേ സ്റ്റേഷൻ",
+    "lat": 9.4850082,
+    "lng": 76.3226246,
+    "aliases": [
+      "Alappuzha Railway Station",
+      "ആലപ്പുഴ റെയിൽവേ സ്റ്റേഷൻ"
+    ]
+  },
+  {
+    "id": "node/4292205903",
+    "name": "ottupara bus stand",
+    "lat": 10.6661583,
+    "lng": 76.2543865,
+    "aliases": [
+      "ottupara bus stand"
+    ]
+  },
+  {
+    "id": "node/4308325290",
+    "name": "Kandanakam Kerala State Road Transport Corporation",
+    "lat": 10.8139157,
+    "lng": 76.0140147,
+    "aliases": [
+      "Kandanakam Kerala State Road Transport Corporation"
+    ]
+  },
+  {
+    "id": "node/4348995047",
+    "name": "Palapetty beach",
+    "lat": 10.3623777,
+    "lng": 76.1081482,
+    "aliases": [
+      "Palapetty beach"
+    ]
+  },
+  {
+    "id": "node/4397015590",
+    "name": "Payyoli",
+    "nameMl": "പയ്യോളി",
+    "lat": 11.5150174,
+    "lng": 75.620078,
+    "aliases": [
+      "Payyoli",
+      "പയ്യോളി"
+    ]
+  },
+  {
+    "id": "node/4410752289",
+    "name": "Enchakkal",
+    "lat": 8.4787442,
+    "lng": 76.9374966,
+    "aliases": [
+      "Enchakkal"
+    ]
+  },
+  {
+    "id": "node/4413584491",
+    "name": "thazhe chovva",
+    "lat": 11.865846,
+    "lng": 75.4071749,
+    "aliases": [
+      "thazhe chovva"
+    ]
+  },
+  {
+    "id": "node/4413584689",
+    "name": "mele chovva",
+    "lat": 11.8717069,
+    "lng": 75.3969833,
+    "aliases": [
+      "mele chovva"
+    ]
+  },
+  {
+    "id": "node/4415494793",
+    "name": "Njaliakuzhi Bus Stand",
+    "lat": 9.5219045,
+    "lng": 76.5734398,
+    "aliases": [
+      "Njaliakuzhi Bus Stand"
+    ]
+  },
+  {
+    "id": "node/4424782690",
+    "name": "Panthrandil",
+    "lat": 12.1867405,
+    "lng": 75.1294155,
+    "aliases": [
+      "Panthrandil"
+    ]
+  },
+  {
+    "id": "node/4434041235",
+    "name": "Marayamuttom",
+    "lat": 8.4166055,
+    "lng": 77.1077296,
+    "aliases": [
+      "Marayamuttom"
+    ]
+  },
+  {
+    "id": "node/4445183990",
+    "name": "Mukkadamukku, Chavara",
+    "lat": 8.9784651,
+    "lng": 76.5436009,
+    "aliases": [
+      "Mukkadamukku, Chavara"
+    ]
+  },
+  {
+    "id": "node/4445183991",
+    "name": "Kunjalumoodu Chavara",
+    "lat": 8.9797661,
+    "lng": 76.5387055,
+    "aliases": [
+      "Kunjalumoodu Chavara"
+    ]
+  },
+  {
+    "id": "node/4445269189",
+    "name": "Vazhayilmukku, Chavara",
+    "lat": 8.9781236,
+    "lng": 76.5461243,
+    "aliases": [
+      "Vazhayilmukku, Chavara"
+    ]
+  },
+  {
+    "id": "node/4502579790",
+    "name": "Thozhuvanoor",
+    "lat": 10.9007613,
+    "lng": 76.0592056,
+    "aliases": [
+      "Thozhuvanoor"
+    ]
+  },
+  {
+    "id": "node/4510122590",
+    "name": "Paravur Bus Stand",
+    "lat": 8.8107644,
+    "lng": 76.6686915,
+    "aliases": [
+      "Paravur Bus Stand"
+    ]
+  },
+  {
+    "id": "node/4616175089",
+    "name": "Munnar Local bus stand",
+    "lat": 10.0863247,
+    "lng": 77.061182,
+    "aliases": [
+      "Munnar Local bus stand"
+    ]
+  },
+  {
+    "id": "node/4688824842",
+    "name": "Vikas Bhavan Bus Depot",
+    "nameMl": "വികാസ് ഭവൻ",
+    "lat": 8.5085586,
+    "lng": 76.9469661,
+    "aliases": [
+      "Vikas Bhavan Bus Depot",
+      "വികാസ് ഭവൻ",
+      "Vikas Bhavan",
+      "10"
+    ]
+  },
+  {
+    "id": "node/4735556825",
+    "name": "Keezhur kunnu",
+    "lat": 11.9707879,
+    "lng": 75.6590701,
+    "aliases": [
+      "Keezhur kunnu"
+    ]
+  },
+  {
+    "id": "node/4735559521",
+    "name": "Punnad",
+    "nameMl": "പുന്നാട്",
+    "district": "Punnad",
+    "lat": 11.9642102,
+    "lng": 75.655176,
+    "aliases": [
+      "Punnad",
+      "പുന്നാട്"
+    ]
+  },
+  {
+    "id": "node/4744267021",
+    "name": "Alathur private Bus staion",
+    "nameMl": "ആലത്തൂർ പ്രൈവറ്റ് ബസ് സ്റ്റാൻഡ്",
+    "lat": 10.6469228,
+    "lng": 76.5417394,
+    "aliases": [
+      "Alathur private Bus staion",
+      "ആലത്തൂർ പ്രൈവറ്റ് ബസ് സ്റ്റാൻഡ്"
+    ]
+  },
+  {
+    "id": "node/4748418898",
+    "name": "Chavara Pvt. Bus Stand",
+    "lat": 8.9757533,
+    "lng": 76.5351064,
+    "aliases": [
+      "Chavara Pvt. Bus Stand"
+    ]
+  },
+  {
+    "id": "node/4829735633",
+    "name": "പന്തളം",
+    "lat": 9.2244689,
+    "lng": 76.6770026,
+    "aliases": [
+      "പന്തളം"
+    ]
+  },
+  {
+    "id": "node/4829744731",
+    "name": "PrivateBusStation",
+    "lat": 9.311192,
+    "lng": 76.5353918,
+    "aliases": [
+      "PrivateBusStation"
+    ]
+  },
+  {
+    "id": "node/4853803092",
+    "name": "New bus stand koyilandy",
+    "lat": 11.4410631,
+    "lng": 75.6955779,
+    "aliases": [
+      "New bus stand koyilandy"
+    ]
+  },
+  {
+    "id": "node/5097234921",
+    "name": "Neyyar Dam",
+    "nameMl": "നെയ്യാർ ഡാം ബസ് സ്റ്റാൻഡ്",
+    "lat": 8.5327095,
+    "lng": 77.1447283,
+    "aliases": [
+      "Neyyar Dam",
+      "നെയ്യാർ ഡാം ബസ് സ്റ്റാൻഡ്"
+    ]
+  },
+  {
+    "id": "node/5255461723",
+    "name": "Vembuva",
+    "lat": 12.065979,
+    "lng": 75.5799213,
+    "aliases": [
+      "Vembuva"
+    ]
+  },
+  {
+    "id": "node/5255461724",
+    "name": "Payyavoor",
+    "lat": 12.0610197,
+    "lng": 75.581181,
+    "aliases": [
+      "Payyavoor"
+    ]
+  },
+  {
+    "id": "node/5300436205",
+    "name": "Kozhinjampara Bus Stand",
+    "nameMl": "കൊഴിഞ്ഞാമ്പാര ബസ് സ്റ്റാൻഡ്",
+    "lat": 10.7375466,
+    "lng": 76.8336961,
+    "aliases": [
+      "Kozhinjampara Bus Stand",
+      "കൊഴിഞ്ഞാമ്പാര ബസ് സ്റ്റാൻഡ്"
+    ]
+  },
+  {
+    "id": "node/5444813630",
+    "name": "Jetty to Ayitti, Padne, Kotty",
+    "lat": 12.1443026,
+    "lng": 75.1481496,
+    "aliases": [
+      "Jetty to Ayitti, Padne, Kotty"
+    ]
+  },
+  {
+    "id": "node/5658274063",
+    "name": "Old Bus Stand",
+    "lat": 11.4409005,
+    "lng": 75.6940406,
+    "aliases": [
+      "Old Bus Stand"
+    ]
+  },
+  {
+    "id": "node/5757830263",
+    "name": "Molekkurish Bus Stop",
+    "lat": 10.0366621,
+    "lng": 76.4162776,
+    "aliases": [
+      "Molekkurish Bus Stop"
+    ]
+  },
+  {
+    "id": "node/5781032591",
+    "name": "Koduvally Bustand",
+    "lat": 11.3612592,
+    "lng": 75.9103776,
+    "aliases": [
+      "Koduvally Bustand"
+    ]
+  },
+  {
+    "id": "node/5978953440",
+    "name": "Vellikulangara Bus Stand",
+    "lat": 10.3605311,
+    "lng": 76.4108991,
+    "aliases": [
+      "Vellikulangara Bus Stand"
+    ]
+  },
+  {
+    "id": "node/6004246335",
+    "name": "Elamkadu Bus Stand",
+    "nameMl": "ഇളംകാട് ബസ്സ് സ്റ്റാന്റ്",
+    "lat": 9.6342394,
+    "lng": 76.89555,
+    "aliases": [
+      "Elamkadu Bus Stand",
+      "ഇളംകാട് ബസ്സ് സ്റ്റാന്റ്"
+    ]
+  },
+  {
+    "id": "node/6237476485",
+    "name": "Attipeedika Bus Stand",
+    "nameMl": "അട്ടിപ്പീടിക",
+    "lat": 9.576929,
+    "lng": 76.4351363,
+    "aliases": [
+      "Attipeedika Bus Stand",
+      "അട്ടിപ്പീടിക"
+    ]
+  },
+  {
+    "id": "node/6872584459",
+    "name": "thekkekara bus stop",
+    "district": "kottayi",
+    "lat": 10.7600423,
+    "lng": 76.5361447,
+    "aliases": [
+      "thekkekara bus stop"
+    ]
+  },
+  {
+    "id": "node/6894794701",
+    "name": "Aryanad Bus Stand",
+    "nameMl": "ആര്യനാട്",
+    "lat": 8.5796319,
+    "lng": 77.0830541,
+    "aliases": [
+      "Aryanad Bus Stand",
+      "ആര്യനാട്",
+      "ARD"
+    ]
+  },
+  {
+    "id": "node/6897397549",
+    "name": "mangatukavala",
+    "lat": 9.9077872,
+    "lng": 76.7204228,
+    "aliases": [
+      "mangatukavala"
+    ]
+  },
+  {
+    "id": "node/6898348375",
+    "name": "private bus station pandalam",
+    "lat": 9.2248312,
+    "lng": 76.6778201,
+    "aliases": [
+      "private bus station pandalam"
+    ]
+  },
+  {
+    "id": "node/6908032048",
+    "name": "nadapuram bus stand",
+    "lat": 11.6845128,
+    "lng": 75.6534746,
+    "aliases": [
+      "nadapuram bus stand"
+    ]
+  },
+  {
+    "id": "node/6982422336",
+    "name": "Karuvarakund Bus stand",
+    "lat": 11.1255968,
+    "lng": 76.3424834,
+    "aliases": [
+      "Karuvarakund Bus stand"
+    ]
+  },
+  {
+    "id": "node/7016742691",
+    "name": "Parassala",
+    "lat": 8.3494223,
+    "lng": 77.1464755,
+    "aliases": [
+      "Parassala",
+      "PSL"
+    ]
+  },
+  {
+    "id": "node/7075686804",
+    "name": "Neyyattinkara Bus Stand",
+    "lat": 8.3974066,
+    "lng": 77.0880245,
+    "aliases": [
+      "Neyyattinkara Bus Stand",
+      "NTA"
+    ]
+  },
+  {
+    "id": "node/7079154533",
+    "name": "thriprayar privet bus stand",
+    "lat": 10.4150436,
+    "lng": 76.107365,
+    "aliases": [
+      "thriprayar privet bus stand"
+    ]
+  },
+  {
+    "id": "node/7090063788",
+    "name": "Vithura",
+    "nameMl": "വിതുര",
+    "lat": 8.6763654,
+    "lng": 77.0951147,
+    "aliases": [
+      "Vithura",
+      "വിതുര",
+      "VTR"
+    ]
+  },
+  {
+    "id": "node/7090216827",
+    "name": "Vadakara",
+    "nameMl": "വടകര",
+    "lat": 11.5941919,
+    "lng": 75.5941324,
+    "aliases": [
+      "Vadakara",
+      "വടകര",
+      "VKA"
+    ]
+  },
+  {
+    "id": "node/7103911109",
+    "name": "wadakkanchery bus station",
+    "lat": 10.6573204,
+    "lng": 76.2465786,
+    "aliases": [
+      "wadakkanchery bus station"
+    ]
+  },
+  {
+    "id": "node/7119153736",
+    "name": "Thiruvambady Bus Stand",
+    "district": "Thiruvambady",
+    "lat": 11.3611627,
+    "lng": 76.0099571,
+    "aliases": [
+      "Thiruvambady Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7119677646",
+    "name": "Koodaranji Bus stand",
+    "district": "Calicut",
+    "lat": 11.3481892,
+    "lng": 76.0361837,
+    "aliases": [
+      "Koodaranji Bus stand"
+    ]
+  },
+  {
+    "id": "node/7123793987",
+    "name": "Aashramum Bus Stop;Ashramam bustop",
+    "lat": 10.5528251,
+    "lng": 76.1612683,
+    "aliases": [
+      "Aashramum Bus Stop;Ashramam bustop"
+    ]
+  },
+  {
+    "id": "node/7128163559",
+    "name": "Kandala Bus Stop",
+    "lat": 8.4828986,
+    "lng": 77.0726519,
+    "aliases": [
+      "Kandala Bus Stop"
+    ]
+  },
+  {
+    "id": "node/7201164051",
+    "name": "Pampady Bus Stand",
+    "lat": 9.5696697,
+    "lng": 76.6398576,
+    "aliases": [
+      "Pampady Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7227156494",
+    "name": "അങ്കമാലി ബസ് സ്റ്റാന്റ്",
+    "lat": 10.1958543,
+    "lng": 76.3865464,
+    "aliases": [
+      "അങ്കമാലി ബസ് സ്റ്റാന്റ്"
+    ]
+  },
+  {
+    "id": "node/7305284372",
+    "name": "elampally",
+    "lat": 9.5704685,
+    "lng": 76.7169812,
+    "aliases": [
+      "elampally"
+    ]
+  },
+  {
+    "id": "node/7321075019",
+    "name": "KSRTC BUS STAND, KOOTHATUKULAM",
+    "lat": 9.8633567,
+    "lng": 76.5928441,
+    "aliases": [
+      "KSRTC BUS STAND, KOOTHATUKULAM"
+    ]
+  },
+  {
+    "id": "node/7324324347",
+    "name": "Puthuppally Bus Stand",
+    "lat": 9.5573955,
+    "lng": 76.5727024,
+    "aliases": [
+      "Puthuppally Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7325550887",
+    "name": "kottaramattam bus terminal",
+    "lat": 9.708848,
+    "lng": 76.6728613,
+    "aliases": [
+      "kottaramattam bus terminal"
+    ]
+  },
+  {
+    "id": "node/7335357661",
+    "name": "ksrtc sub depot NDKM",
+    "lat": 9.836373,
+    "lng": 77.1596296,
+    "aliases": [
+      "ksrtc sub depot NDKM"
+    ]
+  },
+  {
+    "id": "node/7340824135",
+    "name": "Pallikkare Bus Stop",
+    "district": "BEKAL FORT",
+    "lat": 12.3906059,
+    "lng": 75.0418477,
+    "aliases": [
+      "Pallikkare Bus Stop"
+    ]
+  },
+  {
+    "id": "node/7340883158",
+    "name": "Pallikkare Bus Stop",
+    "district": "BEKAL FORT",
+    "lat": 12.3901104,
+    "lng": 75.0422961,
+    "aliases": [
+      "Pallikkare Bus Stop"
+    ]
+  },
+  {
+    "id": "node/7342322422",
+    "name": "Kallada Tours And Travels Kottarakara",
+    "lat": 9.0044562,
+    "lng": 76.7832349,
+    "aliases": [
+      "Kallada Tours And Travels Kottarakara"
+    ]
+  },
+  {
+    "id": "node/7342727365",
+    "name": "Kottarakkara Kerala State Road Transport Corporation Bus Station",
+    "lat": 9.0060586,
+    "lng": 76.7819086,
+    "aliases": [
+      "Kottarakkara Kerala State Road Transport Corporation Bus Station"
+    ]
+  },
+  {
+    "id": "node/7454153723",
+    "name": "Mannanthala",
+    "lat": 8.560323,
+    "lng": 76.9435115,
+    "aliases": [
+      "Mannanthala"
+    ]
+  },
+  {
+    "id": "node/7454153725",
+    "name": "Mannanthala",
+    "lat": 8.5605733,
+    "lng": 76.9431227,
+    "aliases": [
+      "Mannanthala"
+    ]
+  },
+  {
+    "id": "node/7459280920",
+    "name": "Kerala State Transport Corporation Bus Stand",
+    "lat": 8.6054656,
+    "lng": 77.0035783,
+    "aliases": [
+      "Kerala State Transport Corporation Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7461797457",
+    "name": "Kavumkara Bus Station/Market Bus Stand",
+    "lat": 9.9891756,
+    "lng": 76.5845116,
+    "aliases": [
+      "Kavumkara Bus Station/Market Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7462250969",
+    "name": "Chirayinkeezhu",
+    "lat": 8.6604187,
+    "lng": 76.7853866,
+    "aliases": [
+      "Chirayinkeezhu"
+    ]
+  },
+  {
+    "id": "node/7462528377",
+    "name": "Parappil Bus Stand",
+    "lat": 8.7174991,
+    "lng": 76.9790588,
+    "aliases": [
+      "Parappil Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7462779262",
+    "name": "Kerala State Road Transport Corporation Bus Stand",
+    "lat": 9.4453829,
+    "lng": 76.5406697,
+    "aliases": [
+      "Kerala State Road Transport Corporation Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7464698941",
+    "name": "Chengannur Private Bus Stand",
+    "lat": 9.3186083,
+    "lng": 76.6096763,
+    "aliases": [
+      "Chengannur Private Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7465555388",
+    "name": "Kerala State Road Transport Corporation Regional Workshop",
+    "lat": 10.0924402,
+    "lng": 76.344839,
+    "aliases": [
+      "Kerala State Road Transport Corporation Regional Workshop"
+    ]
+  },
+  {
+    "id": "node/7465902649",
+    "name": "Kulamavu Bus Stand",
+    "lat": 9.7949521,
+    "lng": 76.8887822,
+    "aliases": [
+      "Kulamavu Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7467170982",
+    "name": "Vazhakulam Private Stand",
+    "district": "Vazhakulam",
+    "lat": 9.9441519,
+    "lng": 76.6408347,
+    "aliases": [
+      "Vazhakulam Private Stand"
+    ]
+  },
+  {
+    "id": "node/7467637511",
+    "name": "Rajakad Bus Stand",
+    "district": "Rajakad",
+    "lat": 9.9616742,
+    "lng": 77.0984088,
+    "aliases": [
+      "Rajakad Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7470352013",
+    "name": "Thalayolaparambu Bus Terminal",
+    "lat": 9.7854136,
+    "lng": 76.4431992,
+    "aliases": [
+      "Thalayolaparambu Bus Terminal"
+    ]
+  },
+  {
+    "id": "node/7473009353",
+    "name": "Thanjoor Mala Colony",
+    "lat": 10.0214084,
+    "lng": 76.607404,
+    "aliases": [
+      "Thanjoor Mala Colony"
+    ]
+  },
+  {
+    "id": "node/7473576392",
+    "name": "kalavoor bus station",
+    "lat": 9.5691246,
+    "lng": 76.3294085,
+    "aliases": [
+      "kalavoor bus station"
+    ]
+  },
+  {
+    "id": "node/7477833223",
+    "name": "vattoli busstand",
+    "lat": 11.3992704,
+    "lng": 75.8884996,
+    "aliases": [
+      "vattoli busstand"
+    ]
+  },
+  {
+    "id": "node/7489360710",
+    "name": "Edoor BusStand &Goods Carrier Stand",
+    "district": "Edoor",
+    "lat": 11.9964057,
+    "lng": 75.7250142,
+    "aliases": [
+      "Edoor BusStand &Goods Carrier Stand"
+    ]
+  },
+  {
+    "id": "node/7489987391",
+    "name": "Kumbalam Bus Stand",
+    "lat": 8.9924317,
+    "lng": 76.6618022,
+    "aliases": [
+      "Kumbalam Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7490127386",
+    "name": "Ambalamkunnu",
+    "lat": 8.9009919,
+    "lng": 76.7931208,
+    "aliases": [
+      "Ambalamkunnu"
+    ]
+  },
+  {
+    "id": "node/7490184959",
+    "name": "bus stand ambalapady",
+    "lat": 9.9948809,
+    "lng": 76.7832782,
+    "aliases": [
+      "bus stand ambalapady"
+    ]
+  },
+  {
+    "id": "node/7490324062",
+    "name": "Muthalamad",
+    "lat": 11.0311788,
+    "lng": 75.9548509,
+    "aliases": [
+      "Muthalamad"
+    ]
+  },
+  {
+    "id": "node/7491693835",
+    "name": "Kaduvamuzhy Bus station",
+    "lat": 9.6942973,
+    "lng": 76.7736821,
+    "aliases": [
+      "Kaduvamuzhy Bus station"
+    ]
+  },
+  {
+    "id": "node/7497035596",
+    "name": "Kadukutty Bus Stand",
+    "lat": 10.2700931,
+    "lng": 76.309524,
+    "aliases": [
+      "Kadukutty Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7498032679",
+    "name": "Muthukurussi bus stand",
+    "lat": 10.8983252,
+    "lng": 76.2567086,
+    "aliases": [
+      "Muthukurussi bus stand"
+    ]
+  },
+  {
+    "id": "node/7499988791",
+    "name": "Changanassery Private Bus Stand No. 1",
+    "lat": 9.4470579,
+    "lng": 76.5420423,
+    "aliases": [
+      "Changanassery Private Bus Stand No. 1"
+    ]
+  },
+  {
+    "id": "node/7508765741",
+    "name": "Pothanicad Bus Waiting Station",
+    "district": "Pothanicad",
+    "lat": 10.0069201,
+    "lng": 76.681229,
+    "aliases": [
+      "Pothanicad Bus Waiting Station"
+    ]
+  },
+  {
+    "id": "node/7510448663",
+    "name": "Manalinmmel Bus Stand",
+    "lat": 11.1934306,
+    "lng": 76.235333,
+    "aliases": [
+      "Manalinmmel Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7515408052",
+    "name": "Mukkam Old Bus Stand",
+    "lat": 11.3206787,
+    "lng": 75.9972036,
+    "aliases": [
+      "Mukkam Old Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7516356807",
+    "name": "Mandiram",
+    "lat": 9.5080416,
+    "lng": 76.5267122,
+    "aliases": [
+      "Mandiram"
+    ]
+  },
+  {
+    "id": "node/7525132997",
+    "name": "KSRTC Bus Terminus",
+    "lat": 11.7949739,
+    "lng": 76.0000136,
+    "aliases": [
+      "KSRTC Bus Terminus"
+    ]
+  },
+  {
+    "id": "node/7600040714",
+    "name": "peechi bus stand",
+    "lat": 10.5283054,
+    "lng": 76.3677491,
+    "aliases": [
+      "peechi bus stand"
+    ]
+  },
+  {
+    "id": "node/7634953471",
+    "name": "KSRTC Vithura",
+    "lat": 8.6760259,
+    "lng": 77.0954746,
+    "aliases": [
+      "KSRTC Vithura"
+    ]
+  },
+  {
+    "id": "node/7663505358",
+    "name": "Ambalapuzha Junction Bus Stop",
+    "lat": 9.382829,
+    "lng": 76.3551601,
+    "aliases": [
+      "Ambalapuzha Junction Bus Stop"
+    ]
+  },
+  {
+    "id": "node/7923747352",
+    "name": "Puthenvelikkara Bus Stand",
+    "lat": 10.1874427,
+    "lng": 76.2454284,
+    "aliases": [
+      "Puthenvelikkara Bus Stand"
+    ]
+  },
+  {
+    "id": "node/7944687000",
+    "name": "Medical College Station",
+    "lat": 11.2711194,
+    "lng": 75.8368988,
+    "aliases": [
+      "Medical College Station"
+    ]
+  },
+  {
+    "id": "node/8237911844",
+    "name": "pallimukku-mulavana",
+    "lat": 8.9674869,
+    "lng": 76.6883682,
+    "aliases": [
+      "pallimukku-mulavana"
+    ]
+  },
+  {
+    "id": "node/8255003108",
+    "name": "Parippu",
+    "lat": 9.6192318,
+    "lng": 76.4758931,
+    "aliases": [
+      "Parippu"
+    ]
+  },
+  {
+    "id": "node/8279467391",
+    "name": "Edathanattukara",
+    "lat": 11.0597378,
+    "lng": 76.3492748,
+    "aliases": [
+      "Edathanattukara"
+    ]
+  },
+  {
+    "id": "node/8280662767",
+    "name": "Bmm school bus station",
+    "lat": 9.5543933,
+    "lng": 76.6289276,
+    "aliases": [
+      "Bmm school bus station"
+    ]
+  },
+  {
+    "id": "node/8286625791",
+    "name": "Medical College bus Terminal",
+    "lat": 9.632297,
+    "lng": 76.5213911,
+    "aliases": [
+      "Medical College bus Terminal"
+    ]
+  },
+  {
+    "id": "node/8290657068",
+    "name": "chungam pattikkad",
+    "lat": 11.0162982,
+    "lng": 76.2288012,
+    "aliases": [
+      "chungam pattikkad"
+    ]
+  },
+  {
+    "id": "node/8323674240",
+    "name": "Alummood Bus Stop",
+    "lat": 9.5094979,
+    "lng": 76.7942707,
+    "aliases": [
+      "Alummood Bus Stop"
+    ]
+  },
+  {
+    "id": "node/8325008781",
+    "name": "edneer",
+    "lat": 12.5236989,
+    "lng": 75.0717105,
+    "aliases": [
+      "edneer"
+    ]
+  },
+  {
+    "id": "node/8325309561",
+    "name": "ADOOR BUS STAND",
+    "district": "Adoor",
+    "lat": 9.1528484,
+    "lng": 76.7331323,
+    "aliases": [
+      "ADOOR BUS STAND"
+    ]
+  },
+  {
+    "id": "node/8334434124",
+    "name": "kunnamkulam bus stand",
+    "lat": 10.6508456,
+    "lng": 76.0697256,
+    "aliases": [
+      "kunnamkulam bus stand"
+    ]
+  },
+  {
+    "id": "node/8345433432",
+    "name": "Pandalam Private Bus Stop",
+    "lat": 9.2244588,
+    "lng": 76.6775722,
+    "aliases": [
+      "Pandalam Private Bus Stop"
+    ]
+  },
+  {
+    "id": "node/8345433447",
+    "name": "Chengannur KSRTC Bus Stand",
+    "lat": 9.318477,
+    "lng": 76.6130267,
+    "aliases": [
+      "Chengannur KSRTC Bus Stand"
+    ]
+  },
+  {
+    "id": "node/8387363100",
+    "name": "Karikulam Bus stop",
+    "lat": 9.3949325,
+    "lng": 76.8131997,
+    "aliases": [
+      "Karikulam Bus stop"
+    ]
+  },
+  {
+    "id": "node/8396443668",
+    "name": "mangattukavala bus stop",
+    "lat": 9.9026347,
+    "lng": 76.7248112,
+    "aliases": [
+      "mangattukavala bus stop"
+    ]
+  },
+  {
+    "id": "node/8396732029",
+    "name": "Valiyaplachal Bus Stop Padi",
+    "nameMl": "വലിയപ്ലാച്ചല്‍ ബസ് സ്റ്റോപ്പ്പടി",
+    "lat": 9.3530238,
+    "lng": 76.789261,
+    "aliases": [
+      "Valiyaplachal Bus Stop Padi",
+      "വലിയപ്ലാച്ചല്‍ ബസ് സ്റ്റോപ്പ്പടി"
+    ]
+  },
+  {
+    "id": "node/8398672102",
+    "name": "Waiting shed, Pazhayidom",
+    "lat": 9.5053756,
+    "lng": 76.7770583,
+    "aliases": [
+      "Waiting shed, Pazhayidom"
+    ]
+  },
+  {
+    "id": "node/8399094503",
+    "name": "Waiting Shed",
+    "lat": 9.5066909,
+    "lng": 76.7965158,
+    "aliases": [
+      "Waiting Shed"
+    ]
+  },
+  {
+    "id": "node/8399235736",
+    "name": "Pallickathodu bus stand",
+    "lat": 9.6019645,
+    "lng": 76.6825499,
+    "aliases": [
+      "Pallickathodu bus stand"
+    ]
+  },
+  {
+    "id": "node/8410806153",
+    "name": "Arumaloor",
+    "lat": 8.4769919,
+    "lng": 77.0742376,
+    "aliases": [
+      "Arumaloor"
+    ]
+  },
+  {
+    "id": "node/8411932471",
+    "name": "mangattukavala bus stop",
+    "lat": 9.9076731,
+    "lng": 76.7209022,
+    "aliases": [
+      "mangattukavala bus stop"
+    ]
+  },
+  {
+    "id": "node/8423188202",
+    "name": "KSRTC Attingal",
+    "district": "attingal",
+    "lat": 8.6941962,
+    "lng": 76.8188726,
+    "aliases": [
+      "KSRTC Attingal"
+    ]
+  },
+  {
+    "id": "node/8504627253",
+    "name": "Thiruvarpu",
+    "lat": 9.578784,
+    "lng": 76.4719415,
+    "aliases": [
+      "Thiruvarpu"
+    ]
+  },
+  {
+    "id": "node/8543100128",
+    "name": "Malarikal",
+    "lat": 9.5590198,
+    "lng": 76.4923105,
+    "aliases": [
+      "Malarikal"
+    ]
+  },
+  {
+    "id": "node/8561362588",
+    "name": "Kayalpuram Pally",
+    "lat": 9.4609144,
+    "lng": 76.4310977,
+    "aliases": [
+      "Kayalpuram Pally"
+    ]
+  },
+  {
+    "id": "node/8571043809",
+    "name": "Nedumkandam Bus Stand",
+    "lat": 9.8437002,
+    "lng": 77.1518644,
+    "aliases": [
+      "Nedumkandam Bus Stand"
+    ]
+  },
+  {
+    "id": "node/8575640878",
+    "name": "Mannadiyar Bus Garage",
+    "lat": 8.4287944,
+    "lng": 77.0047768,
+    "aliases": [
+      "Mannadiyar Bus Garage"
+    ]
+  },
+  {
+    "id": "node/8728599927",
+    "name": "umayanalloor bus stop",
+    "lat": 8.8650395,
+    "lng": 76.6537963,
+    "aliases": [
+      "umayanalloor bus stop"
+    ]
+  },
+  {
+    "id": "node/8764984577",
+    "name": "bus stop",
+    "lat": 12.141002,
+    "lng": 75.2332838,
+    "aliases": [
+      "bus stop"
+    ]
+  },
+  {
+    "id": "node/8788724490",
+    "name": "Old Bus Stand",
+    "district": "Kottayam",
+    "lat": 9.5905855,
+    "lng": 76.5214253,
+    "aliases": [
+      "Old Bus Stand"
+    ]
+  },
+  {
+    "id": "node/8845582901",
+    "name": "Koduvayur Bus Stand 1",
+    "district": "Koduvayur",
+    "lat": 10.6849196,
+    "lng": 76.6541091,
+    "aliases": [
+      "Koduvayur Bus Stand 1"
+    ]
+  },
+  {
+    "id": "node/8847816795",
+    "name": "Pilathra Bus Stand",
+    "lat": 12.0782172,
+    "lng": 75.2667983,
+    "aliases": [
+      "Pilathra Bus Stand"
+    ]
+  },
+  {
+    "id": "node/8848038935",
+    "name": "Pazhayangadi Bustand",
+    "lat": 12.0268875,
+    "lng": 75.2659951,
+    "aliases": [
+      "Pazhayangadi Bustand"
+    ]
+  },
+  {
+    "id": "node/8864666705",
+    "name": "Municipal Bus Stand Thankalam",
+    "lat": 10.0688834,
+    "lng": 76.6127927,
+    "aliases": [
+      "Municipal Bus Stand Thankalam"
+    ]
+  },
+  {
+    "id": "node/8864989562",
+    "name": "Karukachal Bus station",
+    "lat": 9.5030111,
+    "lng": 76.641388,
+    "aliases": [
+      "Karukachal Bus station"
+    ]
+  },
+  {
+    "id": "node/8887251741",
+    "name": "ksrtc bus stand irinjakuda",
+    "district": "THRISSUR",
+    "lat": 10.3460758,
+    "lng": 76.1949673,
+    "aliases": [
+      "ksrtc bus stand irinjakuda"
+    ]
+  },
+  {
+    "id": "node/8889815407",
+    "name": "irinjalakuda bus stand",
+    "lat": 10.3471898,
+    "lng": 76.2069498,
+    "aliases": [
+      "irinjalakuda bus stand"
+    ]
+  },
+  {
+    "id": "node/8890058717",
+    "name": "New bustand payyanur",
+    "lat": 12.1080948,
+    "lng": 75.214975,
+    "aliases": [
+      "New bustand payyanur"
+    ]
+  },
+  {
+    "id": "node/8890058718",
+    "name": "Bustand payyanur",
+    "lat": 12.1058166,
+    "lng": 75.2073098,
+    "aliases": [
+      "Bustand payyanur"
+    ]
+  },
+  {
+    "id": "node/8890580917",
+    "name": "Changaramkulam Bus Stand",
+    "lat": 10.7348497,
+    "lng": 76.0277551,
+    "aliases": [
+      "Changaramkulam Bus Stand"
+    ]
+  },
+  {
+    "id": "node/8892176818",
+    "name": "Vengad",
+    "lat": 11.8727486,
+    "lng": 75.5389404,
+    "aliases": [
+      "Vengad"
+    ]
+  },
+  {
+    "id": "node/8956159663",
+    "name": "Bus Stand Edavanna",
+    "district": "edavanna",
+    "lat": 11.215243,
+    "lng": 76.1398117,
+    "aliases": [
+      "Bus Stand Edavanna"
+    ]
+  },
+  {
+    "id": "node/9048625822",
+    "name": "KSRTC Bus Stand",
+    "lat": 10.0602479,
+    "lng": 76.6291446,
+    "aliases": [
+      "KSRTC Bus Stand"
+    ]
+  },
+  {
+    "id": "node/9072639517",
+    "name": "Vadakke stand",
+    "lat": 10.5304435,
+    "lng": 76.2147787,
+    "aliases": [
+      "Vadakke stand"
+    ]
+  },
+  {
+    "id": "node/9097073646",
+    "name": "chungam",
+    "district": "alathur",
+    "lat": 10.6572579,
+    "lng": 76.5006814,
+    "aliases": [
+      "chungam"
+    ]
+  },
+  {
+    "id": "node/9106176830",
+    "name": "Chemperi Bus Stop",
+    "district": "Chemperi",
+    "lat": 12.096418,
+    "lng": 75.5470636,
+    "aliases": [
+      "Chemperi Bus Stop"
+    ]
+  },
+  {
+    "id": "node/9123553246",
+    "name": "Alanallur bus stand",
+    "district": "Alanallur",
+    "lat": 11.007082,
+    "lng": 76.3521941,
+    "aliases": [
+      "Alanallur bus stand"
+    ]
+  },
+  {
+    "id": "node/9144656920",
+    "name": "omassery bus terminal",
+    "lat": 11.3831919,
+    "lng": 75.9822352,
+    "aliases": [
+      "omassery bus terminal"
+    ]
+  },
+  {
+    "id": "node/9284804417",
+    "name": "KSRTC Bus Stand",
+    "lat": 10.215129,
+    "lng": 76.200802,
+    "aliases": [
+      "KSRTC Bus Stand"
+    ]
+  },
+  {
+    "id": "node/9363096385",
+    "name": "Pulinkunnu",
+    "lat": 9.4488959,
+    "lng": 76.4463698,
+    "aliases": [
+      "Pulinkunnu"
+    ]
+  },
+  {
+    "id": "node/9363643219",
+    "name": "Thiruvalla KSRTC Terminal",
+    "lat": 9.3864759,
+    "lng": 76.5746058,
+    "aliases": [
+      "Thiruvalla KSRTC Terminal"
+    ]
+  },
+  {
+    "id": "node/9365045366",
+    "name": "KSRTC Kottayam",
+    "lat": 9.5858048,
+    "lng": 76.523438,
+    "aliases": [
+      "KSRTC Kottayam",
+      "5"
+    ]
+  },
+  {
+    "id": "node/9388019721",
+    "name": "Asst Transport Office",
+    "lat": 10.1957524,
+    "lng": 76.3867232,
+    "aliases": [
+      "Asst Transport Office"
+    ]
+  },
+  {
+    "id": "node/9442675997",
+    "name": "Kavalam",
+    "nameMl": "കാവാലം",
+    "lat": 9.4765609,
+    "lng": 76.455845,
+    "aliases": [
+      "Kavalam",
+      "കാവാലം"
+    ]
+  },
+  {
+    "id": "node/9467782518",
+    "name": "Palayi bus stop",
+    "lat": 11.8463583,
+    "lng": 75.5749163,
+    "aliases": [
+      "Palayi bus stop"
+    ]
+  },
+  {
+    "id": "node/9481321260",
+    "name": "Kongad Bus Stand",
+    "lat": 10.8541639,
+    "lng": 76.5213617,
+    "aliases": [
+      "Kongad Bus Stand"
+    ]
+  },
+  {
+    "id": "node/9765280488",
+    "name": "Perumba",
+    "lat": 12.1097531,
+    "lng": 75.2186177,
+    "aliases": [
+      "Perumba"
+    ]
+  },
+  {
+    "id": "node/9765354898",
+    "name": "LIC Junction",
+    "lat": 12.1134594,
+    "lng": 75.2105731,
+    "aliases": [
+      "LIC Junction"
+    ]
+  },
+  {
+    "id": "node/9765389012",
+    "name": "Krishnapilla Smaraka Waiting Shed",
+    "lat": 12.1129152,
+    "lng": 75.2054165,
+    "aliases": [
+      "Krishnapilla Smaraka Waiting Shed"
+    ]
+  },
+  {
+    "id": "node/9775890256",
+    "name": "Kotti",
+    "lat": 12.0909601,
+    "lng": 75.1943021,
+    "aliases": [
+      "Kotti"
+    ]
+  },
+  {
+    "id": "node/9775890271",
+    "name": "Punchakkad",
+    "lat": 12.0798711,
+    "lng": 75.1948071,
+    "aliases": [
+      "Punchakkad"
+    ]
+  },
+  {
+    "id": "node/9775890274",
+    "name": "Punnakadavu",
+    "lat": 12.0754503,
+    "lng": 75.1946904,
+    "aliases": [
+      "Punnakadavu"
+    ]
+  },
+  {
+    "id": "node/9775890282",
+    "name": "Vadakkumbad",
+    "lat": 12.0749618,
+    "lng": 75.1831569,
+    "aliases": [
+      "Vadakkumbad"
+    ]
+  },
+  {
+    "id": "node/9775890289",
+    "name": "CM Musahaji Sahib Smaraka Waiting Shelter",
+    "lat": 12.0772672,
+    "lng": 75.1861321,
+    "aliases": [
+      "CM Musahaji Sahib Smaraka Waiting Shelter"
+    ]
+  },
+  {
+    "id": "node/9775890298",
+    "name": "Vadukkumbad",
+    "lat": 12.0757598,
+    "lng": 75.1878494,
+    "aliases": [
+      "Vadukkumbad"
+    ]
+  },
+  {
+    "id": "node/9775890299",
+    "name": "Vadukkumbad",
+    "lat": 12.0756903,
+    "lng": 75.187718,
+    "aliases": [
+      "Vadukkumbad"
+    ]
+  },
+  {
+    "id": "node/9775890308",
+    "name": "Punnakkadavu",
+    "lat": 12.07395,
+    "lng": 75.1919317,
+    "aliases": [
+      "Punnakkadavu"
+    ]
+  },
+  {
+    "id": "node/9775907017",
+    "name": "Kunnaru",
+    "lat": 12.0708025,
+    "lng": 75.1907663,
+    "aliases": [
+      "Kunnaru"
+    ]
+  },
+  {
+    "id": "node/9775907025",
+    "name": "Ramanthali Bank",
+    "lat": 12.0631527,
+    "lng": 75.1899818,
+    "aliases": [
+      "Ramanthali Bank"
+    ]
+  },
+  {
+    "id": "node/9776394771",
+    "name": "Lions Bus Shelter",
+    "lat": 12.1005105,
+    "lng": 75.2314997,
+    "aliases": [
+      "Lions Bus Shelter"
+    ]
+  },
+  {
+    "id": "node/9776394799",
+    "name": "Payyannur New Stand",
+    "lat": 12.1082626,
+    "lng": 75.2148701,
+    "aliases": [
+      "Payyannur New Stand"
+    ]
+  },
+  {
+    "id": "node/9776418238",
+    "name": "Thayineri",
+    "lat": 12.1228752,
+    "lng": 75.2079445,
+    "aliases": [
+      "Thayineri"
+    ]
+  },
+  {
+    "id": "node/9777546735",
+    "name": "Bus Stop",
+    "lat": 12.1398245,
+    "lng": 75.2151905,
+    "aliases": [
+      "Bus Stop"
+    ]
+  },
+  {
+    "id": "node/9777546750",
+    "name": "Kandoth Mukku",
+    "lat": 12.1320299,
+    "lng": 75.2166255,
+    "aliases": [
+      "Kandoth Mukku"
+    ]
+  },
+  {
+    "id": "node/9777546753",
+    "name": "Ayurveda",
+    "lat": 12.1286156,
+    "lng": 75.2162299,
+    "aliases": [
+      "Ayurveda"
+    ]
+  },
+  {
+    "id": "node/9777546767",
+    "name": "Kandoth",
+    "lat": 12.1196313,
+    "lng": 75.2171847,
+    "aliases": [
+      "Kandoth"
+    ]
+  },
+  {
+    "id": "node/9777546771",
+    "name": "Kandoth",
+    "lat": 12.1196929,
+    "lng": 75.2170412,
+    "aliases": [
+      "Kandoth"
+    ]
+  },
+  {
+    "id": "node/9778655081",
+    "name": "Thachangod bus stop",
+    "lat": 11.1896536,
+    "lng": 76.269744,
+    "aliases": [
+      "Thachangod bus stop"
+    ]
+  },
+  {
+    "id": "node/9781228120",
+    "name": "Olavara",
+    "lat": 12.1016186,
+    "lng": 75.1862964,
+    "aliases": [
+      "Olavara"
+    ]
+  },
+  {
+    "id": "node/9781228121",
+    "name": "Olavara",
+    "lat": 12.1015714,
+    "lng": 75.1861757,
+    "aliases": [
+      "Olavara"
+    ]
+  },
+  {
+    "id": "node/9781394939",
+    "name": "Bus Stop",
+    "lat": 12.1239163,
+    "lng": 75.1808998,
+    "aliases": [
+      "Bus Stop"
+    ]
+  },
+  {
+    "id": "node/9781394940",
+    "name": "Bus Stop",
+    "lat": 12.1237432,
+    "lng": 75.1809454,
+    "aliases": [
+      "Bus Stop"
+    ]
+  },
+  {
+    "id": "node/9781394950",
+    "name": "School Stop",
+    "lat": 12.1191855,
+    "lng": 75.1828994,
+    "aliases": [
+      "School Stop"
+    ]
+  },
+  {
+    "id": "node/9781394951",
+    "name": "School Stop",
+    "lat": 12.1192261,
+    "lng": 75.1831113,
+    "aliases": [
+      "School Stop"
+    ]
+  },
+  {
+    "id": "node/9781394959",
+    "name": "Udumbunthala",
+    "lat": 12.1090431,
+    "lng": 75.1854012,
+    "aliases": [
+      "Udumbunthala"
+    ]
+  },
+  {
+    "id": "node/9781394960",
+    "name": "Udumbunthala",
+    "lat": 12.1090345,
+    "lng": 75.1852859,
+    "aliases": [
+      "Udumbunthala"
+    ]
+  },
+  {
+    "id": "node/9781427946",
+    "name": "Beericheri",
+    "lat": 12.1360105,
+    "lng": 75.1771058,
+    "aliases": [
+      "Beericheri"
+    ]
+  },
+  {
+    "id": "node/9781427947",
+    "name": "Beericheri",
+    "lat": 12.1346666,
+    "lng": 75.1771836,
+    "aliases": [
+      "Beericheri"
+    ]
+  },
+  {
+    "id": "node/9781427952",
+    "name": "Beericheri",
+    "lat": 12.1349157,
+    "lng": 75.1772882,
+    "aliases": [
+      "Beericheri"
+    ]
+  },
+  {
+    "id": "node/9783451598",
+    "name": "Trikaripur",
+    "lat": 12.1418305,
+    "lng": 75.1766525,
+    "aliases": [
+      "Trikaripur"
+    ]
+  },
+  {
+    "id": "node/9789279592",
+    "name": "badiadka bus stand",
+    "lat": 12.5888815,
+    "lng": 75.0722363,
+    "aliases": [
+      "badiadka bus stand"
+    ]
+  },
+  {
+    "id": "node/9861648117",
+    "name": "Koramukku Bus Stop",
+    "lat": 11.9987595,
+    "lng": 75.7083967,
+    "aliases": [
+      "Koramukku Bus Stop"
+    ]
+  },
+  {
+    "id": "node/10164897938",
+    "name": "KSRTC Depot",
+    "lat": 10.9942801,
+    "lng": 76.4686236,
+    "aliases": [
+      "KSRTC Depot"
+    ]
+  },
+  {
+    "id": "node/10181834107",
+    "name": "Mannarkkad Bus Stand",
+    "lat": 10.9920286,
+    "lng": 76.4550503,
+    "aliases": [
+      "Mannarkkad Bus Stand"
+    ]
+  },
+  {
+    "id": "node/10635502868",
+    "name": "KSRTC BUS STATION",
+    "lat": 9.6676837,
+    "lng": 76.556018,
+    "aliases": [
+      "KSRTC BUS STATION"
+    ]
+  },
+  {
+    "id": "node/11064301105",
+    "name": "Thampanoor central",
+    "district": "Thiruvananthapuram",
+    "lat": 8.4882482,
+    "lng": 76.9520403,
+    "aliases": [
+      "Thampanoor central"
+    ]
+  },
+  {
+    "id": "node/11155380105",
+    "name": "kodenchery bus station",
+    "lat": 11.4309507,
+    "lng": 76.0068806,
+    "aliases": [
+      "kodenchery bus station"
+    ]
+  },
+  {
+    "id": "node/11173426008",
+    "name": "Piravom Bus Stand",
+    "lat": 9.8744923,
+    "lng": 76.4885784,
+    "aliases": [
+      "Piravom Bus Stand"
+    ]
+  },
+  {
+    "id": "node/11273823811",
+    "name": "Airport Feeder Bus Stop",
+    "lat": 10.1094731,
+    "lng": 76.3496575,
+    "aliases": [
+      "Airport Feeder Bus Stop"
+    ]
+  },
+  {
+    "id": "node/11273823812",
+    "name": "Airport Feeder Bus Stop",
+    "lat": 10.1556373,
+    "lng": 76.3916313,
+    "aliases": [
+      "Airport Feeder Bus Stop"
+    ]
+  },
+  {
+    "id": "node/11274423076",
+    "name": "Old Bus stand Manjeri",
+    "district": "Manjeri",
+    "lat": 11.119855,
+    "lng": 76.1202284,
+    "aliases": [
+      "Old Bus stand Manjeri"
+    ]
+  },
+  {
+    "id": "node/11350096504",
+    "name": "bus station",
+    "lat": 10.9340934,
+    "lng": 76.0051251,
+    "aliases": [
+      "bus station"
+    ]
+  },
+  {
+    "id": "node/11677272262",
+    "name": "Kainakiri",
+    "lat": 9.4791411,
+    "lng": 76.3863412,
+    "aliases": [
+      "Kainakiri"
+    ]
+  },
+  {
+    "id": "node/11776246369",
+    "name": "Etteyar Bus Stop",
+    "lat": 11.9907652,
+    "lng": 75.4716102,
+    "aliases": [
+      "Etteyar Bus Stop"
+    ]
+  },
+  {
+    "id": "node/11883177104",
+    "name": "Kayalpuram Pally",
+    "lat": 9.4609449,
+    "lng": 76.4311767,
+    "aliases": [
+      "Kayalpuram Pally"
+    ]
+  },
+  {
+    "id": "node/12034837301",
+    "name": "Manimala",
+    "nameMl": "മണിമല",
+    "lat": 9.4937029,
+    "lng": 76.7491531,
+    "aliases": [
+      "Manimala",
+      "മണിമല"
+    ]
+  },
+  {
+    "id": "node/12301337770",
+    "name": "Kanjirapally",
+    "lat": 9.5579726,
+    "lng": 76.7916486,
+    "aliases": [
+      "Kanjirapally"
+    ]
+  },
+  {
+    "id": "node/12301337771",
+    "name": "Ponkunnam",
+    "lat": 9.5650989,
+    "lng": 76.7558297,
+    "aliases": [
+      "Ponkunnam"
+    ]
+  },
+  {
+    "id": "node/12433027091",
+    "name": "Chadayamangalam",
+    "nameMl": "ചടയമംഗലം",
+    "lat": 8.8740665,
+    "lng": 76.8690612,
+    "aliases": [
+      "Chadayamangalam",
+      "ചടയമംഗലം"
+    ]
+  },
+  {
+    "id": "node/12464883847",
+    "name": "Muttil",
+    "lat": 11.6425103,
+    "lng": 76.1105978,
+    "aliases": [
+      "Muttil"
+    ]
+  },
+  {
+    "id": "node/12471429462",
+    "name": "Karunagapally",
+    "nameMl": "കരുനാഗപ്പള്ളി",
+    "lat": 9.0554698,
+    "lng": 76.5358188,
+    "aliases": [
+      "Karunagapally",
+      "കരുനാഗപ്പള്ളി"
+    ]
+  },
+  {
+    "id": "node/12475740028",
+    "name": "Pamba KSRTC bus stand",
+    "lat": 9.4065163,
+    "lng": 77.0691087,
+    "aliases": [
+      "Pamba KSRTC bus stand",
+      "94"
+    ]
+  },
+  {
+    "id": "node/12495325092",
+    "name": "Ranni",
+    "nameMl": "റാന്നി",
+    "lat": 9.386161,
+    "lng": 76.7860354,
+    "aliases": [
+      "Ranni",
+      "റാന്നി",
+      "Ittiyappara"
+    ]
+  },
+  {
+    "id": "node/12495337950",
+    "name": "Anchal Municipal Bus Station",
+    "lat": 8.9290984,
+    "lng": 76.9079797,
+    "aliases": [
+      "Anchal Municipal Bus Station"
+    ]
+  },
+  {
+    "id": "node/12495352855",
+    "name": "Punalur KSRTC Bus Station",
+    "lat": 9.0169618,
+    "lng": 76.9271225,
+    "aliases": [
+      "Punalur KSRTC Bus Station"
+    ]
+  },
+  {
+    "id": "node/12495381828",
+    "name": "Punalur Chemmanthoor Private Bus Station",
+    "lat": 9.0186836,
+    "lng": 76.9176858,
+    "aliases": [
+      "Punalur Chemmanthoor Private Bus Station"
+    ]
+  },
+  {
+    "id": "node/12495391578",
+    "name": "Kadakkal",
+    "nameMl": "കടയ്ക്കല്‍",
+    "lat": 8.8253611,
+    "lng": 76.9172279,
+    "aliases": [
+      "Kadakkal",
+      "കടയ്ക്കല്‍"
+    ]
+  },
+  {
+    "id": "node/12825686235",
+    "name": "Neeleswaram Bus Stand",
+    "lat": 12.2556994,
+    "lng": 75.1303245,
+    "aliases": [
+      "Neeleswaram Bus Stand"
+    ]
+  },
+  {
+    "id": "node/13307691386",
+    "name": "Mammoottil Kadavu",
+    "lat": 8.9103608,
+    "lng": 76.5680302,
+    "aliases": [
+      "Mammoottil Kadavu"
+    ]
+  },
+  {
+    "id": "node/13583998401",
+    "name": "Megha Bus (Cochin and Munnar)",
+    "lat": 8.4911067,
+    "lng": 76.9539536,
+    "aliases": [
+      "Megha Bus (Cochin and Munnar)"
+    ]
+  }
+]

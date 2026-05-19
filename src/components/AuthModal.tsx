@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2
+  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2, Eye, EyeOff
 } from "lucide-react";
 import { useAuth, type UserRole } from "@/context/AuthContext";
 
@@ -28,6 +28,11 @@ export default function AuthModal() {
   const [passengerPassword, setPassengerPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  // Eye toggle visibility states
+  const [showPassengerPass, setShowPassengerPass] = useState(false);
+  const [showConfirmPass, setShowConfirmPass] = useState(false);
+  const [showDriverAdminPass, setShowDriverAdminPass] = useState(false);
+
   // Driver/Admin states
   const [emailOrId, setEmailOrId] = useState("");
   const [password, setPassword] = useState("");
@@ -43,6 +48,9 @@ export default function AuthModal() {
     setConfirmPassword("");
     setEmailOrId("");
     setPassword("");
+    setShowPassengerPass(false);
+    setShowConfirmPass(false);
+    setShowDriverAdminPass(false);
   }, [activeTab]);
 
   if (!isModalOpen) return null;
@@ -281,13 +289,20 @@ export default function AuthModal() {
                         <Lock className="w-4 h-4" />
                       </div>
                       <input
-                        type="password"
+                        type={showPassengerPass ? "text" : "password"}
                         value={passengerPassword}
                         onChange={(e) => setPassengerPassword(e.target.value)}
                         placeholder="••••••••"
                         required
-                        className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
+                        className="w-full bg-transparent border-none outline-none py-3 pl-4 pr-12 text-white placeholder:text-white/20 font-sans text-sm"
                       />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassengerPass(!showPassengerPass)}
+                        className="absolute right-4 text-geobus-text hover:text-white transition-colors"
+                      >
+                        {showPassengerPass ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      </button>
                     </div>
                   </div>
 
@@ -301,13 +316,20 @@ export default function AuthModal() {
                           <Lock className="w-4 h-4" />
                         </div>
                         <input
-                          type="password"
+                          type={showConfirmPass ? "text" : "password"}
                           value={confirmPassword}
                           onChange={(e) => setConfirmPassword(e.target.value)}
                           placeholder="••••••••"
                           required
-                          className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
+                          className="w-full bg-transparent border-none outline-none py-3 pl-4 pr-12 text-white placeholder:text-white/20 font-sans text-sm"
                         />
+                        <button
+                          type="button"
+                          onClick={() => setShowConfirmPass(!showConfirmPass)}
+                          className="absolute right-4 text-geobus-text hover:text-white transition-colors"
+                        >
+                          {showConfirmPass ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                        </button>
                       </div>
                     </div>
                   )}
@@ -412,13 +434,20 @@ export default function AuthModal() {
                         <Key className="w-4 h-4" />
                       </div>
                       <input
-                        type="password"
+                        type={showDriverAdminPass ? "text" : "password"}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder="••••••••"
                         required
-                        className="w-full bg-transparent border-none outline-none py-4 px-4 text-white placeholder:text-white/20 font-sans"
+                        className="w-full bg-transparent border-none outline-none py-4 pl-4 pr-12 text-white placeholder:text-white/20 font-sans"
                       />
+                      <button
+                        type="button"
+                        onClick={() => setShowDriverAdminPass(!showDriverAdminPass)}
+                        className="absolute right-4 text-geobus-text hover:text-white transition-colors"
+                      >
+                        {showDriverAdminPass ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      </button>
                     </div>
                   </div>
 

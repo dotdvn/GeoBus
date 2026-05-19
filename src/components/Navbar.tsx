@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Menu, MapPin } from "lucide-react";
+import { Menu, MapPin, LogIn } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -27,8 +27,9 @@ export default function Navbar() {
         </div>
         
         <div className="hidden md:flex">
-          <button className="px-6 py-2 bg-geobus-neon/10 border border-geobus-neon/50 text-geobus-neon font-semibold rounded-full hover:bg-geobus-neon hover:text-black transition-all">
-            Get Started
+          <button className="px-6 py-2 bg-geobus-neon/15 border border-geobus-neon/50 text-geobus-neon font-semibold rounded-full hover:bg-geobus-neon hover:text-black transition-all flex items-center gap-2">
+            <LogIn className="w-4 h-4" />
+            <span>Login</span>
           </button>
         </div>
 

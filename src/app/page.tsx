@@ -5,6 +5,7 @@ import LiveTrackingSection from "@/components/LiveTrackingSection";
 import AdminDashboard from "@/components/AdminDashboard";
 import SmartCitySection from "@/components/SmartCitySection";
 import Footer from "@/components/Footer";
+import AuthModal from "@/components/AuthModal";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AdminDashboard />
       <SmartCitySection />
       <Footer />
+      <AuthModal />
     </main>
   );
 }

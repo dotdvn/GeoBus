@@ -217,7 +217,7 @@ export default function LiveTrackingSection() {
 
             {/* Overlay UI elements */}
             <div className="absolute top-6 left-6 z-20 glass-card p-4 rounded-2xl max-w-[250px]">
-              <h4 className="text-white font-heading font-bold text-lg mb-1">Route 42A Express</h4>
+              <h4 className="text-white font-heading font-bold text-lg mb-1">Route Trial Express</h4>
               <p className="text-sm text-geobus-neon flex items-center gap-2 font-medium mb-3">
                 <span className="w-2 h-2 rounded-full bg-geobus-neon animate-pulse" />
                 ETA: 4 mins

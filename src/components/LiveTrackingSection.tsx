@@ -78,7 +78,7 @@ export default function LiveTrackingSection() {
     el.style.cursor = "pointer";
 
     el.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" style="margin-top: 2px; margin-right: 2px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" style="margin-top: 2.5px; margin-right: 2.5px;">
         <!-- Tires (Black) -->
         <rect x="6.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
         <rect x="14.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />

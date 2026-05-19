@@ -78,12 +78,19 @@ export default function LiveTrackingSection() {
     el.style.cursor = "pointer";
 
     el.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px; margin-right: 2px;">
-        <rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect>
-        <path d="M4 18v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2h10v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2"></path>
-        <path d="M3 11h18"></path>
-        <circle cx="7.5" cy="14.5" r="1.5" fill="#000000"></circle>
-        <circle cx="16.5" cy="14.5" r="1.5" fill="#000000"></circle>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 1px; margin-right: 1px;">
+        <!-- Left/Right wheels underneath -->
+        <rect x="6" y="19" width="3" height="3.5" rx="1" fill="#000000" stroke="none"></rect>
+        <rect x="15" y="19" width="3" height="3.5" rx="1" fill="#000000" stroke="none"></rect>
+        <!-- Main Bus Box Body (Tall vertical shape) -->
+        <rect x="4" y="3" width="16" height="16.5" rx="3" fill="none" stroke="#000000" stroke-width="2.5"></rect>
+        <!-- Windshield (Upper half) -->
+        <rect x="6" y="5.5" width="12" height="6.5" rx="1.5" fill="none" stroke="#000000" stroke-width="2"></rect>
+        <!-- Mid-grille line separator -->
+        <line x1="4" y1="14.5" x2="20" y2="14.5" stroke="#000000" stroke-width="2"></line>
+        <!-- Headlights -->
+        <circle cx="7.5" cy="16.5" r="1.2" fill="#000000" stroke="none"></circle>
+        <circle cx="16.5" cy="16.5" r="1.2" fill="#000000" stroke="none"></circle>
       </svg>
     `;
 

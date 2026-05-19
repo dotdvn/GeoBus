@@ -394,9 +394,14 @@ export default function AuthModal() {
                   )}
 
                   {isSignUp && (
-                    <div className="py-1 px-3 bg-geobus-neon/5 border border-geobus-neon/15 rounded-xl flex items-center gap-2 text-[10px] text-geobus-neon/80">
-                      <Sparkles className="w-3.5 h-3.5 shrink-0" />
-                      <span>Creating an account will automatically dispatch an email verification.</span>
+                    <div className="py-2.5 px-3.5 bg-geobus-neon/5 border border-geobus-neon/15 rounded-xl flex flex-col gap-1 text-[10px] text-geobus-neon/85">
+                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-geobus-neon">
+                        <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                        <span>Email Verification Note</span>
+                      </div>
+                      <p className="text-white/60 pl-5 leading-relaxed font-sans">
+                        A secure verification link will be dispatched automatically. **Please check your Spam or Promotions folder** if it does not arrive in your primary inbox!
+                      </p>
                     </div>
                   )}
 

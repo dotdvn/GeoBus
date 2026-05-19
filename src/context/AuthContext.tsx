@@ -20,9 +20,8 @@ interface AuthContextType {
   openAuthModal: () => void;
   closeAuthModal: () => void;
   loginWithGoogle: () => Promise<void>;
-  sendPhoneOtp: (phone: string, elementId: string) => Promise<boolean>;
-  verifyPhoneOtp: (code: string) => Promise<boolean>;
-  loginWithEmailPassword: (emailOrId: string, pass: string, role: "driver" | "admin") => Promise<void>;
+  loginWithEmailPassword: (emailOrId: string, pass: string, role: "passenger" | "driver" | "admin") => Promise<void>;
+  signUpPassenger: (email: string, pass: string) => Promise<void>;
   logout: () => Promise<void>;
 }
 
@@ -34,7 +33,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AppUser | null>(null);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [phoneState, setPhoneState] = useState<string | null>(null);
 
   // Monitor auth status changes on the Supabase client
   useEffect(() => {
@@ -97,37 +95,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  // 2. Phone OTP Authentication
-  const sendPhoneOtp = async (phone: string, elementId: string) => {
-    setLoading(true);
-    setPhoneState(phone);
-    try {
-      const { error } = await supabase.auth.signInWithOtp({
-        phone: phone,
-      });
-
-      if (error) throw error;
-      return true;
-    } catch (err) {
-      console.error("Supabase Phone OTP exception:", err);
-      throw err;
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const verifyPhoneOtp = async (code: string) => {
+  // 2. Passenger Sign Up (Email/Password)
+  const signUpPassenger = async (email: string, pass: string) => {
     setLoading(true);
     try {
-      if (!phoneState) {
-        throw new Error("No phone number state found. Please try again.");
-      }
-
-      // Live Supabase OTP Verification
-      const { data, error } = await supabase.auth.verifyOtp({
-        phone: phoneState,
-        token: code,
-        type: "sms",
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password: pass,
       });
 
       if (error) throw error;
@@ -137,27 +111,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser({
           uid: data.user.id,
           email: data.user.email || null,
-          phoneNumber: data.user.phone || null,
-          displayName: "Passenger User",
+          phoneNumber: null,
+          displayName: email.split("@")[0],
           role: "passenger",
         });
         setIsModalOpen(false);
-        return true;
       }
-      throw new Error("Verification process failed.");
-    } catch (err: any) {
-      console.error("Supabase OTP verification error:", err);
+    } catch (err) {
+      console.error("Supabase sign up error:", err);
       throw err;
     } finally {
       setLoading(false);
     }
   };
 
-  // 3. Driver & Admin Email Credentials
-  const loginWithEmailPassword = async (emailOrId: string, pass: string, role: "driver" | "admin") => {
+  // 3. Email & Password Log In (Passenger, Driver, or Admin)
+  const loginWithEmailPassword = async (emailOrId: string, pass: string, role: "passenger" | "driver" | "admin") => {
     setLoading(true);
     try {
-      const resolvedEmail = emailOrId.includes("@") ? emailOrId : `${emailOrId}@geobus-fleet.com`;
+      // If it is a Driver login and they entered a raw ID (e.g. DRV-99321), resolve to fleet domain email
+      const resolvedEmail = (role === "driver" && !emailOrId.includes("@")) 
+        ? `${emailOrId}@geobus-fleet.com` 
+        : emailOrId;
       
       const { data, error } = await supabase.auth.signInWithPassword({
         email: resolvedEmail,
@@ -172,7 +147,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           uid: data.user.id,
           email: data.user.email || null,
           phoneNumber: null,
-          displayName: role === "admin" ? "GeoBus Admin Command" : `Driver #${emailOrId}`,
+          displayName: role === "admin" 
+            ? "GeoBus Admin Command" 
+            : role === "driver" 
+              ? `Driver #${emailOrId}` 
+              : emailOrId.split("@")[0],
           role,
         });
         setIsModalOpen(false);
@@ -207,8 +186,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         openAuthModal, 
         closeAuthModal, 
         loginWithGoogle,
-        sendPhoneOtp,
-        verifyPhoneOtp,
+        signUpPassenger,
         loginWithEmailPassword,
         logout 
       }}

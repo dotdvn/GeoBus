@@ -2,16 +2,16 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
+import {
   X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2, Eye, EyeOff, RefreshCw, Check
 } from "lucide-react";
 import { useAuth, type UserRole } from "@/context/AuthContext";
 
 export default function AuthModal() {
-  const { 
-    isModalOpen, 
-    closeAuthModal, 
-    loginWithGoogle, 
+  const {
+    isModalOpen,
+    closeAuthModal,
+    loginWithGoogle,
     signUpPassenger,
     loginWithEmailPassword,
     resendVerificationEmail,
@@ -160,7 +160,7 @@ export default function AuthModal() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Dark Overlay background */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -169,7 +169,7 @@ export default function AuthModal() {
       />
 
       {/* Modal Card */}
-      <motion.div 
+      <motion.div
         initial={{ scale: 0.9, y: 20, opacity: 0 }}
         animate={{ scale: 1, y: 0, opacity: 1 }}
         exit={{ scale: 0.9, y: 20, opacity: 0 }}
@@ -177,21 +177,19 @@ export default function AuthModal() {
         className="relative w-full max-w-lg glass-card rounded-[32px] overflow-hidden border border-white/10 shadow-2xl z-10 p-6 md:p-8"
       >
         {/* Glow Effects */}
-        <div className={`absolute top-0 right-1/4 w-[250px] h-[250px] rounded-full blur-[80px] opacity-10 pointer-events-none transition-colors duration-500 ${
-          activeTab === "passenger" ? "bg-geobus-neon" : activeTab === "driver" ? "bg-blue-500" : "bg-red-500"
-        }`} />
+        <div className={`absolute top-0 right-1/4 w-[250px] h-[250px] rounded-full blur-[80px] opacity-10 pointer-events-none transition-colors duration-500 ${activeTab === "passenger" ? "bg-geobus-neon" : activeTab === "driver" ? "bg-blue-500" : "bg-red-500"
+          }`} />
 
         {/* Header */}
         <div className="flex justify-between items-center mb-6 relative z-10">
           <div className="flex items-center gap-2">
-            <span className={`w-2 h-2 rounded-full animate-pulse ${
-              activeTab === "passenger" ? "bg-geobus-neon" : activeTab === "driver" ? "bg-blue-400" : "bg-red-500"
-            }`} />
+            <span className={`w-2 h-2 rounded-full animate-pulse ${activeTab === "passenger" ? "bg-geobus-neon" : activeTab === "driver" ? "bg-blue-400" : "bg-red-500"
+              }`} />
             <span className="text-sm font-semibold tracking-widest text-white/50 uppercase font-heading">
-              Firebase Gateway
+              Velora Gateway
             </span>
           </div>
-          <button 
+          <button
             onClick={closeAuthModal}
             className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center border border-white/10 hover:border-white/20 transition-all hover:bg-white/10"
           >
@@ -202,7 +200,7 @@ export default function AuthModal() {
         {/* Title */}
         <div className="mb-6 relative z-10">
           <h2 className="text-3xl font-heading font-extrabold text-white tracking-tight uppercase">
-            {activeTab === "passenger" 
+            {activeTab === "passenger"
               ? isSignUp ? "Passenger Sign-Up" : "Passenger Sign-In"
               : activeTab === "driver" ? "Driver Console" : "Security Command"}
           </h2>
@@ -217,15 +215,14 @@ export default function AuthModal() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-3 text-sm font-bold rounded-xl uppercase tracking-wider transition-all duration-300 relative ${
-                activeTab === tab 
-                  ? tab === "passenger" 
-                    ? "bg-geobus-neon text-black shadow-[0_0_15px_rgba(182,255,59,0.3)] font-black" 
+              className={`flex-1 py-3 text-sm font-bold rounded-xl uppercase tracking-wider transition-all duration-300 relative ${activeTab === tab
+                  ? tab === "passenger"
+                    ? "bg-geobus-neon text-black shadow-[0_0_15px_rgba(182,255,59,0.3)] font-black"
                     : tab === "driver"
                       ? "bg-blue-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.3)]"
                       : "bg-red-600 text-white shadow-[0_0_15px_rgba(220,38,38,0.3)]"
                   : "text-white/50 hover:text-white hover:bg-white/5"
-              }`}
+                }`}
             >
               <div className="flex items-center justify-center gap-1.5">
                 {tab === "passenger" && <User className="w-4 h-4" />}
@@ -239,7 +236,7 @@ export default function AuthModal() {
 
         {/* Errors Block */}
         {error && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="flex items-start gap-3 bg-red-950/40 border border-red-500/20 p-4 rounded-2xl mb-6 relative z-10"
@@ -251,7 +248,7 @@ export default function AuthModal() {
 
         {/* Success Alert Block with Verification Utilities */}
         {success && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="bg-green-950/40 border border-green-500/20 p-5 rounded-2xl mb-6 relative z-10 space-y-4"
@@ -260,7 +257,7 @@ export default function AuthModal() {
               <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
               <div className="text-sm text-green-200 font-medium leading-relaxed">{success}</div>
             </div>
-            
+
             {/* Quick-action buttons for verification resend and bypass */}
             {activeTab === "passenger" && (
               <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
@@ -298,7 +295,7 @@ export default function AuthModal() {
                 exit={{ opacity: 0, x: 10 }}
               >
                 <form onSubmit={handlePassengerSubmit} className="space-y-4">
-                  
+
                   {isSignUp && (
                     <div>
                       <label className="block text-[10px] font-bold text-white/50 uppercase tracking-widest mb-1.5 font-heading">
@@ -400,7 +397,7 @@ export default function AuthModal() {
                         <span>Email Verification Note</span>
                       </div>
                       <p className="text-white/60 pl-5 leading-relaxed font-sans">
-                        A secure verification link will be dispatched automatically. **Please check your Spam or Promotions folder** if it does not arrive in your primary inbox!
+                        A secure verification link will be dispatched automatically. *Please check your Spam or Promotions folder if it does not arrive in your primary inbox!
                       </p>
                     </div>
                   )}
@@ -518,11 +515,10 @@ export default function AuthModal() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`w-full py-4 text-black font-extrabold uppercase rounded-2xl transition-all tracking-wider font-heading flex items-center justify-center gap-2 disabled:opacity-50 ${
-                      activeTab === "driver" 
+                    className={`w-full py-4 text-black font-extrabold uppercase rounded-2xl transition-all tracking-wider font-heading flex items-center justify-center gap-2 disabled:opacity-50 ${activeTab === "driver"
                         ? "bg-blue-500 hover:bg-blue-400 text-white shadow-[0_0_15px_rgba(59,130,246,0.3)]"
                         : "bg-red-600 hover:bg-red-500 text-white shadow-[0_0_15px_rgba(220,38,38,0.3)]"
-                    }`}
+                      }`}
                   >
                     {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : `Access Secure Portal`}
                   </button>

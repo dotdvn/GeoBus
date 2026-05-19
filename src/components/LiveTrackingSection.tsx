@@ -103,8 +103,8 @@ export default function LiveTrackingSection() {
     stationMarkers.current = [];
 
     // Filter which stations to display
-    const targetStations = showAllBusStops 
-      ? (stationsData as Station[]) 
+    const targetStations = showAllBusStops
+      ? (stationsData as Station[])
       : selectedStops;
 
     targetStations.forEach((station) => {
@@ -168,7 +168,7 @@ export default function LiveTrackingSection() {
           <Navigation className="w-3.5 h-3.5" />
           <span>Live Fleet Telemetry</span>
         </motion.div>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -190,13 +190,13 @@ export default function LiveTrackingSection() {
           <div className="absolute inset-0 rounded-3xl pointer-events-none border border-white/10 z-10" />
 
           <div className="w-full h-full rounded-2xl overflow-hidden relative">
-            
+
             {/* MapLibre Container */}
             <div ref={mapContainer} id="map" className="w-full h-full rounded-2xl overflow-hidden" />
 
             {/* Interactive Lock Overlay Block */}
             {isMapLocked && (
-              <div 
+              <div
                 onClick={handleUnlockMap}
                 className="absolute inset-0 bg-black/55 backdrop-blur-[1px] flex flex-col items-center justify-center cursor-pointer z-30 group transition-all duration-300"
               >
@@ -220,7 +220,6 @@ export default function LiveTrackingSection() {
                 className="absolute bottom-6 left-6 z-20 px-3.5 py-2.5 bg-geobus-neon hover:bg-[#a5e635] text-black border border-geobus-neon rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-2 shadow-[0_0_15px_rgba(182,255,59,0.3)] hover:scale-102 transition-transform cursor-pointer"
               >
                 <Unlock className="w-3.5 h-3.5" />
-                <span>Lock Map Scroll</span>
               </button>
             )}
 

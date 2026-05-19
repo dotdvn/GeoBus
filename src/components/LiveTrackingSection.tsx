@@ -63,39 +63,24 @@ export default function LiveTrackingSection() {
     // Disable scroll zoom initially so users can scroll down the page past the map
     map.current.scrollZoom.disable();
 
-    // Create a custom neon bus marker element matching the premium circle design in the reference image
+    // Create a custom neon bus marker element matching the premium pure CSS logo layout
     const el = document.createElement("div");
     el.className = "bus-marker-element";
-    el.style.width = "44px";
-    el.style.height = "44px";
-    el.style.backgroundColor = "#B6FF3B";
-    el.style.border = "none";
-    el.style.borderRadius = "50%"; // Perfect circular pin!
-    el.style.display = "flex";
-    el.style.alignItems = "center";
-    el.style.justifyContent = "center";
-    el.style.boxShadow = "0 0 15px rgba(182, 255, 59, 0.6)";
     el.style.cursor = "pointer";
 
     el.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <!-- Tires (Black) -->
-        <rect x="6.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
-        <rect x="14.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
-        
-        <!-- Main Bus Body (Solid Black) -->
-        <rect x="5.5" y="3" width="13" height="15.5" rx="4" fill="#000000" />
-        
-        <!-- Route Indicator Sign Board (Hollowed out with Neon Green color) -->
-        <rect x="8" y="4.5" width="8" height="1.6" rx="0.8" fill="#B6FF3B" />
-        
-        <!-- Windshield (Hollowed out with Neon Green color) -->
-        <rect x="6.5" y="7.5" width="11" height="5.5" rx="1.5" fill="#B6FF3B" />
-        
-        <!-- Headlights (Hollowed out with Neon Green color) -->
-        <circle cx="8" cy="15" r="1.5" fill="#B6FF3B" />
-        <circle cx="16" cy="15" r="1.5" fill="#B6FF3B" />
-      </svg>
+      <div class="logo" style="transform: scale(1.15);">
+        <div class="circle">
+          <div class="bus">
+            <div class="top"></div>
+            <div class="window"></div>
+            <div class="light left"></div>
+            <div class="light right"></div>
+            <div class="wheel left"></div>
+            <div class="wheel right"></div>
+          </div>
+        </div>
+      </div>
     `;
 
     marker.current = new maplibregl.Marker({ element: el })

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock
+  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2
 } from "lucide-react";
 import { useAuth, type UserRole } from "@/context/AuthContext";
 
@@ -19,11 +19,14 @@ export default function AuthModal() {
   const [activeTab, setActiveTab] = useState<"passenger" | "driver" | "admin">("passenger");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
-  // Passenger state (Email/Password + Toggle to Sign Up)
+  // Passenger state (Email/Password + Username + Confirm Password)
   const [isSignUp, setIsSignUp] = useState(false);
   const [passengerEmail, setPassengerEmail] = useState("");
+  const [passengerUsername, setPassengerUsername] = useState("");
   const [passengerPassword, setPassengerPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   // Driver/Admin states
   const [emailOrId, setEmailOrId] = useState("");
@@ -32,9 +35,12 @@ export default function AuthModal() {
   // Clear states when tab changes
   useEffect(() => {
     setError(null);
+    setSuccess(null);
     setIsSignUp(false);
     setPassengerEmail("");
+    setPassengerUsername("");
     setPassengerPassword("");
+    setConfirmPassword("");
     setEmailOrId("");
     setPassword("");
   }, [activeTab]);
@@ -44,23 +50,45 @@ export default function AuthModal() {
   // Handle Passenger Sign In or Sign Up
   const handlePassengerSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
+    setSuccess(null);
+
     if (!passengerEmail || !passengerPassword) {
-      setError("Please fill in all fields.");
+      setError("Please fill in all required fields.");
       return;
     }
+
     if (passengerPassword.length < 6) {
       setError("Password must be at least 6 characters long.");
       return;
     }
-    setError(null);
+
+    if (isSignUp) {
+      if (!passengerUsername) {
+        setError("Please enter a username.");
+        return;
+      }
+      if (passengerPassword !== confirmPassword) {
+        setError("Passwords do not match. Please try again.");
+        return;
+      }
+    }
+
     setLoading(true);
     try {
       if (isSignUp) {
-        await signUpPassenger(passengerEmail, passengerPassword);
+        await signUpPassenger(passengerEmail, passengerPassword, passengerUsername);
+        setSuccess("Account created successfully! A secure verification email has been sent. Please check your inbox.");
+        // Clear sign up inputs
+        setPassengerEmail("");
+        setPassengerUsername("");
+        setPassengerPassword("");
+        setConfirmPassword("");
+        setIsSignUp(false);
       } else {
         await loginWithEmailPassword(passengerEmail, passengerPassword, "passenger");
+        closeAuthModal();
       }
-      closeAuthModal();
     } catch (err: any) {
       setError(err.message || "Authentication failed. Check your credentials.");
     } finally {
@@ -76,6 +104,7 @@ export default function AuthModal() {
       return;
     }
     setError(null);
+    setSuccess(null);
     setLoading(true);
     try {
       await loginWithEmailPassword(emailOrId, password, activeTab as "driver" | "admin");
@@ -118,7 +147,7 @@ export default function AuthModal() {
               activeTab === "passenger" ? "bg-geobus-neon" : activeTab === "driver" ? "bg-blue-400" : "bg-red-500"
             }`} />
             <span className="text-sm font-semibold tracking-widest text-white/50 uppercase font-heading">
-              Secure Gateway
+              Firebase Gateway
             </span>
           </div>
           <button 
@@ -179,6 +208,18 @@ export default function AuthModal() {
           </motion.div>
         )}
 
+        {/* Success Block */}
+        {success && (
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex items-start gap-3 bg-green-950/40 border border-green-500/20 p-4 rounded-2xl mb-6 relative z-10"
+          >
+            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+            <div className="text-sm text-green-200">{success}</div>
+          </motion.div>
+        )}
+
         {/* Tab Contents */}
         <div className="relative z-10">
           <AnimatePresence mode="wait">
@@ -189,9 +230,31 @@ export default function AuthModal() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
               >
-                <form onSubmit={handlePassengerSubmit} className="space-y-5">
+                <form onSubmit={handlePassengerSubmit} className="space-y-4">
+                  
+                  {isSignUp && (
+                    <div>
+                      <label className="block text-[10px] font-bold text-white/50 uppercase tracking-widest mb-1.5 font-heading">
+                        Username
+                      </label>
+                      <div className="relative flex items-center bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 focus-within:border-geobus-neon/50 transition-all">
+                        <div className="pl-4 text-geobus-text">
+                          <User className="w-4 h-4" />
+                        </div>
+                        <input
+                          type="text"
+                          value={passengerUsername}
+                          onChange={(e) => setPassengerUsername(e.target.value)}
+                          placeholder="johndoe"
+                          required
+                          className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
+                        />
+                      </div>
+                    </div>
+                  )}
+
                   <div>
-                    <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2 font-heading">
+                    <label className="block text-[10px] font-bold text-white/50 uppercase tracking-widest mb-1.5 font-heading">
                       Email Address
                     </label>
                     <div className="relative flex items-center bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 focus-within:border-geobus-neon/50 transition-all">
@@ -204,13 +267,13 @@ export default function AuthModal() {
                         onChange={(e) => setPassengerEmail(e.target.value)}
                         placeholder="passenger@example.com"
                         required
-                        className="w-full bg-transparent border-none outline-none py-4 px-4 text-white placeholder:text-white/20 font-sans"
+                        className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-white/50 uppercase tracking-widest mb-2 font-heading">
+                    <label className="block text-[10px] font-bold text-white/50 uppercase tracking-widest mb-1.5 font-heading">
                       Password
                     </label>
                     <div className="relative flex items-center bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 focus-within:border-geobus-neon/50 transition-all">
@@ -223,21 +286,49 @@ export default function AuthModal() {
                         onChange={(e) => setPassengerPassword(e.target.value)}
                         placeholder="••••••••"
                         required
-                        className="w-full bg-transparent border-none outline-none py-4 px-4 text-white placeholder:text-white/20 font-sans"
+                        className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
                       />
                     </div>
                   </div>
+
+                  {isSignUp && (
+                    <div>
+                      <label className="block text-[10px] font-bold text-white/50 uppercase tracking-widest mb-1.5 font-heading">
+                        Confirm Password
+                      </label>
+                      <div className="relative flex items-center bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 focus-within:border-geobus-neon/50 transition-all">
+                        <div className="pl-4 text-geobus-text">
+                          <Lock className="w-4 h-4" />
+                        </div>
+                        <input
+                          type="password"
+                          value={confirmPassword}
+                          onChange={(e) => setConfirmPassword(e.target.value)}
+                          placeholder="••••••••"
+                          required
+                          className="w-full bg-transparent border-none outline-none py-3 px-4 text-white placeholder:text-white/20 font-sans text-sm"
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {isSignUp && (
+                    <div className="py-1 px-3 bg-geobus-neon/5 border border-geobus-neon/15 rounded-xl flex items-center gap-2 text-[10px] text-geobus-neon/80">
+                      <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                      <span>Creating an account will automatically dispatch an email verification.</span>
+                    </div>
+                  )}
 
                   <button
                     type="submit"
                     disabled={loading}
                     className="w-full py-4 bg-geobus-neon hover:bg-[#a5e635] text-black font-extrabold uppercase rounded-2xl transition-all tracking-wider font-heading flex items-center justify-center gap-2 disabled:opacity-50 neon-glow"
                   >
-                    {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : isSignUp ? "Create Account" : "Access Secure Portal"}
+                    {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : isSignUp ? "Verify & Create Account" : "Access Secure Portal"}
                     {!loading && <ArrowRight className="w-5 h-5" />}
                   </button>
 
-                  <div className="text-center mt-4">
+                  <div className="text-center mt-3">
                     <button
                       type="button"
                       onClick={() => setIsSignUp(!isSignUp)}
@@ -248,7 +339,7 @@ export default function AuthModal() {
                   </div>
 
                   {/* Google Login Separator */}
-                  <div className="relative my-8 flex items-center justify-center">
+                  <div className="relative my-6 flex items-center justify-center">
                     <div className="absolute inset-x-0 h-px bg-white/10" />
                     <span className="relative bg-[#0d0d0d] px-4 text-xs font-bold text-white/30 uppercase tracking-wider">
                       Or authenticate with

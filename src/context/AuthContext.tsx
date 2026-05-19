@@ -1,7 +1,17 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { createClient } from "@/utils/supabase/client";
+import { auth, googleProvider, isFirebaseConfigured } from "@/lib/firebase";
+import { 
+  signInWithPopup, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword, 
+  updateProfile, 
+  sendEmailVerification, 
+  signOut, 
+  onAuthStateChanged,
+  type User as FirebaseUser
+} from "firebase/auth";
 
 export type UserRole = "passenger" | "driver" | "admin" | null;
 
@@ -11,6 +21,7 @@ export interface AppUser {
   phoneNumber: string | null;
   displayName: string | null;
   role: UserRole;
+  emailVerified: boolean;
 }
 
 interface AuthContextType {
@@ -21,48 +32,35 @@ interface AuthContextType {
   closeAuthModal: () => void;
   loginWithGoogle: () => Promise<void>;
   loginWithEmailPassword: (emailOrId: string, pass: string, role: "passenger" | "driver" | "admin") => Promise<void>;
-  signUpPassenger: (email: string, pass: string) => Promise<void>;
+  signUpPassenger: (email: string, pass: string, username: string) => Promise<void>;
   logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
-
-const supabase = createClient();
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AppUser | null>(null);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Monitor auth status changes on the Supabase client
+  // Monitor auth status changes on the Firebase client
   useEffect(() => {
-    // 1. Initial Session Check
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) {
-        const sbUser = session.user;
-        const localRole = localStorage.getItem(`geobus_role_${sbUser.id}`) as UserRole || "passenger";
-        setUser({
-          uid: sbUser.id,
-          email: sbUser.email || null,
-          phoneNumber: sbUser.phone || null,
-          displayName: sbUser.user_metadata?.full_name || sbUser.email?.split('@')[0] || "Passenger User",
-          role: localRole,
-        });
-      }
+    if (!isFirebaseConfigured) {
       setLoading(false);
-    });
+      return;
+    }
 
-    // 2. Auth state subscriptions
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (session) {
-        const sbUser = session.user;
-        const localRole = localStorage.getItem(`geobus_role_${sbUser.id}`) as UserRole || "passenger";
+    const unsubscribe = onAuthStateChanged(auth, async (fbUser) => {
+      if (fbUser) {
+        // Resolve user role
+        const localRole = localStorage.getItem(`geobus_role_${fbUser.uid}`) as UserRole || "passenger";
         setUser({
-          uid: sbUser.id,
-          email: sbUser.email || null,
-          phoneNumber: sbUser.phone || null,
-          displayName: sbUser.user_metadata?.full_name || sbUser.email?.split('@')[0] || "Passenger User",
+          uid: fbUser.uid,
+          email: fbUser.email,
+          phoneNumber: fbUser.phoneNumber,
+          displayName: fbUser.displayName || fbUser.email?.split('@')[0] || "Passenger",
           role: localRole,
+          emailVerified: fbUser.emailVerified,
         });
       } else {
         setUser(null);
@@ -70,7 +68,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setLoading(false);
     });
 
-    return () => subscription.unsubscribe();
+    return () => unsubscribe();
   }, []);
 
   const openAuthModal = () => setIsModalOpen(true);
@@ -78,47 +76,58 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // 1. Google Single Sign-On (OAuth)
   const loginWithGoogle = async () => {
+    if (!isFirebaseConfigured) return;
     setLoading(true);
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: {
-          redirectTo: `${window.location.origin}/`,
-        }
-      });
-      if (error) throw error;
+      const userCredential = await signInWithPopup(auth, googleProvider);
+      if (userCredential.user) {
+        localStorage.setItem(`geobus_role_${userCredential.user.uid}`, "passenger");
+        setUser({
+          uid: userCredential.user.uid,
+          email: userCredential.user.email,
+          phoneNumber: userCredential.user.phoneNumber,
+          displayName: userCredential.user.displayName,
+          role: "passenger",
+          emailVerified: userCredential.user.emailVerified,
+        });
+        setIsModalOpen(false);
+      }
     } catch (err) {
-      console.error("Supabase Google Auth redirect failed:", err);
+      console.error("Firebase Google Auth failed:", err);
       throw err;
     } finally {
       setLoading(false);
     }
   };
 
-  // 2. Passenger Sign Up (Email/Password)
-  const signUpPassenger = async (email: string, pass: string) => {
+  // 2. Passenger Sign Up with Username & Email Verification
+  const signUpPassenger = async (email: string, pass: string, username: string) => {
+    if (!isFirebaseConfigured) return;
     setLoading(true);
     try {
-      const { data, error } = await supabase.auth.signUp({
-        email,
-        password: pass,
+      // Create user
+      const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
+      const fbUser = userCredential.user;
+
+      // Update Display Name (Username)
+      await updateProfile(fbUser, { displayName: username });
+
+      // Send Verification Email
+      await sendEmailVerification(fbUser);
+
+      localStorage.setItem(`geobus_role_${fbUser.uid}`, "passenger");
+      setUser({
+        uid: fbUser.uid,
+        email: fbUser.email,
+        phoneNumber: fbUser.phoneNumber,
+        displayName: username,
+        role: "passenger",
+        emailVerified: false, // verification is dispatched but not yet verified
       });
-
-      if (error) throw error;
-
-      if (data?.user) {
-        localStorage.setItem(`geobus_role_${data.user.id}`, "passenger");
-        setUser({
-          uid: data.user.id,
-          email: data.user.email || null,
-          phoneNumber: null,
-          displayName: email.split("@")[0],
-          role: "passenger",
-        });
-        setIsModalOpen(false);
-      }
+      
+      setIsModalOpen(false);
     } catch (err) {
-      console.error("Supabase sign up error:", err);
+      console.error("Firebase sign up failed:", err);
       throw err;
     } finally {
       setLoading(false);
@@ -127,35 +136,26 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // 3. Email & Password Log In (Passenger, Driver, or Admin)
   const loginWithEmailPassword = async (emailOrId: string, pass: string, role: "passenger" | "driver" | "admin") => {
+    if (!isFirebaseConfigured) return;
     setLoading(true);
     try {
-      // If it is a Driver login and they entered a raw ID (e.g. DRV-99321), resolve to fleet domain email
       const resolvedEmail = (role === "driver" && !emailOrId.includes("@")) 
         ? `${emailOrId}@geobus-fleet.com` 
         : emailOrId;
       
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: resolvedEmail,
-        password: pass,
+      const userCredential = await signInWithEmailAndPassword(auth, resolvedEmail, pass);
+      const fbUser = userCredential.user;
+
+      localStorage.setItem(`geobus_role_${fbUser.uid}`, role);
+      setUser({
+        uid: fbUser.uid,
+        email: fbUser.email,
+        phoneNumber: fbUser.phoneNumber,
+        displayName: fbUser.displayName || resolvedEmail.split("@")[0],
+        role,
+        emailVerified: fbUser.emailVerified,
       });
-
-      if (error) throw error;
-
-      if (data?.user) {
-        localStorage.setItem(`geobus_role_${data.user.id}`, role);
-        setUser({
-          uid: data.user.id,
-          email: data.user.email || null,
-          phoneNumber: null,
-          displayName: role === "admin" 
-            ? "GeoBus Admin Command" 
-            : role === "driver" 
-              ? `Driver #${emailOrId}` 
-              : emailOrId.split("@")[0],
-          role,
-        });
-        setIsModalOpen(false);
-      }
+      setIsModalOpen(false);
     } catch (err: any) {
       console.error(`${role} login failed:`, err);
       throw err;
@@ -166,9 +166,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // 4. Log out
   const logout = async () => {
+    if (!isFirebaseConfigured) return;
     setLoading(true);
     try {
-      await supabase.auth.signOut();
+      await signOut(auth);
       setUser(null);
     } catch (err) {
       console.error("Sign out error:", err);

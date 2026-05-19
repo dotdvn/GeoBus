@@ -69,7 +69,7 @@ export default function LiveTrackingSection() {
     el.style.width = "44px";
     el.style.height = "44px";
     el.style.backgroundColor = "#B6FF3B";
-    el.style.border = "none";
+    el.style.border = "2px solid #000000";
     el.style.borderRadius = "50%"; // Perfect circular pin!
     el.style.display = "flex";
     el.style.alignItems = "center";

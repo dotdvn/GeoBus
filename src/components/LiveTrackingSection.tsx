@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import { Navigation } from "lucide-react";
+import { Navigation, Lock, Unlock } from "lucide-react";
 import maplibregl from "maplibre-gl";
 import stationsData from "../data/stations.json";
 import { Station } from "../utils/searchEngine";
@@ -11,6 +11,8 @@ export default function LiveTrackingSection() {
   const [busPosition, setBusPosition] = useState({ lat: 9.9312, lng: 76.2673 }); // Kerala [lat, lng]
   const [showAllBusStops, setShowAllBusStops] = useState(false);
   const [selectedStops, setSelectedStops] = useState<Station[]>([]);
+  const [isMapLocked, setIsMapLocked] = useState(true);
+
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maplibregl.Map | null>(null);
   const marker = useRef<maplibregl.Marker | null>(null);
@@ -58,6 +60,9 @@ export default function LiveTrackingSection() {
       attributionControl: false,
     });
 
+    // Disable scroll zoom initially so users can scroll down the page past the map
+    map.current.scrollZoom.disable();
+
     // Create a custom neon bus marker element
     const el = document.createElement("div");
     el.className = "bus-marker-element";
@@ -97,105 +102,78 @@ export default function LiveTrackingSection() {
     stationMarkers.current.forEach(m => m.remove());
     stationMarkers.current = [];
 
-    // Filter which stations to display: 
-    // If showAllBusStops is false, ONLY show the selectedStops!
-    // If showAllBusStops is true, show all 295 stations
-    const stationsToShow = showAllBusStops
-      ? (stationsData as Station[])
+    // Filter which stations to display
+    const targetStations = showAllBusStops 
+      ? (stationsData as Station[]) 
       : selectedStops;
 
-    // Render new markers
-    stationsToShow.forEach((station) => {
-      const isSelected = selectedStops.some(s => s.id === station.id);
+    targetStations.forEach((station) => {
+      // Small neon stop element
+      const el = document.createElement("div");
+      el.className = "station-marker-element";
+      el.style.width = "12px";
+      el.style.height = "12px";
+      el.style.backgroundColor = "#B6FF3B";
+      el.style.border = "2px solid #000";
+      el.style.borderRadius = "50%";
+      el.style.boxShadow = "0 0 8px #B6FF3B";
+      el.style.cursor = "pointer";
 
-      let el: HTMLElement | undefined = undefined;
-      if (isSelected && !showAllBusStops) {
-        // Create custom neon stop marker element for the selected route stops
-        el = document.createElement("div");
-        el.className = "selected-stop-marker";
-        el.style.width = "16px";
-        el.style.height = "16px";
-        el.style.backgroundColor = "#B6FF3B";
-        el.style.border = "2px solid #0a0a0a";
-        el.style.borderRadius = "50%";
-        el.style.boxShadow = "0 0 10px #B6FF3B";
-        el.style.cursor = "pointer";
-      }
+      // Add simple popup on hover/click
+      const popup = new maplibregl.Popup({ offset: 10, closeButton: false })
+        .setHTML(`<div style="color: #000; font-family: sans-serif; font-size: 11px; font-weight: bold; padding: 2px 4px;">${station.name}</div>`);
 
       const m = new maplibregl.Marker({ element: el })
         .setLngLat([station.lng, station.lat])
-        .setPopup(
-          new maplibregl.Popup({ closeButton: false })
-            .setText(station.name)
-        )
+        .setPopup(popup)
         .addTo(map.current!);
 
       stationMarkers.current.push(m);
     });
-  }, [showAllBusStops, map.current, selectedStops]);
+  }, [showAllBusStops, selectedStops]);
 
-  // Update marker position smoothly (without auto-relocating map camera)
+  // Synchronize dynamic bus marker location
   useEffect(() => {
-    if (marker.current) {
+    if (marker.current && map.current) {
       marker.current.setLngLat([busPosition.lng, busPosition.lat]);
     }
   }, [busPosition]);
 
-  // Focus station helper function
-  const focusStation = (station: Station) => {
+  // Handle Lock / Unlock actions
+  const handleUnlockMap = () => {
+    setIsMapLocked(false);
     if (map.current) {
-      map.current.flyTo({
-        center: [station.lng, station.lat],
-        zoom: 14,
-        essential: true
-      });
+      map.current.scrollZoom.enable();
     }
   };
 
-  // Add event listener to dynamically focus map on selected search station
-  useEffect(() => {
-    const handleFocusStation = (e: Event) => {
-      const station = (e as CustomEvent).detail as Station;
-      if (station) {
-        // Add to selected stops list dynamically if not already present
-        setSelectedStops(prev => {
-          if (prev.some(s => s.id === station.id)) return prev;
-          return [...prev, station];
-        });
-
-        // Smoothly scroll to the map tracking section
-        const section = document.getElementById("live-tracking");
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-
-        // Trigger map zoom and pan flight
-        focusStation(station);
-      }
-    };
-
-    window.addEventListener("focus-station", handleFocusStation);
-    return () => window.removeEventListener("focus-station", handleFocusStation);
-  }, []);
+  const handleLockMap = () => {
+    setIsMapLocked(true);
+    if (map.current) {
+      map.current.scrollZoom.disable();
+    }
+  };
 
   return (
-    <section id="live-tracking" className="py-32 relative bg-geobus-black border-t border-white/5">
-      <div className="container px-6 mx-auto mb-12 text-center">
+    <section id="tracking" className="py-24 bg-[#050505] relative overflow-hidden">
+      {/* Title */}
+      <div className="text-center mb-16 px-6">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-geobus-neon/10 border border-geobus-neon/20 mb-6"
-        >
-          <div className="w-2 h-2 rounded-full bg-geobus-neon animate-pulse" />
-          <span className="text-xs font-semibold text-geobus-neon uppercase tracking-wider">Live System Active</span>
-        </motion.div>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-heading font-bold text-white uppercase tracking-tight"
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 px-4 py-2 bg-geobus-neon/5 border border-geobus-neon/10 rounded-full mb-4 text-xs font-bold text-geobus-neon uppercase tracking-widest font-heading"
+        >
+          <Navigation className="w-3.5 h-3.5" />
+          <span>Live Fleet Telemetry</span>
+        </motion.div>
+        <motion.h2 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-4xl md:text-5xl font-heading font-extrabold uppercase text-white tracking-tight leading-none"
         >
           Real-Time Tracking
         </motion.h2>
@@ -207,13 +185,44 @@ export default function LiveTrackingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="relative h-[100vh] w-full rounded-3xl overflow-hidden glass-card p-2"
+          className="relative h-[80vh] w-full rounded-3xl overflow-hidden glass-card p-2"
         >
           <div className="absolute inset-0 rounded-3xl pointer-events-none border border-white/10 z-10" />
 
           <div className="w-full h-full rounded-2xl overflow-hidden relative">
+            
             {/* MapLibre Container */}
             <div ref={mapContainer} id="map" className="w-full h-full rounded-2xl overflow-hidden" />
+
+            {/* Interactive Lock Overlay Block */}
+            {isMapLocked && (
+              <div 
+                onClick={handleUnlockMap}
+                className="absolute inset-0 bg-black/55 backdrop-blur-[1px] flex flex-col items-center justify-center cursor-pointer z-30 group transition-all duration-300"
+              >
+                <div className="glass-card p-6 rounded-[24px] border border-white/10 flex flex-col items-center gap-3 text-center max-w-[280px] group-hover:scale-105 transition-transform duration-300 shadow-2xl">
+                  <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-geobus-neon shadow-[0_0_15px_rgba(182,255,59,0.2)]">
+                    <Lock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-heading font-extrabold uppercase tracking-wider text-xs">Interactive Map Locked</h4>
+                    <p className="text-xs text-geobus-text mt-1.5 leading-relaxed">Click anywhere on the map to unlock zooming & panning</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Floating Unlock Padlock Button */}
+            {!isMapLocked && (
+              <button
+                type="button"
+                onClick={handleLockMap}
+                className="absolute bottom-6 left-6 z-20 px-3.5 py-2.5 bg-geobus-neon hover:bg-[#a5e635] text-black border border-geobus-neon rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-2 shadow-[0_0_15px_rgba(182,255,59,0.3)] hover:scale-102 transition-transform cursor-pointer"
+              >
+                <Unlock className="w-3.5 h-3.5" />
+                <span>Lock Map Scroll</span>
+              </button>
+            )}
 
             {/* Overlay UI elements */}
             <div className="absolute top-6 left-6 z-20 glass-card p-4 rounded-2xl max-w-[250px]">
@@ -241,6 +250,7 @@ export default function LiveTrackingSection() {
               </button>
             </div>
 
+            {/* Bottom-Right Online Status */}
             <div className="absolute bottom-6 right-6 z-20 glass p-3 rounded-xl flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                 <span className="text-white font-bold">1</span>
@@ -250,6 +260,7 @@ export default function LiveTrackingSection() {
                 <p className="text-white font-bold">Vehicles Online</p>
               </div>
             </div>
+
           </div>
         </motion.div>
       </div>

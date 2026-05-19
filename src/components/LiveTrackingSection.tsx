@@ -76,26 +76,45 @@ export default function LiveTrackingSection() {
     el.style.justifyContent = "center";
     el.style.boxShadow = "0 0 15px rgba(182, 255, 59, 0.6)";
     el.style.cursor = "pointer";
+    el.style.position = "relative"; // Establish absolute context for direction pointer
 
     el.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <!-- Tires (Black) -->
-        <rect x="6.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
-        <rect x="14.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
-        
-        <!-- Main Bus Body (Solid Black) -->
-        <rect x="5.5" y="3" width="13" height="15.5" rx="4" fill="#000000" />
-        
-        <!-- Route Indicator Sign Board (Hollowed out with Neon Green color) -->
-        <rect x="8" y="4.5" width="8" height="1.6" rx="0.8" fill="#B6FF3B" />
-        
-        <!-- Windshield (Hollowed out with Neon Green color) -->
-        <rect x="6.5" y="7.5" width="11" height="5.5" rx="1.5" fill="#B6FF3B" />
-        
-        <!-- Headlights (Hollowed out with Neon Green color) -->
-        <circle cx="8" cy="15" r="1.5" fill="#B6FF3B" />
-        <circle cx="16" cy="15" r="1.5" fill="#B6FF3B" />
-      </svg>
+      <!-- Direction Pointing Tip (pointing Northeast / 45 degrees along travel direction) -->
+      <div style="
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 14px;
+        height: 14px;
+        background-color: #B6FF3B;
+        border-right: 2px solid #000000;
+        border-top: 2px solid #000000;
+        transform: rotate(45deg);
+        z-index: 1;
+        border-radius: 0 3px 0 0;
+      "></div>
+
+      <!-- Centered Bus Silhouette SVG (z-index ensures it renders above the pointer body) -->
+      <div style="position: relative; z-index: 2; display: flex; align-items: center; justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <!-- Tires (Black) -->
+          <rect x="6.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
+          <rect x="14.5" y="17" width="3" height="4.5" rx="1.5" fill="#000000" />
+          
+          <!-- Main Bus Body (Solid Black) -->
+          <rect x="5.5" y="3" width="13" height="15.5" rx="4" fill="#000000" />
+          
+          <!-- Route Indicator Sign Board (Hollowed out with Neon Green color) -->
+          <rect x="8" y="4.5" width="8" height="1.6" rx="0.8" fill="#B6FF3B" />
+          
+          <!-- Windshield (Hollowed out with Neon Green color) -->
+          <rect x="6.5" y="7.5" width="11" height="5.5" rx="1.5" fill="#B6FF3B" />
+          
+          <!-- Headlights (Hollowed out with Neon Green color) -->
+          <circle cx="8" cy="15" r="1.5" fill="#B6FF3B" />
+          <circle cx="16" cy="15" r="1.5" fill="#B6FF3B" />
+        </svg>
+      </div>
     `;
 
     marker.current = new maplibregl.Marker({ element: el })

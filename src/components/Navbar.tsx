@@ -15,19 +15,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5"
     >
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="logo">
-            <div className="circle">
-              <div className="bus">
-                <div className="top"></div>
-                <div className="window"></div>
-                <div className="light left"></div>
-                <div className="light right"></div>
-                <div className="wheel left"></div>
-                <div className="wheel right"></div>
-              </div>
-            </div>
-          </div>
+        <div className="flex items-center gap-2">
+          <MapPin className="w-8 h-8 text-geobus-neon" />
           <span className="text-xl font-heading font-bold text-white tracking-wider">
             GeoBus
           </span>

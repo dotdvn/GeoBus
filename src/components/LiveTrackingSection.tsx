@@ -63,23 +63,28 @@ export default function LiveTrackingSection() {
     // Disable scroll zoom initially so users can scroll down the page past the map
     map.current.scrollZoom.disable();
 
-    // Create a custom neon bus marker element
+    // Create a custom neon bus marker element matching the teardrop bubble pointer shape
     const el = document.createElement("div");
     el.className = "bus-marker-element";
     el.style.width = "40px";
     el.style.height = "40px";
-    el.style.backgroundColor = "#0a0a0a";
-    el.style.border = "2px solid #B6FF3B";
-    el.style.borderRadius = "50%";
+    el.style.backgroundColor = "#B6FF3B";
+    el.style.border = "2.5px solid #000000";
+    el.style.borderRadius = "50% 0 50% 50%"; // Beautiful teardrop shape pointing to the top-right!
     el.style.display = "flex";
     el.style.alignItems = "center";
     el.style.justifyContent = "center";
-    el.style.boxShadow = "0 0 15px rgba(182, 255, 59, 0.6)";
+    el.style.boxShadow = "0 0 15px rgba(182, 255, 59, 0.7)";
     el.style.cursor = "pointer";
-    el.style.transform = "rotate(45deg)";
 
     el.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B6FF3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(45deg);"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px; margin-right: 2px;">
+        <rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect>
+        <path d="M4 18v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2h10v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2"></path>
+        <path d="M3 11h18"></path>
+        <circle cx="7.5" cy="14.5" r="1.5" fill="#000000"></circle>
+        <circle cx="16.5" cy="14.5" r="1.5" fill="#000000"></circle>
+      </svg>
     `;
 
     marker.current = new maplibregl.Marker({ element: el })

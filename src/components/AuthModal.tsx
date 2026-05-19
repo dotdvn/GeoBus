@@ -3,10 +3,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  X, Phone, Shield, User, Key, ArrowRight, Loader2, Sparkles, AlertCircle, RefreshCw
+  X, Phone, Shield, User, Key, ArrowRight, Loader2, AlertCircle, RefreshCw
 } from "lucide-react";
 import { useAuth, type UserRole } from "@/context/AuthContext";
-const isSupabaseConfigured = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 export default function AuthModal() {
   const { 
@@ -226,13 +225,7 @@ export default function AuthModal() {
           </motion.div>
         )}
 
-        {/* Supabase Config Notice for Dev */}
-        {!isSupabaseConfigured && (
-          <div className="mb-6 py-2 px-3 bg-yellow-950/20 border border-yellow-500/10 rounded-xl flex items-center gap-2 text-xs text-yellow-300/80 relative z-10">
-            <Sparkles className="w-4 h-4 shrink-0" />
-            <span>Simulation Mode Active (Use code <strong>123456</strong> for OTP, or any credentials)</span>
-          </div>
-        )}
+
 
         {/* Tab Contents */}
         <div className="relative z-10">

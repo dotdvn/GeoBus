@@ -35,7 +35,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [phoneState, setPhoneState] = useState<string | null>(null);
-  const [isSimulationMode, setIsSimulationMode] = useState(false);
 
   // Monitor auth status changes on the Supabase client
   useEffect(() => {
@@ -51,12 +50,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           displayName: sbUser.user_metadata?.full_name || sbUser.email?.split('@')[0] || "Passenger User",
           role: localRole,
         });
-      } else {
-        // Fallback check in case mock user was set locally
-        const mockUser = localStorage.getItem("geobus_user");
-        if (mockUser) {
-          setUser(JSON.parse(mockUser));
-        }
       }
       setLoading(false);
     });
@@ -85,7 +78,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const openAuthModal = () => setIsModalOpen(true);
   const closeAuthModal = () => setIsModalOpen(false);
 
-  // 1. Google Single Sign-On
+  // 1. Google Single Sign-On (OAuth)
   const loginWithGoogle = async () => {
     setLoading(true);
     try {
@@ -97,18 +90,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       });
       if (error) throw error;
     } catch (err) {
-      console.warn("Supabase Google Auth redirect failed, attempting demo fallback:", err);
-      // Demo Fallback in case localhost OAuth is not approved in Supabase console yet
-      const mockUser: AppUser = {
-        uid: "mock-supabase-google-user",
-        email: "passenger@supabase-geobus.com",
-        phoneNumber: null,
-        displayName: "Supabase Passenger",
-        role: "passenger",
-      };
-      setUser(mockUser);
-      localStorage.setItem("geobus_user", JSON.stringify(mockUser));
-      setIsModalOpen(false);
+      console.error("Supabase Google Auth redirect failed:", err);
+      throw err;
     } finally {
       setLoading(false);
     }
@@ -119,25 +102,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setLoading(true);
     setPhoneState(phone);
     try {
-      // First attempt Supabase authentic Phone OTP
       const { error } = await supabase.auth.signInWithOtp({
         phone: phone,
       });
 
-      if (error) {
-        // If billing / SMS provider is not active, fallback to simulation mode
-        console.warn("Supabase real SMS delivery skipped (Twilio not configured). Activating OTP Simulation.");
-        setIsSimulationMode(true);
-        await new Promise((res) => setTimeout(res, 1200));
-        return true;
-      }
-      
-      setIsSimulationMode(false);
+      if (error) throw error;
       return true;
     } catch (err) {
-      console.warn("Supabase Phone OTP exception, activating OTP simulation:", err);
-      setIsSimulationMode(true);
-      return true;
+      console.error("Supabase Phone OTP exception:", err);
+      throw err;
     } finally {
       setLoading(false);
     }
@@ -146,46 +119,30 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const verifyPhoneOtp = async (code: string) => {
     setLoading(true);
     try {
-      if (isSimulationMode) {
-        await new Promise((res) => setTimeout(res, 1000));
-        if (code === "123456") {
-          const mockUser: AppUser = {
-            uid: "mock-supabase-phone-user",
-            email: null,
-            phoneNumber: phoneState || "+1 (555) 0199",
-            displayName: "PassenGer-SB",
-            role: "passenger",
-          };
-          setUser(mockUser);
-          localStorage.setItem("geobus_user", JSON.stringify(mockUser));
-          setIsModalOpen(false);
-          return true;
-        }
-        throw new Error("Invalid verification code. Enter 123456.");
+      if (!phoneState) {
+        throw new Error("No phone number state found. Please try again.");
       }
 
       // Live Supabase OTP Verification
-      if (phoneState) {
-        const { data, error } = await supabase.auth.verifyOtp({
-          phone: phoneState,
-          token: code,
-          type: "sms",
+      const { data, error } = await supabase.auth.verifyOtp({
+        phone: phoneState,
+        token: code,
+        type: "sms",
+      });
+
+      if (error) throw error;
+
+      if (data?.user) {
+        localStorage.setItem(`geobus_role_${data.user.id}`, "passenger");
+        setUser({
+          uid: data.user.id,
+          email: data.user.email || null,
+          phoneNumber: data.user.phone || null,
+          displayName: "Passenger User",
+          role: "passenger",
         });
-
-        if (error) throw error;
-
-        if (data?.user) {
-          localStorage.setItem(`geobus_role_${data.user.id}`, "passenger");
-          setUser({
-            uid: data.user.id,
-            email: data.user.email || null,
-            phoneNumber: data.user.phone || null,
-            displayName: "Passenger User",
-            role: "passenger",
-          });
-          setIsModalOpen(false);
-          return true;
-        }
+        setIsModalOpen(false);
+        return true;
       }
       throw new Error("Verification process failed.");
     } catch (err: any) {
@@ -207,25 +164,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         password: pass,
       });
 
-      if (error) {
-        // If credentials are not pre-registered in Supabase DB, fallback to secure simulation
-        console.warn("User not pre-registered in Supabase DB. Activating fallback simulator.");
-        if (pass.length < 6) {
-          throw new Error("Password must be at least 6 characters.");
-        }
-        await new Promise((res) => setTimeout(res, 1000));
-        const mockUser: AppUser = {
-          uid: `mock-supabase-${role}-user`,
-          email: resolvedEmail,
-          phoneNumber: null,
-          displayName: role === "admin" ? "Admin Command Hub" : `Fleet Operator ID: ${emailOrId}`,
-          role,
-        };
-        setUser(mockUser);
-        localStorage.setItem("geobus_user", JSON.stringify(mockUser));
-        setIsModalOpen(false);
-        return;
-      }
+      if (error) throw error;
 
       if (data?.user) {
         localStorage.setItem(`geobus_role_${data.user.id}`, role);
@@ -252,7 +191,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       await supabase.auth.signOut();
       setUser(null);
-      localStorage.removeItem("geobus_user");
     } catch (err) {
       console.error("Sign out error:", err);
     } finally {

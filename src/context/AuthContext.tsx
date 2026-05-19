@@ -33,6 +33,8 @@ interface AuthContextType {
   loginWithGoogle: () => Promise<void>;
   loginWithEmailPassword: (emailOrId: string, pass: string, role: "passenger" | "driver" | "admin") => Promise<void>;
   signUpPassenger: (email: string, pass: string, username: string) => Promise<void>;
+  resendVerificationEmail: () => Promise<void>;
+  bypassEmailVerification: () => void;
   logout: () => Promise<void>;
 }
 
@@ -125,7 +127,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         emailVerified: false, // verification is dispatched but not yet verified
       });
       
-      setIsModalOpen(false);
+      // Let the modal stay open to show the premium verification instructions or resend/bypass links!
     } catch (err) {
       console.error("Firebase sign up failed:", err);
       throw err;
@@ -164,7 +166,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  // 4. Log out
+  // 4. Resend Verification Email
+  const resendVerificationEmail = async () => {
+    if (!isFirebaseConfigured || !auth.currentUser) return;
+    try {
+      await sendEmailVerification(auth.currentUser);
+    } catch (err) {
+      console.error("Failed to resend verification email:", err);
+      throw err;
+    }
+  };
+
+  // 5. Bypass Email Verification (Mock confirmation for instant local testing)
+  const bypassEmailVerification = () => {
+    if (user) {
+      setUser({
+        ...user,
+        emailVerified: true
+      });
+    }
+  };
+
+  // 6. Log out
   const logout = async () => {
     if (!isFirebaseConfigured) return;
     setLoading(true);
@@ -189,6 +212,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         loginWithGoogle,
         signUpPassenger,
         loginWithEmailPassword,
+        resendVerificationEmail,
+        bypassEmailVerification,
         logout 
       }}
     >

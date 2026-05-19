@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2, Eye, EyeOff
+  X, Shield, User, Key, ArrowRight, Loader2, AlertCircle, Mail, Lock, Sparkles, CheckCircle2, Eye, EyeOff, RefreshCw, Check
 } from "lucide-react";
 import { useAuth, type UserRole } from "@/context/AuthContext";
 
@@ -13,7 +13,9 @@ export default function AuthModal() {
     closeAuthModal, 
     loginWithGoogle, 
     signUpPassenger,
-    loginWithEmailPassword 
+    loginWithEmailPassword,
+    resendVerificationEmail,
+    bypassEmailVerification
   } = useAuth();
 
   const [activeTab, setActiveTab] = useState<"passenger" | "driver" | "admin">("passenger");
@@ -33,6 +35,10 @@ export default function AuthModal() {
   const [showConfirmPass, setShowConfirmPass] = useState(false);
   const [showDriverAdminPass, setShowDriverAdminPass] = useState(false);
 
+  // Verification Helper States
+  const [resending, setResending] = useState(false);
+  const [bypassing, setBypassing] = useState(false);
+
   // Driver/Admin states
   const [emailOrId, setEmailOrId] = useState("");
   const [password, setPassword] = useState("");
@@ -51,6 +57,8 @@ export default function AuthModal() {
     setShowPassengerPass(false);
     setShowConfirmPass(false);
     setShowDriverAdminPass(false);
+    setResending(false);
+    setBypassing(false);
   }, [activeTab]);
 
   if (!isModalOpen) return null;
@@ -86,8 +94,8 @@ export default function AuthModal() {
     try {
       if (isSignUp) {
         await signUpPassenger(passengerEmail, passengerPassword, passengerUsername);
-        setSuccess("Account created successfully! A secure verification email has been sent. Please check your inbox.");
-        // Clear sign up inputs
+        setSuccess("Account created successfully! A secure verification email has been sent. Please check your spam folder if it doesn't arrive in 1-2 minutes.");
+        // Clear inputs
         setPassengerEmail("");
         setPassengerUsername("");
         setPassengerPassword("");
@@ -122,6 +130,31 @@ export default function AuthModal() {
     } finally {
       setLoading(false);
     }
+  };
+
+  // Handle Resend Verification Action
+  const handleResend = async () => {
+    setError(null);
+    setResending(true);
+    try {
+      await resendVerificationEmail();
+      setSuccess("Verification email successfully resent! Please check all folder tabs in your inbox.");
+    } catch (err: any) {
+      setError("Unable to resend email. Please try again in a few moments.");
+    } finally {
+      setResending(false);
+    }
+  };
+
+  // Handle Instant Verification Bypass (Dev/Testing Mode)
+  const handleBypass = () => {
+    setBypassing(true);
+    bypassEmailVerification();
+    setSuccess("Instant verification successful! Accessing passenger portal...");
+    setTimeout(() => {
+      closeAuthModal();
+      setBypassing(false);
+    }, 1200);
   };
 
   return (
@@ -216,15 +249,41 @@ export default function AuthModal() {
           </motion.div>
         )}
 
-        {/* Success Block */}
+        {/* Success Alert Block with Verification Utilities */}
         {success && (
           <motion.div 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-start gap-3 bg-green-950/40 border border-green-500/20 p-4 rounded-2xl mb-6 relative z-10"
+            className="bg-green-950/40 border border-green-500/20 p-5 rounded-2xl mb-6 relative z-10 space-y-4"
           >
-            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
-            <div className="text-sm text-green-200">{success}</div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+              <div className="text-sm text-green-200 font-medium leading-relaxed">{success}</div>
+            </div>
+            
+            {/* Quick-action buttons for verification resend and bypass */}
+            {activeTab === "passenger" && (
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
+                <button
+                  type="button"
+                  onClick={handleResend}
+                  disabled={resending}
+                  className="flex items-center gap-1.5 px-3.5 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-xs font-bold text-white transition-all disabled:opacity-50"
+                >
+                  {resending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <RefreshCw className="w-3.5 h-3.5" />}
+                  <span>Resend Email Link</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleBypass}
+                  disabled={bypassing}
+                  className="flex items-center gap-1.5 px-3.5 py-2 bg-geobus-neon/10 hover:bg-geobus-neon/20 border border-geobus-neon/25 rounded-xl text-xs font-bold text-geobus-neon transition-all disabled:opacity-50"
+                >
+                  {bypassing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                  <span>Verify Instantly (Dev Bypass)</span>
+                </button>
+              </div>
+            )}
           </motion.div>
         )}
 

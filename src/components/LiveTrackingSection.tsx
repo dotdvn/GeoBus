@@ -225,7 +225,7 @@ export default function LiveTrackingSection() {
             )}
 
             {/* Overlay UI elements */}
-            <div className="absolute top-6 left-6 z-20 glass-card p-4 rounded-2xl max-w-[250px]">
+            <div className="hidden md:block absolute top-6 left-6 z-20 glass-card p-4 rounded-2xl max-w-[250px]">
               <h4 className="text-white font-heading font-bold text-lg mb-1">Route Trial Express</h4>
               <p className="text-sm text-geobus-neon flex items-center gap-2 font-medium mb-3">
                 <span className="w-2 h-2 rounded-full bg-geobus-neon animate-pulse" />
@@ -251,7 +251,7 @@ export default function LiveTrackingSection() {
             </div>
 
             {/* Bottom-Right Online Status */}
-            <div className="absolute bottom-6 right-6 z-20 glass p-3 rounded-xl flex items-center gap-3">
+            <div className="hidden md:flex absolute bottom-6 right-6 z-20 glass p-3 rounded-xl items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                 <span className="text-white font-bold">1</span>
               </div>
